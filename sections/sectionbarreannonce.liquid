@@ -14,7 +14,7 @@
     border-top: 1px solid {{ section.settings.border_color }};
     border-bottom: 1px solid {{ section.settings.border_color }};
     {%- endif -%}
-    font-family: var(--font-body-family, {{ settings.type_body_font.family | default: 'sans-serif' }});
+    font-family: 'Epilogue', var(--font-body-family, sans-serif);
   }
   #Annonce-{{ section.id }} .annonce__wrapper {
     max-width: {{ section.settings.max_width }}px;
@@ -115,6 +115,10 @@
     #Annonce-{{ section.id }} .annonce__item { transition: none; }
   }
 {%- endstyle -%}
+
+{%- comment -%} Chargement de secours de la police Epilogue (ne fait rien si le thème la charge déjà) {%- endcomment -%}
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
 
 <div id="Annonce-{{ section.id }}">
   <div class="annonce__wrapper">
