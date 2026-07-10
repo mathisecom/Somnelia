@@ -73,7 +73,7 @@
         "text_ratio": 40,
         "radius": 16,
         "padding_top": 36,
-        "padding_bottom": 36,
+        "padding_bottom": 12,
         "section_bg": "#ffffff",
         "hero_bg": "#eeebe3",
         "text_color": "#1a1a1a",
@@ -111,6 +111,32 @@
         "btn_label": "Profiter de L'Offre",
         "btn_link": "",
         "hide_desc_mobile": true
+      }
+    },
+    "featured_collection_aiLzYJ": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "collection": "",
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "Meilleures Ventes",
+        "content": "",
+        "link_url": "",
+        "link_text": "Découvrir",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
       }
     },
     "scrolling_text_9amhqk": {
@@ -185,6 +211,7 @@
   },
   "order": [
     "herosectiondeals_T8gzth",
+    "featured_collection_aiLzYJ",
     "scrolling_text_9amhqk",
     "faq"
   ]
