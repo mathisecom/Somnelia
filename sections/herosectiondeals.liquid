@@ -9,6 +9,14 @@
 {%- endcomment -%}
 
 {%- style -%}
+  {%- if section.settings.trust_font_url != blank -%}
+  @font-face {
+    font-family: 'Trustpilot Sans';
+    src: url('{{ section.settings.trust_font_url }}') format('woff2');
+    font-weight: 400 700;
+    font-display: swap;
+  }
+  {%- endif -%}
   #Promo-{{ section.id }} {
     padding-top: {{ section.settings.padding_top }}px;
     padding-bottom: {{ section.settings.padding_bottom }}px;
@@ -44,6 +52,7 @@
     gap: 10px;
     flex-wrap: wrap;
     justify-content: center;
+    font-family: 'Trustpilot Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: {{ section.settings.trust_size }}px;
     color: {{ section.settings.text_color }};
   }
@@ -491,6 +500,7 @@
     { "type": "text", "id": "review_text", "label": "Texte après le nombre", "default": "avis sur" },
     { "type": "text", "id": "trust_name", "label": "Nom de la plateforme", "default": "Trustpilot" },
     { "type": "color", "id": "star_bg", "label": "Couleur des étoiles", "default": "#00B67A" },
+    { "type": "text", "id": "trust_font_url", "label": "URL de la police Trustpilot Sans (.woff2)", "info": "Optionnel : uploadez le fichier de police dans Contenu > Fichiers, puis collez son URL ici. Sans URL, une police proche (Helvetica) est utilisée." },
 
     { "type": "header", "content": "Titre" },
     { "type": "text", "id": "title_part1", "label": "Titre — partie 1 (gras)", "default": "Summer" },
