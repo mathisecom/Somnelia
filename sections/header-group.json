@@ -24,7 +24,7 @@
         "message_7ii7Y4": {
           "type": "message",
           "settings": {
-            "text": "LIVRAISON OFFERTE EN FRANCE",
+            "text": "LIVRAISON OFFERTE Dès 50€",
             "url": ""
           }
         }
@@ -102,6 +102,7 @@
         "item_m3GXmH",
         "item_L8hUHG"
       ],
+      "disabled": true,
       "name": "Barre d'annonce icônes",
       "settings": {
         "max_width": 1400,
