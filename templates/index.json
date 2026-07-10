@@ -98,10 +98,11 @@
         "benefit_size_mobile": 12,
         "show_trust": true,
         "trust_below_mobile": true,
+        "hide_trust_label_mobile": true,
         "rating": 4,
-        "review_count": "34012",
+        "review_count": "34,012",
         "review_text": "avis sur",
-        "trust_name": "Trustpilot",
+        "trust_url": "",
         "star_bg": "#00b67a",
         "trust_font_url": "",
         "title_part1": "Summer",
@@ -151,7 +152,7 @@
         "scrolling_speed": 10,
         "background": "",
         "background_gradient": "",
-        "text_color": "#0E1A2B",
+        "text_color": "#0e1a2b",
         "text_gradient": ""
       }
     },
