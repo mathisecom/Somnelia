@@ -32,7 +32,7 @@
         "text_size": "text-xs",
         "navigation_mode": "scrolling",
         "scrolling_speed": 10,
-        "background": "#0E1A2B",
+        "background": "#0e1a2b",
         "background_gradient": "",
         "text_color": "#ffffff"
       }
@@ -60,10 +60,63 @@
         "background_opacity": 100,
         "background_blur_radius": 0
       }
+    },
+    "sectionbarreannonce_RyX8d8": {
+      "type": "sectionbarreannonce",
+      "blocks": {
+        "item_BwA8zA": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "text": "4,5/5 sur plus de 33 000 avis",
+            "link": ""
+          }
+        },
+        "item_m3GXmH": {
+          "type": "item",
+          "settings": {
+            "icon": "heart",
+            "text": "Plus de 1 500 000 clients satisfaits",
+            "link": ""
+          }
+        },
+        "item_L8hUHG": {
+          "type": "item",
+          "settings": {
+            "icon": "medal",
+            "text": "Confort de sommeil primé",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_BwA8zA",
+        "item_m3GXmH",
+        "item_L8hUHG"
+      ],
+      "name": "Barre d'annonce icônes",
+      "settings": {
+        "max_width": 1400,
+        "alignment": "center",
+        "gap": 90,
+        "padding_y": 8,
+        "padding_y_mobile": 8,
+        "show_border": false,
+        "border_color": "#E5E5E5",
+        "bg_color": "#F2BC41",
+        "text_color": "#1a1a1a",
+        "icon_color": "#1a1a1a",
+        "text_size": 12,
+        "text_size_mobile": 12,
+        "icon_size": 16,
+        "mobile_mode": "rotate",
+        "rotate_delay": 4
+      }
     }
   },
   "order": [
     "announcement-bar",
-    "header"
+    "header",
+    "sectionbarreannonce_RyX8d8"
   ]
 }
