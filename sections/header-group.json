@@ -20,10 +20,18 @@
             "text": "SOLDES D’ÉTÉ : -40% DE RÉDUCTION",
             "url": ""
           }
+        },
+        "message_7ii7Y4": {
+          "type": "message",
+          "settings": {
+            "text": "LIVRAISON OFFERTE EN FRANCE",
+            "url": ""
+          }
         }
       },
       "block_order": [
-        "message"
+        "message",
+        "message_7ii7Y4"
       ],
       "settings": {
         "enable_sticky": false,
@@ -103,7 +111,7 @@
         "padding_y_mobile": 8,
         "show_border": false,
         "border_color": "#E5E5E5",
-        "bg_color": "#F2BC41",
+        "bg_color": "#ECEBE4",
         "text_color": "#1a1a1a",
         "icon_color": "#1a1a1a",
         "text_size": 12,
