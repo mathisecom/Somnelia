@@ -1,8 +1,9 @@
 {%- comment -%}
   Section : Bannière Promo + Cartes Deals (style "Summer Deals")
   - 100% personnalisable via l'éditeur de thème
+  - Taille de TOUTES les typographies réglable (PC + mobile)
+  - Police Epilogue (avec repli sur la police du thème)
   - Responsive PC / Mobile
-  - Utilise la typographie du thème (font_body / font_heading)
   Installation : Boutique en ligne > Thèmes > Modifier le code >
   Sections > Ajouter une nouvelle section > "promo-deals" > coller ce code
 {%- endcomment -%}
@@ -12,7 +13,7 @@
     padding-top: {{ section.settings.padding_top }}px;
     padding-bottom: {{ section.settings.padding_bottom }}px;
     background: {{ section.settings.section_bg }};
-    font-family: var(--font-body-family, {{ settings.type_body_font.family | default: 'sans-serif' }});
+    font-family: 'Epilogue', var(--font-body-family, sans-serif);
   }
   #Promo-{{ section.id }} .promo__wrapper {
     max-width: {{ section.settings.max_width }}px;
@@ -43,7 +44,7 @@
     gap: 10px;
     flex-wrap: wrap;
     justify-content: center;
-    font-size: 1.4rem;
+    font-size: {{ section.settings.trust_size }}px;
     color: {{ section.settings.text_color }};
   }
   #Promo-{{ section.id }} .promo__stars {
@@ -72,7 +73,7 @@
   #Promo-{{ section.id }} .promo__trust-logo svg { width: 16px; height: 16px; fill: {{ section.settings.star_bg }}; }
 
   #Promo-{{ section.id }} .promo__title {
-    font-family: var(--font-heading-family, {{ settings.type_header_font.family | default: 'serif' }});
+    font-family: 'Epilogue', var(--font-heading-family, sans-serif);
     font-size: {{ section.settings.title_size }}px;
     line-height: 1.05;
     margin: 0;
@@ -101,7 +102,7 @@
     display: inline-block;
     background: {{ section.settings.btn_bg }};
     color: {{ section.settings.btn_text_color }};
-    font-size: 1.7rem;
+    font-size: {{ section.settings.btn_size }}px;
     font-weight: 600;
     padding: 16px 44px;
     border-radius: 999px;
@@ -179,19 +180,30 @@
   }
   #Promo-{{ section.id }} .promo-card__badge-text {
     position: relative;
-    font-family: var(--font-heading-family, serif);
+    font-family: 'Epilogue', var(--font-heading-family, sans-serif);
     line-height: 1.05;
   }
-  #Promo-{{ section.id }} .promo-card__badge-text .line1 { font-size: 2rem; font-style: italic; font-weight: 700; display: block; }
-  #Promo-{{ section.id }} .promo-card__badge-text .line2 { font-size: 1rem; font-style: italic; letter-spacing: .05em; display: block; }
+  #Promo-{{ section.id }} .promo-card__badge-text .line1 {
+    font-size: {{ section.settings.badge_size1 }}px;
+    font-style: italic;
+    font-weight: 700;
+    display: block;
+  }
+  #Promo-{{ section.id }} .promo-card__badge-text .line2 {
+    font-size: {{ section.settings.badge_size2 }}px;
+    font-style: italic;
+    letter-spacing: .05em;
+    display: block;
+  }
   #Promo-{{ section.id }} .promo-card__texts { color: {{ section.settings.text_color }}; }
   #Promo-{{ section.id }} .promo-card__title {
-    font-size: 2rem;
+    font-size: {{ section.settings.card_title_size }}px;
     font-weight: 700;
     margin: 0 0 8px;
+    display: block;
   }
   #Promo-{{ section.id }} .promo-card__desc {
-    font-size: 1.5rem;
+    font-size: {{ section.settings.card_desc_size }}px;
     line-height: 1.5;
     margin: 0;
   }
@@ -224,7 +236,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 1.5rem;
+    font-size: {{ section.settings.benefit_size }}px;
   }
   #Promo-{{ section.id }} .promo__benefit-icon {
     width: 26px;
@@ -250,8 +262,10 @@
     {%- if section.settings.trust_below_mobile -%}
     #Promo-{{ section.id }} .promo__trust { order: 5; }
     {%- endif -%}
+    #Promo-{{ section.id }} .promo__trust { font-size: {{ section.settings.trust_size_mobile }}px; }
     #Promo-{{ section.id }} .promo__title { font-size: {{ section.settings.title_size_mobile }}px; }
-    #Promo-{{ section.id }} .promo__subtitle { font-size: {{ section.settings.subtitle_size | minus: 2 }}px; }
+    #Promo-{{ section.id }} .promo__subtitle { font-size: {{ section.settings.subtitle_size_mobile }}px; }
+    #Promo-{{ section.id }} .promo__btn { font-size: {{ section.settings.btn_size_mobile }}px; }
     #Promo-{{ section.id }} .promo__cards { grid-template-columns: repeat(2, 1fr); gap: 14px; }
     #Promo-{{ section.id }} .promo-card {
       flex-direction: column;
@@ -261,18 +275,25 @@
     }
     #Promo-{{ section.id }} .promo-card__visual { width: 120px; height: 90px; }
     #Promo-{{ section.id }} .promo-card__badge { width: 68px; height: 68px; right: -34px; }
-    #Promo-{{ section.id }} .promo-card__badge-text .line1 { font-size: 1.6rem; }
-    #Promo-{{ section.id }} .promo-card__badge-text .line2 { font-size: 0.9rem; }
-    #Promo-{{ section.id }} .promo-card__title { font-size: 1.6rem; }
-    #Promo-{{ section.id }} .promo-card__desc { display: {% if section.settings.hide_desc_mobile %}none{% else %}block{% endif %}; font-size: 1.3rem; }
+    #Promo-{{ section.id }} .promo-card__badge-text .line1 { font-size: {{ section.settings.badge_size1 | times: 0.8 | round }}px; }
+    #Promo-{{ section.id }} .promo-card__badge-text .line2 { font-size: {{ section.settings.badge_size2 | times: 0.9 | round }}px; }
+    #Promo-{{ section.id }} .promo-card__title { font-size: {{ section.settings.card_title_size_mobile }}px; }
+    #Promo-{{ section.id }} .promo-card__desc {
+      display: {% if section.settings.hide_desc_mobile %}none{% else %}block{% endif %};
+      font-size: {{ section.settings.card_desc_size_mobile }}px;
+    }
     #Promo-{{ section.id }} .promo-card__arrow { left: 18px; right: auto; top: auto; bottom: 14px; transform: none; width: 30px; height: 30px; }
     #Promo-{{ section.id }} .promo__benefits { gap: 14px 28px; }
-    #Promo-{{ section.id }} .promo__benefit { font-size: 1.35rem; }
+    #Promo-{{ section.id }} .promo__benefit { font-size: {{ section.settings.benefit_size_mobile }}px; }
   }
   @media screen and (max-width: 420px) {
     #Promo-{{ section.id }} .promo__cards { grid-template-columns: 1fr 1fr; }
   }
 {%- endstyle -%}
+
+{%- comment -%} Chargement de secours de la police Epilogue (ne fait rien si le thème la charge déjà) {%- endcomment -%}
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,500;0,600;0,700;1,500;1,700&display=swap" rel="stylesheet">
 
 {%- capture flower_svg -%}
   <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
@@ -433,6 +454,26 @@
     { "type": "color", "id": "btn_text_color", "label": "Texte du bouton", "default": "#FFFFFF" },
     { "type": "color", "id": "flower_color", "label": "Couleur de la fleur du titre", "default": "#F2B72C" },
 
+    { "type": "header", "content": "Tailles de texte — PC" },
+    { "type": "range", "id": "title_size", "min": 28, "max": 80, "step": 2, "unit": "px", "label": "Titre", "default": 52 },
+    { "type": "range", "id": "subtitle_size", "min": 12, "max": 26, "step": 1, "unit": "px", "label": "Sous-titre", "default": 17 },
+    { "type": "range", "id": "trust_size", "min": 10, "max": 22, "step": 1, "unit": "px", "label": "Ligne d'avis (Trustpilot)", "default": 14 },
+    { "type": "range", "id": "btn_size", "min": 12, "max": 26, "step": 1, "unit": "px", "label": "Bouton", "default": 17 },
+    { "type": "range", "id": "card_title_size", "min": 14, "max": 32, "step": 1, "unit": "px", "label": "Titre des cartes deals", "default": 20 },
+    { "type": "range", "id": "card_desc_size", "min": 11, "max": 22, "step": 1, "unit": "px", "label": "Description des cartes deals", "default": 15 },
+    { "type": "range", "id": "badge_size1", "min": 12, "max": 32, "step": 1, "unit": "px", "label": "Badge fleur — ligne 1 (1+1)", "default": 20 },
+    { "type": "range", "id": "badge_size2", "min": 8, "max": 18, "step": 1, "unit": "px", "label": "Badge fleur — ligne 2 (OFFERT)", "default": 10 },
+    { "type": "range", "id": "benefit_size", "min": 11, "max": 22, "step": 1, "unit": "px", "label": "Avantages / réassurance", "default": 15 },
+
+    { "type": "header", "content": "Tailles de texte — Mobile" },
+    { "type": "range", "id": "title_size_mobile", "min": 20, "max": 56, "step": 2, "unit": "px", "label": "Titre", "default": 36 },
+    { "type": "range", "id": "subtitle_size_mobile", "min": 11, "max": 22, "step": 1, "unit": "px", "label": "Sous-titre", "default": 15 },
+    { "type": "range", "id": "trust_size_mobile", "min": 9, "max": 18, "step": 1, "unit": "px", "label": "Ligne d'avis (Trustpilot)", "default": 13 },
+    { "type": "range", "id": "btn_size_mobile", "min": 12, "max": 22, "step": 1, "unit": "px", "label": "Bouton", "default": 16 },
+    { "type": "range", "id": "card_title_size_mobile", "min": 12, "max": 26, "step": 1, "unit": "px", "label": "Titre des cartes deals", "default": 16 },
+    { "type": "range", "id": "card_desc_size_mobile", "min": 10, "max": 18, "step": 1, "unit": "px", "label": "Description des cartes deals", "default": 13 },
+    { "type": "range", "id": "benefit_size_mobile", "min": 10, "max": 18, "step": 1, "unit": "px", "label": "Avantages / réassurance", "default": 13 },
+
     { "type": "header", "content": "Avis clients (Trustpilot)" },
     { "type": "checkbox", "id": "show_trust", "label": "Afficher les avis", "default": true },
     { "type": "checkbox", "id": "trust_below_mobile", "label": "Placer les avis sous le bouton (mobile)", "default": true },
@@ -446,12 +487,9 @@
     { "type": "text", "id": "title_part1", "label": "Titre — partie 1 (gras)", "default": "Summer" },
     { "type": "text", "id": "title_part2", "label": "Titre — partie 2 (italique)", "default": "Deals" },
     { "type": "checkbox", "id": "show_flower", "label": "Afficher la fleur entre les deux", "default": true },
-    { "type": "range", "id": "title_size", "min": 28, "max": 80, "step": 2, "unit": "px", "label": "Taille du titre (PC)", "default": 52 },
-    { "type": "range", "id": "title_size_mobile", "min": 24, "max": 56, "step": 2, "unit": "px", "label": "Taille du titre (mobile)", "default": 36 },
 
     { "type": "header", "content": "Texte & bouton" },
     { "type": "textarea", "id": "subtitle", "label": "Sous-titre", "default": "Célébrez l'été avec le 1+1 offert et économisez sur presque toute notre collection.*" },
-    { "type": "range", "id": "subtitle_size", "min": 12, "max": 24, "step": 1, "unit": "px", "label": "Taille du sous-titre", "default": 17 },
     { "type": "text", "id": "btn_label", "label": "Texte du bouton", "default": "J'en profite" },
     { "type": "url", "id": "btn_link", "label": "Lien du bouton" },
 
