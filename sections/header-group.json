@@ -102,7 +102,6 @@
         "item_m3GXmH",
         "item_L8hUHG"
       ],
-      "disabled": true,
       "name": "Barre d'annonce icônes",
       "settings": {
         "max_width": 1400,
@@ -112,7 +111,7 @@
         "padding_y_mobile": 8,
         "show_border": false,
         "border_color": "#e5e5e5",
-        "bg_color": "#F2BC41",
+        "bg_color": "#F3EDDD",
         "text_color": "#1a1a1a",
         "icon_color": "#1a1a1a",
         "text_size": 12,
