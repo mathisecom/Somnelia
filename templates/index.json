@@ -113,6 +113,22 @@
         "hide_desc_mobile": true
       }
     },
+    "scrolling_text_9amhqk": {
+      "type": "scrolling-text",
+      "name": "Scrolling text",
+      "settings": {
+        "full_width": true,
+        "text": "🌙 Essai de 30 nuits sans risque",
+        "text_size": "xsmall",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 10,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "#0E1A2B",
+        "text_gradient": ""
+      }
+    },
     "faq": {
       "type": "faq",
       "blocks": {
@@ -169,6 +185,7 @@
   },
   "order": [
     "herosectiondeals_T8gzth",
+    "scrolling_text_9amhqk",
     "faq"
   ]
 }
