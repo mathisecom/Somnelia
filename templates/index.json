@@ -49,7 +49,7 @@
           "type": "benefit",
           "settings": {
             "icon": "pillow",
-            "text": "100 nuits d'essai*"
+            "text": "30 nuits d'essai*"
           }
         },
         "benefit_Geb8qf": {
@@ -103,6 +103,7 @@
         "review_text": "avis sur",
         "trust_name": "Trustpilot",
         "star_bg": "#00b67a",
+        "trust_font_url": "",
         "title_part1": "Summer",
         "title_part2": "Deals",
         "show_flower": false,
