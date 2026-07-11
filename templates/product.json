@@ -383,14 +383,14 @@
             "subheading": "",
             "title": "Votre posture commence la nuit",
             "content": "<p>Un oreiller mal adapté peut désaligner votre nuque et provoquer des tensions au réveil. L’oreiller <strong>Somnelia</strong> aide à aligner naturellement la tête, le cou et la colonne pendant le sommeil.<br/><br/><strong>Moins de douleurs, meilleure posture, réveils plus légers.</strong></p>",
-            "link_text": "",
+            "link_text": "ACHETER MAINTENANT",
             "link_url": "",
             "background": "#0E1A2B",
             "background_gradient": "",
-            "text_color": "#ffffff",
+            "text_color": "#FFFFFF",
             "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
+            "button_background": "#F4F4F1",
+            "button_text_color": "#0E1A2B"
           }
         }
       },
