@@ -1,0 +1,554 @@
+{% comment %}
+  =====================================================================
+  Section : Avis clients défilants (style Trustpilot)
+  ---------------------------------------------------------------------
+  - Desktop : 2 colonnes d'avis qui défilent verticalement en continu
+    (colonne gauche vers le haut, colonne droite vers le bas)
+  - Mobile / Tablette : slider horizontal avec pagination (points)
+  - 100% autonome : aucun framework requis (pas de Tailwind, Alpine,
+    ni Swiper). CSS + JS vanilla inclus dans la section.
+  - Les avis sont gérés en "blocks" dans l'éditeur de thème.
+  =====================================================================
+{% endcomment %}
+
+{%- assign sid = section.id -%}
+{%- assign blocks_count = section.blocks.size -%}
+{%- assign mid = blocks_count | divided_by: 2.0 | ceil -%}
+
+<section id="cp-reviews-{{ sid }}" class="cpav" aria-label="{{ section.settings.heading | escape }}">
+  <div class="cpav__container">
+
+    {%- comment -%} ============ COLONNE TEXTE (gauche) ============ {%- endcomment -%}
+    <div class="cpav__intro">
+      {%- if section.settings.show_trustpilot -%}
+        <a class="cpav__tp" href="{{ section.settings.trustpilot_url }}" target="_blank" rel="noopener noreferrer">
+          <span class="cpav__tp-stars" aria-label="{{ section.settings.trust_score }} sur 5">
+            {%- assign score_x10 = section.settings.trust_score | times: 10 | round -%}
+            {%- for i in (1..5) -%}
+              {%- assign full_limit = i | times: 10 -%}
+              {%- assign half_limit = full_limit | minus: 5 -%}
+              {%- if score_x10 >= full_limit -%}
+                {%- assign star_state = 'full' -%}
+              {%- elsif score_x10 >= half_limit -%}
+                {%- assign star_state = 'half' -%}
+              {%- else -%}
+                {%- assign star_state = 'empty' -%}
+              {%- endif -%}
+              <span class="cpav__tp-star cpav__tp-star--{{ star_state }}">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect width="20" height="20" class="cpav__tp-star-bg"/>
+                  {%- if star_state == 'half' -%}<rect width="10" height="20" class="cpav__tp-star-half"/>{%- endif -%}
+                  <path d="M9.99976 13.4789L13.0414 12.7081L14.3123 16.6248L9.99976 13.4789ZM16.9998 8.41642H11.6456L9.99976 3.37476L8.35392 8.41642H2.99976L7.33309 11.5414L5.68726 16.5831L10.0206 13.4581L12.6873 11.5414L16.9998 8.41642Z" fill="#fff"/>
+                </svg>
+              </span>
+            {%- endfor -%}
+          </span>
+          <span class="cpav__tp-label">
+            <strong>{{ section.settings.reviews_count }}</strong> {{ section.settings.reviews_label }}
+          </span>
+          <span class="cpav__tp-logo">
+            <svg width="16" height="16" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M7.66675 10.4792L10.7084 9.7083L11.9792 13.625L7.66675 10.4792ZM14.6667 5.41666H9.31258L7.66675 0.375L6.02092 5.41666H0.666748L5.00008 8.54166L3.35425 13.5833L7.68758 10.4583L10.3542 8.54166L14.6667 5.41666Z" fill="#219653"/>
+            </svg>
+            Trustpilot
+          </span>
+        </a>
+      {%- endif -%}
+
+      {%- if section.settings.heading != blank -%}
+        <h2 class="cpav__heading">{{ section.settings.heading }}</h2>
+      {%- endif -%}
+      {%- if section.settings.text != blank -%}
+        <div class="cpav__text">{{ section.settings.text }}</div>
+      {%- endif -%}
+    </div>
+
+    {%- comment -%} ============ COLONNES DÉFILANTES (desktop) ============ {%- endcomment -%}
+    <div class="cpav__marquee" aria-hidden="true">
+      {%- comment -%} Colonne 1 : défile vers le haut {%- endcomment -%}
+      <div class="cpav__col cpav__col--up" style="--speed: {{ section.settings.scroll_speed }}s;">
+        <div class="cpav__track">
+          {%- for i in (1..2) -%}
+            {%- for block in section.blocks limit: mid -%}
+              <a class="cpav__card" {% if block.settings.review_url != blank %}href="{{ block.settings.review_url }}" target="_blank" rel="noopener noreferrer"{% endif %} {{ block.shopify_attributes }}>
+                <div class="cpav__card-top">
+                  <span class="cpav__quote">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 3C4.05 3 0 7.05 0 12V21H9V12H3C3 8.67 5.67 6 9 6V3ZM20.4 3C15.45 3 11.4 7.05 11.4 12V21H20.4V12H14.4C14.4 8.67 17.07 6 20.4 6V3Z" fill="currentColor"/></svg>
+                  </span>
+                  <span class="cpav__stars">
+                    {%- for s in (1..5) -%}
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="20" fill="#219653"/><path d="M9.99976 13.4789L13.0414 12.7081L14.3123 16.6248L9.99976 13.4789ZM16.9998 8.41642H11.6456L9.99976 3.37476L8.35392 8.41642H2.99976L7.33309 11.5414L5.68726 16.5831L10.0206 13.4581L12.6873 11.5414L16.9998 8.41642Z" fill="#fff"/></svg>
+                    {%- endfor -%}
+                  </span>
+                </div>
+                <div class="cpav__card-title">{{ block.settings.title }}</div>
+                <div class="cpav__card-comment">{{ block.settings.comment }}</div>
+                <div class="cpav__card-footer">
+                  <span class="cpav__card-author">{{ block.settings.author }}</span>
+                  <span class="cpav__card-date">{{ block.settings.date }}</span>
+                </div>
+              </a>
+            {%- endfor -%}
+          {%- endfor -%}
+        </div>
+      </div>
+
+      {%- comment -%} Colonne 2 : défile vers le bas {%- endcomment -%}
+      <div class="cpav__col cpav__col--down" style="--speed: {{ section.settings.scroll_speed }}s;">
+        <div class="cpav__track">
+          {%- for i in (1..2) -%}
+            {%- for block in section.blocks offset: mid -%}
+              <a class="cpav__card" {% if block.settings.review_url != blank %}href="{{ block.settings.review_url }}" target="_blank" rel="noopener noreferrer"{% endif %} {{ block.shopify_attributes }}>
+                <div class="cpav__card-top">
+                  <span class="cpav__quote">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 3C4.05 3 0 7.05 0 12V21H9V12H3C3 8.67 5.67 6 9 6V3ZM20.4 3C15.45 3 11.4 7.05 11.4 12V21H20.4V12H14.4C14.4 8.67 17.07 6 20.4 6V3Z" fill="currentColor"/></svg>
+                  </span>
+                  <span class="cpav__stars">
+                    {%- for s in (1..5) -%}
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="20" fill="#219653"/><path d="M9.99976 13.4789L13.0414 12.7081L14.3123 16.6248L9.99976 13.4789ZM16.9998 8.41642H11.6456L9.99976 3.37476L8.35392 8.41642H2.99976L7.33309 11.5414L5.68726 16.5831L10.0206 13.4581L12.6873 11.5414L16.9998 8.41642Z" fill="#fff"/></svg>
+                    {%- endfor -%}
+                  </span>
+                </div>
+                <div class="cpav__card-title">{{ block.settings.title }}</div>
+                <div class="cpav__card-comment">{{ block.settings.comment }}</div>
+                <div class="cpav__card-footer">
+                  <span class="cpav__card-author">{{ block.settings.author }}</span>
+                  <span class="cpav__card-date">{{ block.settings.date }}</span>
+                </div>
+              </a>
+            {%- endfor -%}
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+
+    {%- comment -%} ============ SLIDER (mobile / tablette) ============ {%- endcomment -%}
+    <div class="cpav__slider" data-cpav-slider>
+      <div class="cpav__slider-track" data-cpav-track>
+        {%- for block in section.blocks -%}
+          <a class="cpav__card cpav__card--slide" {% if block.settings.review_url != blank %}href="{{ block.settings.review_url }}" target="_blank" rel="noopener noreferrer"{% endif %} {{ block.shopify_attributes }}>
+            <div class="cpav__card-top">
+              <span class="cpav__quote">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 3C4.05 3 0 7.05 0 12V21H9V12H3C3 8.67 5.67 6 9 6V3ZM20.4 3C15.45 3 11.4 7.05 11.4 12V21H20.4V12H14.4C14.4 8.67 17.07 6 20.4 6V3Z" fill="currentColor"/></svg>
+              </span>
+              <span class="cpav__stars">
+                {%- for s in (1..5) -%}
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="20" fill="#219653"/><path d="M9.99976 13.4789L13.0414 12.7081L14.3123 16.6248L9.99976 13.4789ZM16.9998 8.41642H11.6456L9.99976 3.37476L8.35392 8.41642H2.99976L7.33309 11.5414L5.68726 16.5831L10.0206 13.4581L12.6873 11.5414L16.9998 8.41642Z" fill="#fff"/></svg>
+                {%- endfor -%}
+              </span>
+            </div>
+            <div class="cpav__card-title">{{ block.settings.title }}</div>
+            <div class="cpav__card-comment">{{ block.settings.comment }}</div>
+            <div class="cpav__card-footer">
+              <span class="cpav__card-author">{{ block.settings.author }}</span>
+              <span class="cpav__card-date">{{ block.settings.date }}</span>
+            </div>
+          </a>
+        {%- endfor -%}
+      </div>
+      <div class="cpav__dots" data-cpav-dots role="tablist" aria-label="Navigation des avis"></div>
+    </div>
+
+  </div>
+</section>
+
+{%- style -%}
+  /* ============ Variables & base ============ */
+  #cp-reviews-{{ sid }} {
+    --cpav-bg: {{ section.settings.bg_color }};
+    --cpav-card-bg: {{ section.settings.card_color }};
+    --cpav-text: {{ section.settings.text_color }};
+    --cpav-height: {{ section.settings.desktop_height }}px;
+    background: var(--cpav-bg);
+    color: var(--cpav-text);
+    overflow: hidden;
+    position: relative;
+  }
+  #cp-reviews-{{ sid }} * { box-sizing: border-box; }
+
+  #cp-reviews-{{ sid }} .cpav__container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 64px 20px;
+  }
+
+  /* ============ Intro ============ */
+  #cp-reviews-{{ sid }} .cpav__intro { max-width: 447px; }
+
+  #cp-reviews-{{ sid }} .cpav__tp {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: fit-content;
+    margin-bottom: 16px;
+    font-size: 12px;
+    color: var(--cpav-text);
+    text-decoration: none;
+  }
+  #cp-reviews-{{ sid }} .cpav__tp-stars { display: inline-flex; gap: 2px; line-height: 0; }
+  #cp-reviews-{{ sid }} .cpav__tp-star svg { display: block; }
+  #cp-reviews-{{ sid }} .cpav__tp-star--full  .cpav__tp-star-bg { fill: #219653; }
+  #cp-reviews-{{ sid }} .cpav__tp-star--half  .cpav__tp-star-bg { fill: #D6D6D6; }
+  #cp-reviews-{{ sid }} .cpav__tp-star--half  .cpav__tp-star-half { fill: #219653; }
+  #cp-reviews-{{ sid }} .cpav__tp-star--empty .cpav__tp-star-bg { fill: #DCDCE5; }
+  #cp-reviews-{{ sid }} .cpav__tp-label strong { font-weight: 700; }
+  #cp-reviews-{{ sid }} .cpav__tp-logo { display: inline-flex; align-items: center; gap: 4px; font-weight: 700; }
+
+  #cp-reviews-{{ sid }} .cpav__heading {
+    margin: 0 0 24px;
+    font-size: clamp(32px, 4.5vw, 56px);
+    line-height: 1.05;
+    font-weight: 800;
+  }
+  #cp-reviews-{{ sid }} .cpav__text { font-size: 14px; }
+  #cp-reviews-{{ sid }} .cpav__text p { margin: 0; }
+
+  /* ============ Cartes ============ */
+  #cp-reviews-{{ sid }} .cpav__card {
+    display: grid;
+    grid-template-rows: auto auto auto 1fr;
+    width: 334px;
+    background: var(--cpav-card-bg);
+    color: var(--cpav-text);
+    text-decoration: none;
+    border-radius: 12px;
+    padding: 32px 24px;
+  }
+  #cp-reviews-{{ sid }} .cpav__card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+  #cp-reviews-{{ sid }} .cpav__quote { color: #d9d9d9; line-height: 0; }
+  #cp-reviews-{{ sid }} .cpav__stars { display: inline-flex; gap: 3px; line-height: 0; }
+  #cp-reviews-{{ sid }} .cpav__card-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+  #cp-reviews-{{ sid }} .cpav__card-comment {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  #cp-reviews-{{ sid }} .cpav__card-footer {
+    align-self: end;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  #cp-reviews-{{ sid }} .cpav__card-author { font-weight: 700; text-transform: capitalize; }
+  #cp-reviews-{{ sid }} .cpav__card-date { font-size: 14px; }
+
+  /* ============ Marquee vertical (desktop) ============ */
+  #cp-reviews-{{ sid }} .cpav__marquee { display: none; }
+
+  @media (min-width: 1024px) {
+    #cp-reviews-{{ sid }} .cpav__container {
+      display: grid;
+      grid-template-columns: 447px 1fr;
+      gap: 90px;
+      align-items: center;
+      min-height: var(--cpav-height);
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    #cp-reviews-{{ sid }} .cpav__slider { display: none; }
+
+    #cp-reviews-{{ sid }} .cpav__marquee {
+      display: flex;
+      gap: 40px;
+      justify-content: flex-end;
+      height: var(--cpav-height);
+      /* Fondu haut/bas pour une entrée-sortie douce des cartes */
+      -webkit-mask-image: linear-gradient(to bottom, transparent, #000 12%, #000 88%, transparent);
+              mask-image: linear-gradient(to bottom, transparent, #000 12%, #000 88%, transparent);
+    }
+    #cp-reviews-{{ sid }} .cpav__col { overflow: hidden; height: 100%; }
+    #cp-reviews-{{ sid }} .cpav__track {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      will-change: transform;
+    }
+    /* Le contenu est dupliqué 2x : -50% = boucle parfaite */
+    #cp-reviews-{{ sid }} .cpav__col--up .cpav__track {
+      animation: cpav-scroll-up var(--speed, 40s) linear infinite;
+    }
+    #cp-reviews-{{ sid }} .cpav__col--down .cpav__track {
+      animation: cpav-scroll-down var(--speed, 40s) linear infinite;
+    }
+    #cp-reviews-{{ sid }} .cpav__marquee:hover .cpav__track { animation-play-state: paused; }
+
+    @keyframes cpav-scroll-up {
+      from { transform: translateY(0); }
+      to   { transform: translateY(calc(-50% - 20px)); }
+    }
+    @keyframes cpav-scroll-down {
+      from { transform: translateY(calc(-50% - 20px)); }
+      to   { transform: translateY(0); }
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #cp-reviews-{{ sid }} .cpav__track { animation: none !important; }
+  }
+
+  /* ============ Slider (mobile / tablette) ============ */
+  @media (max-width: 1023.98px) {
+    #cp-reviews-{{ sid }} .cpav__slider { margin-top: 40px; }
+    #cp-reviews-{{ sid }} .cpav__slider-track {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      padding-bottom: 8px;
+    }
+    #cp-reviews-{{ sid }} .cpav__slider-track::-webkit-scrollbar { display: none; }
+    #cp-reviews-{{ sid }} .cpav__card--slide {
+      flex: 0 0 100%;
+      width: auto;
+      max-width: 420px;
+      scroll-snap-align: start;
+    }
+    #cp-reviews-{{ sid }} .cpav__card-comment { -webkit-line-clamp: 4; }
+
+    #cp-reviews-{{ sid }} .cpav__dots {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 16px;
+    }
+    #cp-reviews-{{ sid }} .cpav__dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      border: 0;
+      padding: 0;
+      background: #c9c9c9;
+      cursor: pointer;
+      transition: background .2s, transform .2s;
+    }
+    #cp-reviews-{{ sid }} .cpav__dot[aria-selected="true"] {
+      background: var(--cpav-text);
+      transform: scale(1.25);
+    }
+  }
+{%- endstyle -%}
+
+<script>
+  (function () {
+    var root = document.getElementById('cp-reviews-{{ sid }}');
+    if (!root) return;
+
+    var slider = root.querySelector('[data-cpav-slider]');
+    var track = root.querySelector('[data-cpav-track]');
+    var dotsWrap = root.querySelector('[data-cpav-dots]');
+    if (!slider || !track || !dotsWrap) return;
+
+    var slides = Array.prototype.slice.call(track.children);
+    if (!slides.length) return;
+
+    // Génère les points de pagination
+    dotsWrap.innerHTML = '';
+    var dots = slides.map(function (_, i) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'cpav__dot';
+      b.setAttribute('role', 'tab');
+      b.setAttribute('aria-label', 'Avis ' + (i + 1));
+      b.setAttribute('aria-selected', i === 0 ? 'true' : 'false');
+      b.addEventListener('click', function () {
+        track.scrollTo({ left: slides[i].offsetLeft - track.offsetLeft, behavior: 'smooth' });
+      });
+      dotsWrap.appendChild(b);
+      return b;
+    });
+
+    function setActive(idx) {
+      dots.forEach(function (d, i) {
+        d.setAttribute('aria-selected', i === idx ? 'true' : 'false');
+      });
+    }
+
+    // Met à jour le point actif pendant le scroll
+    var ticking = false;
+    track.addEventListener('scroll', function () {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(function () {
+        var center = track.scrollLeft + track.clientWidth / 2;
+        var idx = 0, best = Infinity;
+        slides.forEach(function (s, i) {
+          var mid = s.offsetLeft + s.offsetWidth / 2;
+          var d = Math.abs(mid - center);
+          if (d < best) { best = d; idx = i; }
+        });
+        setActive(idx);
+        ticking = false;
+      });
+    }, { passive: true });
+
+    // Recharge propre dans l'éditeur de thème Shopify
+    document.addEventListener('shopify:section:load', function (e) {
+      if (e.detail && e.detail.sectionId === '{{ sid }}') location.reload();
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Avis clients défilants",
+  "tag": "section",
+  "class": "cpav-section",
+  "settings": [
+    { "type": "header", "content": "Contenu" },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Titre",
+      "default": "Que disent nos clients ?"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Texte",
+      "default": "<p>Lisez les avis et découvrez ce que les autres pensent de leur expérience avec nous.</p>"
+    },
+    { "type": "header", "content": "Badge Trustpilot" },
+    {
+      "type": "checkbox",
+      "id": "show_trustpilot",
+      "label": "Afficher le badge Trustpilot",
+      "default": true
+    },
+    {
+      "type": "url",
+      "id": "trustpilot_url",
+      "label": "Lien de la page Trustpilot"
+    },
+    {
+      "type": "range",
+      "id": "trust_score",
+      "label": "Note (TrustScore)",
+      "min": 0,
+      "max": 5,
+      "step": 0.1,
+      "default": 4.6
+    },
+    {
+      "type": "text",
+      "id": "reviews_count",
+      "label": "Nombre d'avis",
+      "default": "34013"
+    },
+    {
+      "type": "text",
+      "id": "reviews_label",
+      "label": "Libellé après le nombre",
+      "default": "avis sur"
+    },
+    { "type": "header", "content": "Apparence" },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Couleur de fond",
+      "default": "#EFEEE9"
+    },
+    {
+      "type": "color",
+      "id": "card_color",
+      "label": "Couleur des cartes",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Couleur du texte",
+      "default": "#1A1A1A"
+    },
+    {
+      "type": "range",
+      "id": "desktop_height",
+      "label": "Hauteur de la section (desktop)",
+      "min": 500,
+      "max": 900,
+      "step": 20,
+      "unit": "px",
+      "default": 700
+    },
+    {
+      "type": "range",
+      "id": "scroll_speed",
+      "label": "Durée d'un cycle de défilement",
+      "info": "Plus la valeur est élevée, plus le défilement est lent.",
+      "min": 15,
+      "max": 90,
+      "step": 5,
+      "unit": "s",
+      "default": 45
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Avis",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titre de l'avis",
+          "default": "Produits de grande qualité"
+        },
+        {
+          "type": "textarea",
+          "id": "comment",
+          "label": "Commentaire",
+          "default": "J'ai acheté un oreiller et une couette. Je les utilise depuis longtemps et j'en suis très satisfait. La livraison a été rapide et la qualité des produits est excellente."
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Auteur",
+          "default": "Deniz"
+        },
+        {
+          "type": "text",
+          "id": "date",
+          "label": "Date (texte libre)",
+          "default": "Il y a 4 jours"
+        },
+        {
+          "type": "url",
+          "id": "review_url",
+          "label": "Lien vers l'avis (optionnel)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Avis clients défilants",
+      "blocks": [
+        { "type": "review" },
+        { "type": "review" },
+        { "type": "review" },
+        { "type": "review" },
+        { "type": "review" },
+        { "type": "review" },
+        { "type": "review" },
+        { "type": "review" }
+      ]
+    }
+  ]
+}
+{% endschema %}
