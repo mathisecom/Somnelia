@@ -157,6 +157,126 @@
         "input_text_color": ""
       }
     },
+    "avisclienttrust_LHtrM7": {
+      "type": "avisclienttrust",
+      "blocks": {
+        "review_Kfexag": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Une qualité incroyable",
+            "text": "J’ai commandé pour tester et je suis franchement surpris par la qualité. Le produit est propre, confortable et le rendu est encore mieux en vrai. Livraison rapide et service client très réactif.",
+            "name": "Jenny Lewis",
+            "date": "3 mai 2026",
+            "initials": "J"
+          }
+        },
+        "review_9ekjwK": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Je recommande à 100%",
+            "text": "Très bonne expérience du début à la fin. La commande est arrivée rapidement, bien emballée, et la qualité est vraiment au-dessus de ce que j’attendais.",
+            "name": "Melissa Manjoine",
+            "date": "24 avril 2026",
+            "initials": "M"
+          }
+        },
+        "review_CQewkG": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Super confortable et qualitatif",
+            "text": "Le produit est à la fois beau, agréable à porter et très bien fini. On sent que les détails ont été travaillés. Je pense déjà repasser commande très bientôt.",
+            "name": "Sally Myhr",
+            "date": "23 avril 2026",
+            "initials": "S"
+          }
+        },
+        "review_icV8qg": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "J’adore mon achat",
+            "text": "Après plusieurs commandes ailleurs, c’est clairement l’un des meilleurs achats que j’ai faits. Le rapport qualité-prix est excellent et le résultat est vraiment propre.",
+            "name": "Cherith",
+            "date": "14 avril 2026",
+            "initials": "C"
+          }
+        },
+        "review_HYPymz": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Très satisfait de ma commande",
+            "text": "Très content de mon achat. La qualité est au rendez-vous, la taille correspond bien et le rendu final est exactement comme sur les photos.",
+            "name": "Suzanne",
+            "date": "27 mars 2026",
+            "initials": "S"
+          }
+        },
+        "review_4zTdfH": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Service client au top",
+            "text": "Service client rapide, gentil et efficace. J’avais une question avant de commander et j’ai reçu une réponse claire très rapidement. L’expérience est vraiment rassurante.",
+            "name": "Katie Glover",
+            "date": "28 janvier 2026",
+            "initials": "K"
+          }
+        },
+        "review_cjzcj4": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "J’étais un peu sceptique…",
+            "text": "Je ne savais pas trop à quoi m’attendre au départ, mais au final je suis super content. La qualité est là, le rendu est propre et je n’utiliserai plus d’autre boutique pour ce type de produit.",
+            "name": "Eva",
+            "date": "16 janvier 2026",
+            "initials": "E"
+          }
+        }
+      },
+      "block_order": [
+        "review_Kfexag",
+        "review_9ekjwK",
+        "review_CQewkG",
+        "review_icV8qg",
+        "review_HYPymz",
+        "review_4zTdfH",
+        "review_cjzcj4"
+      ],
+      "name": "Avis clients carousel",
+      "settings": {
+        "eyebrow": "APPROUVÉ PAR 20 000+ CLIENTS",
+        "heading": "De vrais avis de vrais clients",
+        "heading_size": 44,
+        "mobile_heading_size": 32,
+        "eyebrow_size": 12,
+        "mobile_eyebrow_size": 11,
+        "review_title_size": 20,
+        "mobile_review_title_size": 19,
+        "badge_brand": "Votre marque",
+        "rating_label": "Excellent",
+        "rating_score": "4,8 sur 5",
+        "review_platform": "Trustpilot",
+        "read_more_label": "Lire la suite",
+        "read_less_label": "Réduire",
+        "review_text_lines": 7,
+        "background_color": "#F4F4F1",
+        "text_color": "#111111",
+        "muted_color": "#6F747B",
+        "border_color": "#E6E1DA",
+        "accent_color": "#00B67A",
+        "max_width": 1120,
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "card_radius": 16,
+        "card_min_height": 350,
+        "mobile_card_min_height": 340
+      }
+    },
     "faq_caH4tY": {
       "type": "faq",
       "blocks": {
@@ -236,6 +356,7 @@
   },
   "order": [
     "main",
+    "avisclienttrust_LHtrM7",
     "faq_caH4tY",
     "related-products"
   ]
