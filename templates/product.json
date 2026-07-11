@@ -163,24 +163,42 @@
         "image_Vh6dBr": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/12_1.png",
             "url": ""
           }
         },
         "image_CcjqiK": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/15.png",
             "url": ""
           }
         },
         "image_4U8Q7q": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/17.png",
             "url": ""
           }
         },
         "image_MdwD6r": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/16.png",
+            "url": ""
+          }
+        },
+        "image_BGBKnR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/14.png",
+            "url": ""
+          }
+        },
+        "image_c74ctA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/13.png",
             "url": ""
           }
         }
@@ -189,7 +207,9 @@
         "image_Vh6dBr",
         "image_CcjqiK",
         "image_4U8Q7q",
-        "image_MdwD6r"
+        "image_MdwD6r",
+        "image_BGBKnR",
+        "image_c74ctA"
       ],
       "name": "SS - Scrolling logo cloud #5",
       "settings": {
@@ -201,21 +221,21 @@
         "heading_size": 18,
         "heading_size_mobile": 18,
         "heading_height": 130,
-        "scrolling_velocity": 30,
-        "scrolling_velocity_mobile": 30,
+        "scrolling_velocity": 20,
+        "scrolling_velocity_mobile": 24,
         "scrolling_direction": "left",
         "pause_hover": false,
         "scrolling_gap": 70,
-        "scrolling_gap_mobile": 30,
+        "scrolling_gap_mobile": 0,
         "card_width_desktop": 130,
-        "card_width_mobile": 100,
+        "card_width_mobile": 150,
         "heading_color": "#121212",
         "layout_bg_color": "#f4f4f1",
         "layout_border_color": "#121212",
         "background_color": "#f4f4f1",
         "border_color": "#121212",
         "margin_top": 0,
-        "margin_bottom": 0,
+        "margin_bottom": 20,
         "margin_horizontal": 0,
         "margin_horizontal_mobile": 0,
         "padding_top": 0,
