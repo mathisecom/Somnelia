@@ -1,0 +1,374 @@
+{% comment %}
+  =====================================================================
+  Section : Façon de dormir (texte + images + bouton)
+  ---------------------------------------------------------------------
+  - Desktop : panneau texte à gauche (icône, titre, description,
+    séparateur entre chaque position) + images empilées à droite,
+    bouton centré en dessous.
+  - Mobile : tout s'empile (texte de la position puis son image).
+  - 100% autonome : aucun framework requis.
+  - Chaque "position" est un block : icône (côté / dos / image
+    personnalisée), titre, texte et image.
+  =====================================================================
+{% endcomment %}
+
+{%- assign sid = section.id -%}
+
+<section id="cp-sleep-{{ sid }}" class="cpsl">
+  <div class="cpsl__container">
+
+    {%- if section.settings.heading != blank -%}
+      <h2 class="cpsl__heading">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+
+    <div class="cpsl__grid">
+
+      {%- comment -%} ===== Panneau texte ===== {%- endcomment -%}
+      <div class="cpsl__panel">
+        {%- for block in section.blocks -%}
+          <div class="cpsl__item" {{ block.shopify_attributes }}>
+            <span class="cpsl__icon" aria-hidden="true">
+              {%- if block.settings.icon_image != blank -%}
+                {{ block.settings.icon_image | image_url: width: 128 | image_tag: loading: 'lazy', alt: '' }}
+              {%- elsif block.settings.icon == 'back' -%}
+                {%- comment -%} Dormeur sur le dos {%- endcomment -%}
+                <svg viewBox="0 0 64 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 26H60" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+                  <circle cx="13" cy="15" r="6" stroke="currentColor" stroke-width="2.4"/>
+                  <path d="M19 18C26 14 38 13 46 15C52 16.5 56 19 58 22" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+                  <path d="M30 16C34 14.5 40 14.5 44 16" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+                </svg>
+              {%- else -%}
+                {%- comment -%} Dormeur sur le côté {%- endcomment -%}
+                <svg viewBox="0 0 64 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 27H60" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+                  <circle cx="14" cy="12" r="6" stroke="currentColor" stroke-width="2.4"/>
+                  <path d="M20 14C26 18 32 20 40 20C47 20 53 22 57 26" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+                  <path d="M22 20C27 23 33 24.5 39 24.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+                </svg>
+              {%- endif -%}
+            </span>
+
+            {%- if block.settings.title != blank -%}
+              <h3 class="cpsl__item-title">{{ block.settings.title }}</h3>
+            {%- endif -%}
+            {%- if block.settings.text != blank -%}
+              <div class="cpsl__item-text">{{ block.settings.text }}</div>
+            {%- endif -%}
+          </div>
+
+          {%- comment -%} Image affichée sous le texte en mobile uniquement {%- endcomment -%}
+          {%- if block.settings.image != blank -%}
+            <div class="cpsl__media cpsl__media--mobile">
+              {{ block.settings.image | image_url: width: 900 | image_tag: loading: 'lazy', class: 'cpsl__img', alt: block.settings.title | escape }}
+            </div>
+          {%- endif -%}
+
+          {%- unless forloop.last -%}
+            <hr class="cpsl__divider">
+          {%- endunless -%}
+        {%- endfor -%}
+      </div>
+
+      {%- comment -%} ===== Colonne images (desktop) ===== {%- endcomment -%}
+      <div class="cpsl__images">
+        {%- for block in section.blocks -%}
+          {%- if block.settings.image != blank -%}
+            <div class="cpsl__media">
+              {{ block.settings.image | image_url: width: 1200 | image_tag: loading: 'lazy', class: 'cpsl__img', alt: block.settings.title | escape }}
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+
+    </div>
+
+    {%- if section.settings.button_label != blank -%}
+      <div class="cpsl__cta">
+        <a class="cpsl__btn" href="{{ section.settings.button_link | default: '#' }}">
+          {{ section.settings.button_label }}
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M2 8H14M14 8L9 3M14 8L9 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    {%- endif -%}
+
+  </div>
+</section>
+
+{%- style -%}
+  #cp-sleep-{{ sid }} {
+    --cpsl-bg: {{ section.settings.bg_color }};
+    --cpsl-panel: {{ section.settings.panel_color }};
+    --cpsl-heading: {{ section.settings.heading_color }};
+    --cpsl-text: {{ section.settings.text_color }};
+    --cpsl-btn-bg: {{ section.settings.button_bg }};
+    --cpsl-btn-text: {{ section.settings.button_text_color }};
+    background: var(--cpsl-bg);
+  }
+  #cp-sleep-{{ sid }} * { box-sizing: border-box; }
+
+  #cp-sleep-{{ sid }} .cpsl__container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 48px 20px 64px;
+  }
+
+  #cp-sleep-{{ sid }} .cpsl__heading {
+    margin: 0 0 48px;
+    text-align: center;
+    color: var(--cpsl-heading);
+    font-size: {{ section.settings.heading_size_mobile }}px;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+
+  /* ===== Panneau texte ===== */
+  #cp-sleep-{{ sid }} .cpsl__panel {
+    background: var(--cpsl-panel);
+    border-radius: 12px;
+    padding: 40px 32px;
+  }
+  #cp-sleep-{{ sid }} .cpsl__icon {
+    display: block;
+    width: 72px;
+    color: var(--cpsl-heading);
+    margin-bottom: 20px;
+  }
+  #cp-sleep-{{ sid }} .cpsl__icon svg,
+  #cp-sleep-{{ sid }} .cpsl__icon img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  #cp-sleep-{{ sid }} .cpsl__item-title {
+    margin: 0 0 12px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--cpsl-heading);
+  }
+  #cp-sleep-{{ sid }} .cpsl__item-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--cpsl-text);
+  }
+  #cp-sleep-{{ sid }} .cpsl__item-text p { margin: 0 0 8px; }
+  #cp-sleep-{{ sid }} .cpsl__item-text p:last-child { margin-bottom: 0; }
+  #cp-sleep-{{ sid }} .cpsl__divider {
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    margin: 32px 0;
+  }
+
+  /* ===== Images ===== */
+  #cp-sleep-{{ sid }} .cpsl__images {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  #cp-sleep-{{ sid }} .cpsl__media { border-radius: 12px; overflow: hidden; }
+  #cp-sleep-{{ sid }} .cpsl__img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  /* ===== Bouton ===== */
+  #cp-sleep-{{ sid }} .cpsl__cta { text-align: center; margin-top: 48px; }
+  #cp-sleep-{{ sid }} .cpsl__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--cpsl-btn-bg);
+    color: var(--cpsl-btn-text);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 16px 28px;
+    border-radius: 8px;
+    transition: opacity .2s, transform .2s;
+  }
+  #cp-sleep-{{ sid }} .cpsl__btn:hover { opacity: .9; transform: translateY(-1px); }
+
+  /* ===== Mobile : les images desktop sont masquées,
+     chaque image apparaît sous son texte ===== */
+  #cp-sleep-{{ sid }} .cpsl__images { display: none; }
+  #cp-sleep-{{ sid }} .cpsl__media--mobile { margin: 24px 0 8px; }
+
+  /* ===== Desktop ===== */
+  @media (min-width: 900px) {
+    #cp-sleep-{{ sid }} .cpsl__heading {
+      font-size: {{ section.settings.heading_size_desktop }}px;
+    }
+    #cp-sleep-{{ sid }} .cpsl__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      align-items: stretch;
+    }
+    #cp-sleep-{{ sid }} .cpsl__images { display: flex; }
+    #cp-sleep-{{ sid }} .cpsl__media--mobile { display: none; }
+    #cp-sleep-{{ sid }} .cpsl__panel {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 56px 40px;
+    }
+    #cp-sleep-{{ sid }} .cpsl__images .cpsl__media { flex: 1; min-height: 0; }
+  }
+{%- endstyle -%}
+
+{% schema %}
+{
+  "name": "Façon de dormir",
+  "tag": "section",
+  "class": "cpsl-section",
+  "max_blocks": 4,
+  "settings": [
+    { "type": "header", "content": "Contenu" },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Titre",
+      "default": "Conçu pour votre façon de dormir"
+    },
+    {
+      "type": "range",
+      "id": "heading_size_desktop",
+      "label": "Taille du titre (PC)",
+      "min": 24,
+      "max": 72,
+      "step": 2,
+      "unit": "px",
+      "default": 44
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "label": "Taille du titre (mobile)",
+      "min": 18,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 28
+    },
+    { "type": "header", "content": "Bouton" },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Texte du bouton",
+      "default": "Commander maintenant"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Lien du bouton"
+    },
+    { "type": "header", "content": "Couleurs" },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Fond de la section",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "panel_color",
+      "label": "Fond du panneau texte",
+      "default": "#F4F7F9"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Titres",
+      "default": "#1D2153"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Texte",
+      "default": "#5A6473"
+    },
+    {
+      "type": "color",
+      "id": "button_bg",
+      "label": "Fond du bouton",
+      "default": "#4CAF1E"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Texte du bouton",
+      "default": "#FFFFFF"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "position",
+      "name": "Position de sommeil",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icône",
+          "options": [
+            { "value": "side", "label": "Sur le côté" },
+            { "value": "back", "label": "Sur le dos" }
+          ],
+          "default": "side"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_image",
+          "label": "Icône personnalisée (optionnel)",
+          "info": "Remplace l'icône ci-dessus si renseignée."
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titre",
+          "default": "Sur le côté"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Description",
+          "default": "<p>Posez votre tête sur les ailes de l'oreiller. Votre cou comble l'espace laissé par l'épaule et reste dans le prolongement de votre colonne vertébrale.</p>"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Photo"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Façon de dormir",
+      "blocks": [
+        {
+          "type": "position",
+          "settings": {
+            "icon": "side",
+            "title": "Sur le côté",
+            "text": "<p>Posez votre tête sur les ailes de l'oreiller. Votre cou comble l'espace laissé par l'épaule et reste dans le prolongement de votre colonne vertébrale, pour que vos muscles puissent se détendre complètement.</p>"
+          }
+        },
+        {
+          "type": "position",
+          "settings": {
+            "icon": "back",
+            "title": "Sur le dos",
+            "text": "<p>Posez votre tête dans l'encoche centrale. La forme cervicale épouse la courbe naturelle de votre nuque et maintient votre tête à la bonne hauteur, sans la pousser vers l'avant.</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
