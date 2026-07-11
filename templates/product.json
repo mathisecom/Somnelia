@@ -111,6 +111,16 @@
             "content": "<p>Livraison gratuite pour toutes les commandes.</p><p>Veuillez prévoir les délais de livraison suivants :</p><ul><li><strong>Temps de traitement :</strong> 1 à 2 jours</li><li><strong>Livraison standard :</strong> 3 à 5 jours</li></ul><p>Essayez votre oreiller Somnelia pendant 30 jours. Si vous n’êtes pas entièrement satisfait, vous pouvez le retourner dans ce délai pour un remboursement complet.<br/><br/><strong>Note</strong> : Une fois reçu, laissez votre oreiller à l’air libre quelques minutes afin qu’il retrouve sa forme d’origine après avoir été compressé pour l’expédition.</p>",
             "page": ""
           }
+        },
+        "collapsible_text_B4qahV": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "Garantie 30 Nuits",
+            "content": "<p>Nous sommes convaincus que vous allez adorer notre <strong>Oreiller Orthopédique Somnelia</strong>, mais nous comprenons que vous ne puissiez pas en être sûr maintenant. C'est pourquoi nous vous offrons une période d'essai de <strong>30 nuits. </strong></p><p>Vous pouvez essayer, ressentir et constater par vous-même la qualité exceptionnelle de l'Oreiller <strong>Somnelia</strong>, sans aucun souci.</p><p><strong>Si, après 30 jours</strong>, vous n'êtes pas satisfait de votre oreiller <strong>Somnelia</strong>, renvoyez-le-nous pour un remboursement complet.</p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -126,7 +136,8 @@
         "liquid_cJciKj",
         "collapsible_text_qweLRz",
         "collapsible_text_d4Q7iF",
-        "collapsible_text_dGNMY7"
+        "collapsible_text_dGNMY7",
+        "collapsible_text_B4qahV"
       ],
       "settings": {
         "full_width": true,
