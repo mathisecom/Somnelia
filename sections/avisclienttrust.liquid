@@ -1,0 +1,1020 @@
+{% comment %}
+  Section : Avis clients responsive façon Trustpilot
+  Créée pour être ajoutée dans Shopify > Online Store > Themes > Edit code > Sections
+{% endcomment %}
+
+<section
+  id="AvisClients-{{ section.id }}"
+  class="ac-section"
+  style="
+    --ac-bg: {{ section.settings.background_color }};
+    --ac-text: {{ section.settings.text_color }};
+    --ac-muted: {{ section.settings.muted_color }};
+    --ac-border: {{ section.settings.border_color }};
+    --ac-accent: {{ section.settings.accent_color }};
+    --ac-max-width: {{ section.settings.max_width }}px;
+    --ac-pad-top: {{ section.settings.padding_top }}px;
+    --ac-pad-bottom: {{ section.settings.padding_bottom }}px;
+    --ac-card-radius: {{ section.settings.card_radius }}px;
+    --ac-card-min-height: {{ section.settings.card_min_height }}px;
+    --ac-mobile-card-min-height: {{ section.settings.mobile_card_min_height }}px;
+    --ac-lines: {{ section.settings.review_text_lines }};
+    --ac-eyebrow-size: {{ section.settings.eyebrow_size }}px;
+    --ac-mobile-eyebrow-size: {{ section.settings.mobile_eyebrow_size }}px;
+    --ac-heading-size: {{ section.settings.heading_size }}px;
+    --ac-mobile-heading-size: {{ section.settings.mobile_heading_size }}px;
+    --ac-review-title-size: {{ section.settings.review_title_size }}px;
+    --ac-mobile-review-title-size: {{ section.settings.mobile_review_title_size }}px;
+  "
+>
+  <div class="ac-container">
+    {% if section.settings.eyebrow != blank %}
+      <p class="ac-eyebrow">{{ section.settings.eyebrow }}</p>
+    {% endif %}
+
+    {% if section.settings.heading != blank %}
+      <h2 class="ac-heading">{{ section.settings.heading }}</h2>
+    {% endif %}
+
+    <div class="ac-rating-pill" aria-label="Note client {{ section.settings.rating_score }}">
+      <div class="ac-pill-brand">
+        <span class="ac-brand-star" aria-hidden="true">★</span>
+        <span>{{ section.settings.badge_brand }}</span>
+      </div>
+
+      <span class="ac-pill-divider" aria-hidden="true"></span>
+
+      <div class="ac-pill-stars" aria-hidden="true">
+        {% for i in (1..5) %}
+          <span class="ac-star-box">★</span>
+        {% endfor %}
+      </div>
+
+      <p class="ac-pill-note">
+        <strong>{{ section.settings.rating_label }}</strong>
+        <span>·</span>
+        <span>{{ section.settings.rating_score }}</span>
+      </p>
+
+      {% if section.settings.review_platform != blank %}
+        <p class="ac-platform">
+          <span aria-hidden="true">★</span>
+          <strong>{{ section.settings.review_platform }}</strong>
+        </p>
+      {% endif %}
+    </div>
+
+    <div class="ac-slider" data-ac-slider>
+      <div class="ac-viewport">
+        <div class="ac-track" data-ac-track>
+          {% for block in section.blocks %}
+            {% assign review_rating = block.settings.rating | plus: 0 %}
+            {% assign reviewer_initial = block.settings.initials | default: block.settings.name | slice: 0, 1 %}
+
+            <article class="ac-card" {{ block.shopify_attributes }}>
+              <div class="ac-card-inner">
+                <div class="ac-card-stars" aria-label="{{ review_rating }} étoiles sur 5">
+                  {% for i in (1..5) %}
+                    <span class="ac-star-box{% if i > review_rating %} ac-star-box--empty{% endif %}" aria-hidden="true">★</span>
+                  {% endfor %}
+                </div>
+
+                {% if block.settings.title != blank %}
+                  <h3 class="ac-review-title">{{ block.settings.title }}</h3>
+                {% endif %}
+
+                {% if block.settings.text != blank %}
+                  <div class="ac-review-text" data-ac-review-text>
+                    {{ block.settings.text | newline_to_br }}
+                  </div>
+                {% endif %}
+
+                <div class="ac-review-footer">
+                  <div class="ac-review-author">
+                    <div class="ac-avatar" aria-hidden="true">{{ reviewer_initial | upcase }}</div>
+                    <div>
+                      {% if block.settings.name != blank %}
+                        <p class="ac-author-name">{{ block.settings.name }}</p>
+                      {% endif %}
+                      {% if block.settings.date != blank %}
+                        <p class="ac-author-date">{{ block.settings.date }}</p>
+                      {% endif %}
+                    </div>
+                  </div>
+
+                  {% if block.settings.text != blank %}
+                    <button class="ac-read-more" type="button" data-ac-read-more>
+                      {{ section.settings.read_more_label }}
+                    </button>
+                  {% endif %}
+                </div>
+              </div>
+            </article>
+          {% endfor %}
+        </div>
+      </div>
+
+      {% if section.blocks.size > 1 %}
+        <div class="ac-controls" aria-label="Navigation des avis">
+          <button class="ac-arrow" type="button" data-ac-prev aria-label="Avis précédent">
+            <span aria-hidden="true">‹</span>
+          </button>
+          <div class="ac-dots" data-ac-dots aria-label="Pagination des avis"></div>
+          <button class="ac-arrow" type="button" data-ac-next aria-label="Avis suivant">
+            <span aria-hidden="true">›</span>
+          </button>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<style>
+  #AvisClients-{{ section.id }} {
+    background: var(--ac-bg);
+    color: var(--ac-text);
+    padding: var(--ac-pad-top) 20px var(--ac-pad-bottom);
+    overflow: hidden;
+  }
+
+  #AvisClients-{{ section.id }} * {
+    box-sizing: border-box;
+  }
+
+  #AvisClients-{{ section.id }} .ac-container {
+    width: 100%;
+    max-width: var(--ac-max-width);
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #AvisClients-{{ section.id }} .ac-eyebrow {
+    margin: 0 0 12px;
+    font-size: var(--ac-eyebrow-size);
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ac-muted);
+  }
+
+  #AvisClients-{{ section.id }} .ac-heading {
+    margin: 0;
+    font-size: var(--ac-heading-size);
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+    font-weight: 900;
+    color: var(--ac-text);
+  }
+
+  #AvisClients-{{ section.id }} .ac-rating-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-height: 48px;
+    margin-top: 24px;
+    padding: 10px 18px;
+    border: 1px solid var(--ac-border);
+    border-radius: 999px;
+    background: #fff;
+    box-shadow: 0 1px 0 rgba(17, 17, 17, 0.02);
+    font-size: 14px;
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  #AvisClients-{{ section.id }} .ac-pill-brand,
+  #AvisClients-{{ section.id }} .ac-pill-stars,
+  #AvisClients-{{ section.id }} .ac-pill-note,
+  #AvisClients-{{ section.id }} .ac-platform {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0;
+  }
+
+  #AvisClients-{{ section.id }} .ac-brand-star,
+  #AvisClients-{{ section.id }} .ac-platform span {
+    color: var(--ac-accent);
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  #AvisClients-{{ section.id }} .ac-pill-divider {
+    width: 1px;
+    height: 25px;
+    background: var(--ac-border);
+  }
+
+  #AvisClients-{{ section.id }} .ac-star-box {
+    width: 23px;
+    height: 23px;
+    display: inline-grid;
+    place-items: center;
+    flex: 0 0 auto;
+    border-radius: 1px;
+    background: var(--ac-accent);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1;
+  }
+
+  #AvisClients-{{ section.id }} .ac-star-box--empty {
+    opacity: 0.25;
+  }
+
+  #AvisClients-{{ section.id }} .ac-pill-note strong,
+  #AvisClients-{{ section.id }} .ac-platform strong {
+    font-weight: 800;
+  }
+
+  #AvisClients-{{ section.id }} .ac-slider {
+    margin-top: 58px;
+  }
+
+  #AvisClients-{{ section.id }} .ac-viewport {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #AvisClients-{{ section.id }} .ac-track {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    will-change: transform;
+    transition: transform 450ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  #AvisClients-{{ section.id }} .ac-card {
+    flex: 0 0 calc((100% - 40px) / 3);
+    min-width: 0;
+    text-align: left;
+  }
+
+  #AvisClients-{{ section.id }} .ac-card-inner {
+    height: 100%;
+    min-height: var(--ac-card-min-height);
+    display: flex;
+    flex-direction: column;
+    padding: 28px;
+    border: 1px solid var(--ac-border);
+    border-radius: var(--ac-card-radius);
+    background: #fff;
+  }
+
+  #AvisClients-{{ section.id }} .ac-card-stars {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 18px;
+  }
+
+  #AvisClients-{{ section.id }} .ac-card-stars .ac-star-box {
+    width: 22px;
+    height: 22px;
+    font-size: 13px;
+  }
+
+  #AvisClients-{{ section.id }} .ac-review-title {
+    margin: 0 0 16px;
+    color: var(--ac-text);
+    font-size: var(--ac-review-title-size);
+    line-height: 1.17;
+    letter-spacing: -0.025em;
+    font-weight: 900;
+  }
+
+  #AvisClients-{{ section.id }} .ac-review-text {
+    color: var(--ac-text);
+    font-size: 15.5px;
+    line-height: 1.5;
+    font-weight: 450;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: var(--ac-lines);
+    -webkit-box-orient: vertical;
+  }
+
+  #AvisClients-{{ section.id }} .ac-card.is-expanded .ac-review-text {
+    display: block;
+    -webkit-line-clamp: unset;
+    overflow: visible;
+  }
+
+  #AvisClients-{{ section.id }} .ac-review-footer {
+    margin-top: auto;
+    padding-top: 16px;
+    border-top: 1px solid var(--ac-border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  #AvisClients-{{ section.id }} .ac-review-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+  }
+
+  #AvisClients-{{ section.id }} .ac-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 999px;
+    background: #121417;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 900;
+    flex: 0 0 auto;
+  }
+
+  #AvisClients-{{ section.id }} .ac-author-name,
+  #AvisClients-{{ section.id }} .ac-author-date {
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  #AvisClients-{{ section.id }} .ac-author-name {
+    color: var(--ac-text);
+    font-size: 14px;
+    font-weight: 800;
+  }
+
+  #AvisClients-{{ section.id }} .ac-author-date {
+    margin-top: 3px;
+    color: var(--ac-muted);
+    font-size: 13px;
+  }
+
+  #AvisClients-{{ section.id }} .ac-read-more {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    padding: 0;
+    color: color-mix(in srgb, var(--ac-accent) 70%, #1a1a1a);
+    font: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  #AvisClients-{{ section.id }} .ac-read-more:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  #AvisClients-{{ section.id }} .ac-controls {
+    margin-top: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  #AvisClients-{{ section.id }} .ac-arrow {
+    width: 34px;
+    height: 34px;
+    border-radius: 999px;
+    border: 1px solid var(--ac-border);
+    background: #fff;
+    color: var(--ac-text);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: opacity 200ms ease, transform 200ms ease;
+  }
+
+  #AvisClients-{{ section.id }} .ac-arrow span {
+    font-size: 26px;
+    line-height: 0.8;
+    transform: translateY(-1px);
+  }
+
+  #AvisClients-{{ section.id }} .ac-arrow:hover {
+    transform: translateY(-1px);
+  }
+
+  #AvisClients-{{ section.id }} .ac-arrow:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+    transform: none;
+  }
+
+  #AvisClients-{{ section.id }} .ac-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    min-width: 110px;
+  }
+
+  #AvisClients-{{ section.id }} .ac-dot {
+    width: 6px;
+    height: 6px;
+    border: 0;
+    border-radius: 999px;
+    padding: 0;
+    background: #d8d2ca;
+    cursor: pointer;
+    transition: width 250ms ease, background 250ms ease;
+  }
+
+  #AvisClients-{{ section.id }} .ac-dot.is-active {
+    width: 18px;
+    background: #171717;
+  }
+
+  @media screen and (max-width: 989px) {
+    #AvisClients-{{ section.id }} .ac-card {
+      flex-basis: calc((100% - 20px) / 2);
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    #AvisClients-{{ section.id }} {
+      padding-left: 20px;
+      padding-right: 0;
+    }
+
+    #AvisClients-{{ section.id }} .ac-container {
+      text-align: center;
+      max-width: none;
+    }
+
+    #AvisClients-{{ section.id }} .ac-heading {
+      max-width: 360px;
+      margin: 0 auto;
+      font-size: var(--ac-mobile-heading-size);
+      line-height: 1.08;
+    }
+
+    #AvisClients-{{ section.id }} .ac-eyebrow {
+      padding-right: 20px;
+      font-size: var(--ac-mobile-eyebrow-size);
+      letter-spacing: 0.14em;
+    }
+
+    #AvisClients-{{ section.id }} .ac-rating-pill {
+      max-width: calc(100vw - 40px);
+      min-height: 56px;
+      gap: 8px;
+      padding: 10px 14px;
+      overflow-x: auto;
+      justify-content: flex-start;
+      font-size: 13px;
+      scrollbar-width: none;
+    }
+
+    #AvisClients-{{ section.id }} .ac-rating-pill::-webkit-scrollbar {
+      display: none;
+    }
+
+    #AvisClients-{{ section.id }} .ac-pill-divider {
+      height: 22px;
+    }
+
+    #AvisClients-{{ section.id }} .ac-pill-stars {
+      gap: 3px;
+    }
+
+    #AvisClients-{{ section.id }} .ac-rating-pill .ac-star-box {
+      width: 18px;
+      height: 18px;
+      font-size: 11px;
+    }
+
+    #AvisClients-{{ section.id }} .ac-slider {
+      margin-top: 40px;
+    }
+
+    #AvisClients-{{ section.id }} .ac-viewport {
+      padding-right: 0;
+    }
+
+    #AvisClients-{{ section.id }} .ac-track {
+      gap: 16px;
+    }
+
+    #AvisClients-{{ section.id }} .ac-card {
+      flex-basis: 82%;
+    }
+
+    #AvisClients-{{ section.id }} .ac-card-inner {
+      min-height: var(--ac-mobile-card-min-height);
+      padding: 24px;
+      border-radius: 16px;
+    }
+
+    #AvisClients-{{ section.id }} .ac-review-title {
+      font-size: var(--ac-mobile-review-title-size);
+    }
+
+    #AvisClients-{{ section.id }} .ac-review-text {
+      font-size: 15px;
+      line-height: 1.55;
+    }
+
+    #AvisClients-{{ section.id }} .ac-controls {
+      padding-right: 20px;
+      margin-top: 30px;
+    }
+
+    #AvisClients-{{ section.id }} .ac-dots {
+      min-width: 95px;
+      gap: 6px;
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    function initAvisClients(section) {
+      var slider = section.querySelector('[data-ac-slider]');
+      if (!slider || slider.dataset.initialized === 'true') return;
+      slider.dataset.initialized = 'true';
+
+      var track = slider.querySelector('[data-ac-track]');
+      var cards = Array.prototype.slice.call(slider.querySelectorAll('.ac-card'));
+      var prev = slider.querySelector('[data-ac-prev]');
+      var next = slider.querySelector('[data-ac-next]');
+      var dotsWrap = slider.querySelector('[data-ac-dots]');
+      var index = 0;
+      var resizeTimer = null;
+
+      if (!track || cards.length === 0) return;
+
+      function perView() {
+        if (window.innerWidth <= 749) return 1;
+        if (window.innerWidth <= 989) return 2;
+        return 3;
+      }
+
+      function maxIndex() {
+        return Math.max(0, cards.length - perView());
+      }
+
+      function gapSize() {
+        var styles = window.getComputedStyle(track);
+        return parseFloat(styles.columnGap || styles.gap || 0) || 0;
+      }
+
+      function stepSize() {
+        return cards[0].getBoundingClientRect().width + gapSize();
+      }
+
+      function buildDots() {
+        if (!dotsWrap) return;
+        dotsWrap.innerHTML = '';
+        var total = maxIndex() + 1;
+
+        for (var i = 0; i < total; i++) {
+          var dot = document.createElement('button');
+          dot.type = 'button';
+          dot.className = 'ac-dot';
+          dot.setAttribute('aria-label', 'Aller à l’avis ' + (i + 1));
+          dot.dataset.index = i;
+          dotsWrap.appendChild(dot);
+        }
+      }
+
+      function update() {
+        index = Math.max(0, Math.min(index, maxIndex()));
+        track.style.transform = 'translate3d(' + (-index * stepSize()) + 'px, 0, 0)';
+
+        if (prev) prev.disabled = index === 0;
+        if (next) next.disabled = index === maxIndex();
+
+        if (dotsWrap) {
+          Array.prototype.slice.call(dotsWrap.children).forEach(function (dot, dotIndex) {
+            dot.classList.toggle('is-active', dotIndex === index);
+            dot.setAttribute('aria-current', dotIndex === index ? 'true' : 'false');
+          });
+        }
+      }
+
+      function rebuild() {
+        buildDots();
+        update();
+      }
+
+      if (prev) {
+        prev.addEventListener('click', function () {
+          index -= 1;
+          update();
+        });
+      }
+
+      if (next) {
+        next.addEventListener('click', function () {
+          index += 1;
+          update();
+        });
+      }
+
+      if (dotsWrap) {
+        dotsWrap.addEventListener('click', function (event) {
+          var dot = event.target.closest('.ac-dot');
+          if (!dot) return;
+          index = parseInt(dot.dataset.index, 10) || 0;
+          update();
+        });
+      }
+
+      slider.addEventListener('click', function (event) {
+        var button = event.target.closest('[data-ac-read-more]');
+        if (!button) return;
+
+        var card = button.closest('.ac-card');
+        if (!card) return;
+
+        var expanded = card.classList.toggle('is-expanded');
+        button.textContent = expanded ? {{ section.settings.read_less_label | json }} : {{ section.settings.read_more_label | json }};
+        window.setTimeout(update, 50);
+      });
+
+      window.addEventListener('resize', function () {
+        window.clearTimeout(resizeTimer);
+        resizeTimer = window.setTimeout(rebuild, 150);
+      });
+
+      rebuild();
+    }
+
+    function initAllAvisClients() {
+      document.querySelectorAll('.ac-section').forEach(initAvisClients);
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initAllAvisClients);
+    } else {
+      initAllAvisClients();
+    }
+
+    document.addEventListener('shopify:section:load', function (event) {
+      initAvisClients(event.target);
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Avis clients carousel",
+  "tag": "section",
+  "class": "section-avis-clients-carousel",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Textes principaux"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Petit texte au-dessus du titre",
+      "default": "APPROUVÉ PAR 20 000+ CLIENTS"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Titre",
+      "default": "De vrais avis de vrais clients"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "min": 20,
+      "max": 70,
+      "step": 1,
+      "unit": "px",
+      "label": "Taille du titre sur ordinateur",
+      "default": 44
+    },
+    {
+      "type": "range",
+      "id": "mobile_heading_size",
+      "min": 20,
+      "max": 46,
+      "step": 1,
+      "unit": "px",
+      "label": "Taille du titre sur mobile",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "eyebrow_size",
+      "min": 8,
+      "max": 22,
+      "step": 1,
+      "unit": "px",
+      "label": "Taille du petit texte sur ordinateur",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "mobile_eyebrow_size",
+      "min": 8,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "label": "Taille du petit texte sur mobile",
+      "default": 11
+    },
+    {
+      "type": "range",
+      "id": "review_title_size",
+      "min": 14,
+      "max": 34,
+      "step": 1,
+      "unit": "px",
+      "label": "Taille des titres d’avis sur ordinateur",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "mobile_review_title_size",
+      "min": 14,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "label": "Taille des titres d’avis sur mobile",
+      "default": 19
+    },
+    {
+      "type": "text",
+      "id": "badge_brand",
+      "label": "Nom dans le badge",
+      "default": "Votre marque"
+    },
+    {
+      "type": "text",
+      "id": "rating_label",
+      "label": "Texte de note",
+      "default": "Excellent"
+    },
+    {
+      "type": "text",
+      "id": "rating_score",
+      "label": "Note affichée",
+      "default": "4,8 sur 5"
+    },
+    {
+      "type": "text",
+      "id": "review_platform",
+      "label": "Plateforme affichée",
+      "default": "Trustpilot"
+    },
+    {
+      "type": "text",
+      "id": "read_more_label",
+      "label": "Texte bouton ouvrir",
+      "default": "Lire la suite"
+    },
+    {
+      "type": "text",
+      "id": "read_less_label",
+      "label": "Texte bouton fermer",
+      "default": "Réduire"
+    },
+    {
+      "type": "range",
+      "id": "review_text_lines",
+      "min": 3,
+      "max": 10,
+      "step": 1,
+      "label": "Nombre de lignes visibles dans un avis",
+      "default": 7
+    },
+    {
+      "type": "header",
+      "content": "Design"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Couleur de fond",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Couleur du texte",
+      "default": "#111111"
+    },
+    {
+      "type": "color",
+      "id": "muted_color",
+      "label": "Couleur texte secondaire",
+      "default": "#6F747B"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Couleur des bordures",
+      "default": "#E6E1DA"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Couleur des étoiles",
+      "default": "#00B67A"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 900,
+      "max": 1500,
+      "step": 20,
+      "unit": "px",
+      "label": "Largeur maximale",
+      "default": 1120
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 20,
+      "max": 140,
+      "step": 4,
+      "unit": "px",
+      "label": "Marge haute",
+      "default": 64
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 20,
+      "max": 140,
+      "step": 4,
+      "unit": "px",
+      "label": "Marge basse",
+      "default": 64
+    },
+    {
+      "type": "range",
+      "id": "card_radius",
+      "min": 8,
+      "max": 28,
+      "step": 1,
+      "unit": "px",
+      "label": "Arrondi des cartes",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "card_min_height",
+      "min": 260,
+      "max": 520,
+      "step": 10,
+      "unit": "px",
+      "label": "Hauteur minimale des cartes sur ordinateur",
+      "default": 350
+    },
+    {
+      "type": "range",
+      "id": "mobile_card_min_height",
+      "min": 260,
+      "max": 560,
+      "step": 10,
+      "unit": "px",
+      "label": "Hauteur minimale des cartes sur mobile",
+      "default": 340
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Avis client",
+      "settings": [
+        {
+          "type": "range",
+          "id": "rating",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "label": "Note",
+          "default": 5
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titre de l’avis",
+          "default": "Un vrai changement au quotidien"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Texte de l’avis",
+          "default": "Produit reçu rapidement et qualité au rendez-vous. Je suis vraiment satisfait de mon achat, le rendu est propre, confortable et conforme à mes attentes. Je recommande sans hésiter."
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Nom du client",
+          "default": "Camille Martin"
+        },
+        {
+          "type": "text",
+          "id": "date",
+          "label": "Date",
+          "default": "3 mai 2026"
+        },
+        {
+          "type": "text",
+          "id": "initials",
+          "label": "Initiale dans le rond",
+          "default": "C"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Avis clients carousel",
+      "blocks": [
+        {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Une qualité incroyable",
+            "text": "J’ai commandé pour tester et je suis franchement surpris par la qualité. Le produit est propre, confortable et le rendu est encore mieux en vrai. Livraison rapide et service client très réactif.",
+            "name": "Jenny Lewis",
+            "date": "3 mai 2026",
+            "initials": "J"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Je recommande à 100%",
+            "text": "Très bonne expérience du début à la fin. La commande est arrivée rapidement, bien emballée, et la qualité est vraiment au-dessus de ce que j’attendais.",
+            "name": "Melissa Manjoine",
+            "date": "24 avril 2026",
+            "initials": "M"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Super confortable et qualitatif",
+            "text": "Le produit est à la fois beau, agréable à porter et très bien fini. On sent que les détails ont été travaillés. Je pense déjà repasser commande très bientôt.",
+            "name": "Sally Myhr",
+            "date": "23 avril 2026",
+            "initials": "S"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "J’adore mon achat",
+            "text": "Après plusieurs commandes ailleurs, c’est clairement l’un des meilleurs achats que j’ai faits. Le rapport qualité-prix est excellent et le résultat est vraiment propre.",
+            "name": "Cherith",
+            "date": "14 avril 2026",
+            "initials": "C"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Très satisfait de ma commande",
+            "text": "Très content de mon achat. La qualité est au rendez-vous, la taille correspond bien et le rendu final est exactement comme sur les photos.",
+            "name": "Suzanne",
+            "date": "27 mars 2026",
+            "initials": "S"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Service client au top",
+            "text": "Service client rapide, gentil et efficace. J’avais une question avant de commander et j’ai reçu une réponse claire très rapidement. L’expérience est vraiment rassurante.",
+            "name": "Katie Glover",
+            "date": "28 janvier 2026",
+            "initials": "K"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "J’étais un peu sceptique…",
+            "text": "Je ne savais pas trop à quoi m’attendre au départ, mais au final je suis super content. La qualité est là, le rendu est propre et je n’utiliserai plus d’autre boutique pour ce type de produit.",
+            "name": "Eva",
+            "date": "16 janvier 2026",
+            "initials": "E"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
