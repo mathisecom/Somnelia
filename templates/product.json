@@ -101,8 +101,8 @@
           "settings": {
             "icon": "none",
             "icon_width": 20,
-            "title": "Title",
-            "content": "<p>Share some content to your customers about your products.</p>",
+            "title": "Livraison & Retours",
+            "content": "<p>Livraison gratuite pour toutes les commandes.</p><p>Veuillez prévoir les délais de livraison suivants :</p><ul><li><strong>Temps de traitement :</strong> 1 à 2 jours</li><li><strong>Livraison standard :</strong> 3 à 5 jours</li></ul><p>Essayez votre oreiller Somnelia pendant 30 jours. Si vous n’êtes pas entièrement satisfait, vous pouvez le retourner dans ce délai pour un remboursement complet.<br/><br/><strong>Note</strong> : Une fois reçu, laissez votre oreiller à l’air libre quelques minutes afin qu’il retrouve sa forme d’origine après avoir été compressé pour l’expédition.</p>",
             "page": ""
           }
         }
