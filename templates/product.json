@@ -24,6 +24,12 @@
             "heading_tag": "h2"
           }
         },
+        "text_4WbMBa": {
+          "type": "text",
+          "settings": {
+            "text": "<p>L’ÉVOLUTION DU CONFORT — L’OREILLER ORTHOPÉDIQUE CONÇU AVEC DES PRATICIENS</p>"
+          }
+        },
         "liquid_GaGCCD": {
           "type": "liquid",
           "settings": {
@@ -128,6 +134,7 @@
       "block_order": [
         "liquid_DLzTkt",
         "title",
+        "text_4WbMBa",
         "liquid_GaGCCD",
         "liquid_Vmj9e9",
         "kaching_bundles_app_block_FAXjWf",
