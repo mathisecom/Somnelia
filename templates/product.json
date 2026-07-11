@@ -36,6 +36,13 @@
             "liquid": "<!-- ================================================================\n  Bloc \"Bénéfices produit\" — 2 colonnes PC / 1 colonne mobile\n  100% autonome : à coller tel quel dans la description produit\n  (éditeur Shopify > fiche produit > afficher le HTML </>)\n  ou dans un bloc \"HTML personnalisé\" / \"Liquid\" de la fiche produit.\n================================================================= -->\n<style>\n  .pbenef {\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    gap: 16px 32px;\n    margin: 16px 0;\n    font-family: inherit;\n    color: #1d2153;\n  }\n  .pbenef__item {\n    display: flex;\n    align-items: flex-start;\n    gap: 12px;\n  }\n  .pbenef__icon {\n    flex: 0 0 24px;\n    width: 24px;\n    height: 24px;\n    color: #1d2153;\n  }\n  .pbenef__icon svg { width: 100%; height: 100%; display: block; }\n  .pbenef__text {\n    margin: 0;\n    font-size: 13px;\n    line-height: 1.4;\n  }\n  .pbenef__text strong { font-weight: 700; }\n  @media (max-width: 640px) {\n    .pbenef { grid-template-columns: 1fr; gap: 14px; }\n  }\n</style>\n\n<div class=\"pbenef\">\n\n  <!-- Bénéfice 1 : alignement / colonne vertébrale -->\n  <div class=\"pbenef__item\">\n    <span class=\"pbenef__icon\" aria-hidden=\"true\">\n      <svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n        <line x1=\"12\" y1=\"2.5\" x2=\"12\" y2=\"21.5\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n        <ellipse cx=\"12\" cy=\"5.5\"  rx=\"3.4\" ry=\"1.7\" stroke=\"currentColor\" stroke-width=\"1.6\"/>\n        <ellipse cx=\"12\" cy=\"10\"   rx=\"3.4\" ry=\"1.7\" stroke=\"currentColor\" stroke-width=\"1.6\"/>\n        <ellipse cx=\"12\" cy=\"14.5\" rx=\"3.4\" ry=\"1.7\" stroke=\"currentColor\" stroke-width=\"1.6\"/>\n        <circle cx=\"12\" cy=\"19.5\" r=\"1.4\" fill=\"currentColor\"/>\n      </svg>\n    </span>\n    <p class=\"pbenef__text\"><strong>Maintien l'alignement</strong> pour un sommeil réparateur</p>\n  </div>\n\n  <!-- Bénéfice 2 : dos et côté -->\n  <div class=\"pbenef__item\">\n    <span class=\"pbenef__icon\" aria-hidden=\"true\">\n      <svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n        <circle cx=\"6.5\" cy=\"7\" r=\"2.4\" stroke=\"currentColor\" stroke-width=\"1.8\"/>\n        <path d=\"M9 7H19\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n        <circle cx=\"17.5\" cy=\"17\" r=\"2.4\" stroke=\"currentColor\" stroke-width=\"1.8\"/>\n        <path d=\"M15 17H5\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n      </svg>\n    </span>\n    <p class=\"pbenef__text\"><strong>Dormez sur le dos et le côté</strong> - design tout-en-un</p>\n  </div>\n\n  <!-- Bénéfice 3 : mémoire de forme -->\n  <div class=\"pbenef__item\">\n    <span class=\"pbenef__icon\" aria-hidden=\"true\">\n      <svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n        <path d=\"M12 3.5V13\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n        <path d=\"M8.5 10L12 13.5L15.5 10\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n        <path d=\"M4 15.5V18.5C4 19.6 4.9 20.5 6 20.5H18C19.1 20.5 20 19.6 20 18.5V15.5\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n      </svg>\n    </span>\n    <p class=\"pbenef__text\"><strong>Mémoire de forme haute qualité</strong> pour un soutien durable</p>\n  </div>\n\n  <!-- Bénéfice 4 : ailettes -->\n  <div class=\"pbenef__item\">\n    <span class=\"pbenef__icon\" aria-hidden=\"true\">\n      <svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n        <path d=\"M4 8C4 6.5 5.2 5.5 6.5 6.2L9 7.5C10.9 6.5 13.1 6.5 15 7.5L17.5 6.2C18.8 5.5 20 6.5 20 8V13.5C20 16.8 17.3 19 12 19C6.7 19 4 16.8 4 13.5V8Z\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/>\n        <path d=\"M9 12.5C9.8 13.5 10.8 14 12 14C13.2 14 14.2 13.5 15 12.5\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n      </svg>\n    </span>\n    <p class=\"pbenef__text\"><strong>Ailettes de chaque côté</strong> - fini les bras engourdis</p>\n  </div>\n\n</div>"
           }
         },
+        "kaching_bundles_app_block_FAXjWf": {
+          "type": "shopify://apps/kaching-bundles/blocks/app-block/6c637362-a106-4a32-94ac-94dcfd68cdb8",
+          "settings": {
+            "product": "{{product}}",
+            "manual_deal_block_id": ""
+          }
+        },
         "price": {
           "type": "price",
           "disabled": true,
@@ -128,6 +135,7 @@
         "title",
         "liquid_GaGCCD",
         "liquid_Vmj9e9",
+        "kaching_bundles_app_block_FAXjWf",
         "price",
         "variant_picker",
         "quantity_selector",
@@ -385,12 +393,12 @@
             "content": "<p>Un oreiller mal adapté peut désaligner votre nuque et provoquer des tensions au réveil. L’oreiller <strong>Somnelia</strong> aide à aligner naturellement la tête, le cou et la colonne pendant le sommeil.<br/><br/><strong>Moins de douleurs, meilleure posture, réveils plus légers.</strong></p>",
             "link_text": "ACHETER MAINTENANT",
             "link_url": "",
-            "background": "#0E1A2B",
+            "background": "#0e1a2b",
             "background_gradient": "",
-            "text_color": "#FFFFFF",
+            "text_color": "#ffffff",
             "text_gradient": "",
-            "button_background": "#F4F4F1",
-            "button_text_color": "#0E1A2B"
+            "button_background": "#f4f4f1",
+            "button_text_color": "#0e1a2b"
           }
         }
       },
@@ -435,12 +443,12 @@
         "heading_size_mobile": 20,
         "button_label": "Commander maintenant",
         "button_link": "",
-        "bg_color": "#F4F4F1",
-        "panel_color": "#F4F7F9",
-        "heading_color": "#1D2153",
-        "text_color": "#5A6473",
-        "button_bg": "#0E1A2B",
-        "button_text_color": "#FFFFFF"
+        "bg_color": "#f4f4f1",
+        "panel_color": "#f4f7f9",
+        "heading_color": "#1d2153",
+        "text_color": "#5a6473",
+        "button_bg": "#0e1a2b",
+        "button_text_color": "#ffffff"
       }
     },
     "avisclientsdefilant_3Airrz": {
@@ -548,9 +556,9 @@
         "trust_score": 4.6,
         "reviews_count": "34013",
         "reviews_label": "avis sur",
-        "bg_color": "#EFEEE9",
-        "card_color": "#FFFFFF",
-        "text_color": "#1A1A1A",
+        "bg_color": "#efeee9",
+        "card_color": "#ffffff",
+        "text_color": "#1a1a1a",
         "desktop_height": 700,
         "scroll_speed": 45
       }
