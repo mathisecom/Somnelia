@@ -119,7 +119,12 @@
       "name": "Featured collection",
       "settings": {
         "collection": "",
-        "products": [],
+        "products": [
+          "oreiller-ergonomique",
+          "masque-de-sommeil-3d",
+          "oreiller-cervical-somnelia",
+          "coussin-pour-genoux"
+        ],
         "full_width": true,
         "stack_products": false,
         "show_progress_bar": true,
