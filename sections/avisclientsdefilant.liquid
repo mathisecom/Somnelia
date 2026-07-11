@@ -197,9 +197,14 @@
 
   #cp-reviews-{{ sid }} .cpav__heading {
     margin: 0 0 24px;
-    font-size: clamp(32px, 4.5vw, 56px);
+    font-size: {{ section.settings.heading_size_mobile }}px;
     line-height: 1.05;
     font-weight: 800;
+  }
+  @media (min-width: 1024px) {
+    #cp-reviews-{{ sid }} .cpav__heading {
+      font-size: {{ section.settings.heading_size_desktop }}px;
+    }
   }
   #cp-reviews-{{ sid }} .cpav__text { font-size: 14px; }
   #cp-reviews-{{ sid }} .cpav__text p { margin: 0; }
@@ -423,6 +428,26 @@
       "id": "text",
       "label": "Texte",
       "default": "<p>Lisez les avis et découvrez ce que les autres pensent de leur expérience avec nous.</p>"
+    },
+    {
+      "type": "range",
+      "id": "heading_size_desktop",
+      "label": "Taille du titre (PC)",
+      "min": 24,
+      "max": 90,
+      "step": 2,
+      "unit": "px",
+      "default": 56
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "label": "Taille du titre (mobile)",
+      "min": 18,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 32
     },
     { "type": "header", "content": "Badge Trustpilot" },
     {
