@@ -21,7 +21,7 @@
         "title": {
           "type": "title",
           "settings": {
-            "heading_tag": "h2"
+            "heading_tag": "h3"
           }
         },
         "liquid_GaGCCD": {
@@ -64,7 +64,7 @@
           "settings": {
             "show_payment_button": false,
             "show_gift_card_recipient": false,
-            "atc_button_background": "#0E1A2B",
+            "atc_button_background": "#0e1a2b",
             "atc_button_text_color": "",
             "payment_button_background": "",
             "payment_button_text_color": ""
@@ -81,7 +81,7 @@
           "settings": {
             "icon": "none",
             "icon_width": 20,
-            "title": "Title",
+            "title": "Matériaux & Dimensions",
             "content": "<p>Share some content to your customers about your products.</p>",
             "page": ""
           }
@@ -91,7 +91,7 @@
           "settings": {
             "icon": "none",
             "icon_width": 20,
-            "title": "Title",
+            "title": "Instructions de Lavage",
             "content": "<p>Share some content to your customers about your products.</p>",
             "page": ""
           }
