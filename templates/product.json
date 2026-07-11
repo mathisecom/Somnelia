@@ -277,6 +277,22 @@
         "mobile_card_min_height": 340
       }
     },
+    "scrolling_text_q6tUBg": {
+      "type": "scrolling-text",
+      "name": "Scrolling text",
+      "settings": {
+        "full_width": true,
+        "text": "🌙  Essai de 30 nuits sans risque",
+        "text_size": "xsmall",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 7,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "text_gradient": ""
+      }
+    },
     "faq_caH4tY": {
       "type": "faq",
       "blocks": {
@@ -357,6 +373,7 @@
   "order": [
     "main",
     "avisclienttrust_LHtrM7",
+    "scrolling_text_q6tUBg",
     "faq_caH4tY",
     "related-products"
   ]
