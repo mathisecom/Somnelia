@@ -160,56 +160,40 @@
     "logoscroll_TpFtAk": {
       "type": "logoscroll",
       "blocks": {
-        "image_Vh6dBr": {
+        "image_qmhEn4": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/12_1.png",
+            "image": "shopify://shop_images/Design_sans_titre_59.webp",
             "url": ""
           }
         },
-        "image_CcjqiK": {
+        "image_BhrAMA": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/15.png",
+            "image": "shopify://shop_images/Design_sans_titre_60.webp",
             "url": ""
           }
         },
-        "image_4U8Q7q": {
+        "image_QKJaDA": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/17.png",
+            "image": "shopify://shop_images/Design_sans_titre_62.webp",
             "url": ""
           }
         },
-        "image_MdwD6r": {
+        "image_EjM6gV": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/16.png",
-            "url": ""
-          }
-        },
-        "image_BGBKnR": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/14.png",
-            "url": ""
-          }
-        },
-        "image_c74ctA": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/13.png",
+            "image": "shopify://shop_images/Design_sans_titre_61.webp",
             "url": ""
           }
         }
       },
       "block_order": [
-        "image_Vh6dBr",
-        "image_CcjqiK",
-        "image_4U8Q7q",
-        "image_MdwD6r",
-        "image_BGBKnR",
-        "image_c74ctA"
+        "image_qmhEn4",
+        "image_BhrAMA",
+        "image_QKJaDA",
+        "image_EjM6gV"
       ],
       "name": "SS - Scrolling logo cloud #5",
       "settings": {
@@ -222,13 +206,13 @@
         "heading_size_mobile": 18,
         "heading_height": 130,
         "scrolling_velocity": 20,
-        "scrolling_velocity_mobile": 24,
+        "scrolling_velocity_mobile": 18,
         "scrolling_direction": "left",
         "pause_hover": false,
         "scrolling_gap": 70,
-        "scrolling_gap_mobile": 0,
-        "card_width_desktop": 130,
-        "card_width_mobile": 150,
+        "scrolling_gap_mobile": 26,
+        "card_width_desktop": 160,
+        "card_width_mobile": 140,
         "heading_color": "#121212",
         "layout_bg_color": "#f4f4f1",
         "layout_border_color": "#121212",
@@ -242,7 +226,7 @@
         "padding_bottom": 0,
         "padding_horizontal": 5,
         "padding_horizontal_mobile": 0,
-        "full_width": false,
+        "full_width": true,
         "content_width": 1200,
         "border_thickness": 0,
         "section_radius": 0,
