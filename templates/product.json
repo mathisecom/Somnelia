@@ -549,7 +549,7 @@
       "settings": {
         "heading": "Que disent nos clients ?",
         "text": "<p>Lisez les avis et découvrez ce que les autres pensent de leur expérience avec nous.</p>",
-        "heading_size_desktop": 44,
+        "heading_size_desktop": 38,
         "heading_size_mobile": 28,
         "show_trustpilot": true,
         "trustpilot_url": "",
