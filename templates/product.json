@@ -43,11 +43,10 @@
             "manual_deal_block_id": ""
           }
         },
-        "price": {
-          "type": "price",
-          "disabled": true,
+        "liquid_YKTpmN": {
+          "type": "liquid",
           "settings": {
-            "show_taxes_notice": false
+            "liquid": "<!-- ================================================================\n  Bloc \"Forte demande / Stocks limités\" — indicateur d'urgence\n  100% autonome : à coller dans la description produit\n  (éditeur Shopify > fiche produit > afficher le HTML </>)\n  ou dans un bloc \"HTML personnalisé\" / \"Liquid\" de la fiche produit.\n================================================================= -->\n<style>\n  .pstock {\n    display: inline-flex;\n    align-items: center;\n    gap: 10px;\n    margin: 0;\n    padding: 0;\n    font-family: inherit;\n  }\n  /* Point qui pulse */\n  .pstock__dot {\n    position: relative;\n    flex: 0 0 12px;\n    width: 12px;\n    height: 12px;\n    border-radius: 50%;\n    border: 2px solid #ff4d1f;\n  }\n  .pstock__dot::after {\n    content: \"\";\n    position: absolute;\n    inset: 2px;\n    border-radius: 50%;\n    background: #ff4d1f;\n    animation: pstock-pulse 1.4s ease-in-out infinite;\n  }\n  @keyframes pstock-pulse {\n    0%, 100% { opacity: 1; transform: scale(1); }\n    50%      { opacity: .45; transform: scale(.75); }\n  }\n  @media (prefers-reduced-motion: reduce) {\n    .pstock__dot::after { animation: none; }\n  }\n  .pstock__label {\n    font-size: 15px;\n    color: #ff4d1f;\n  }\n  .pstock__badge {\n    background: #ffe3da;\n    color: #ff4d1f;\n    font-size: 12px;\n    font-weight: 700;\n    letter-spacing: 0.05em;\n    text-transform: uppercase;\n    padding: 5px 10px;\n    border-radius: 6px;\n    white-space: nowrap;\n  }\n</style>\n\n<div class=\"pstock\">\n  <span class=\"pstock__dot\" aria-hidden=\"true\"></span>\n  <span class=\"pstock__label\">Forte demande</span>\n  <span class=\"pstock__badge\">Stocks limités</span>\n</div>"
           }
         },
         "variant_picker": {
@@ -61,13 +60,9 @@
             "size_chart_page": ""
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "disabled": true,
-          "settings": {}
-        },
         "liquid_fbG4pk": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "liquid": "<div class=\"product-info__block-item\" data-block-id=\"liquid_VhFpiH\" data-block-type=\"liquid\"><div class=\"product-info__liquid\">\n              <div class=\"product-info__block-item\" data-block-id=\"liquid_UpM4EP\" data-block-type=\"liquid\"><div class=\"product-info__liquid\">\n              <div class=\"product-info__liquid\">\n  <style>\n    .custom-shipping-container {\n      display: flex;\n      padding: 6px 16px;\n      justify-content: space-between;\n      align-items: center;\n      align-self: stretch;\n      background-color: #f6f6f6;\n      border-radius: 20px;\n      gap: 10px;\n      width: 100%;\n    }\n\n    .custom-shipping-item {\n      display: flex;\n      align-items: center;\n      gap: 6px;\n      white-space: nowrap;\n    }\n\n    .text-block-shipping {\n      font-size: 12px;\n      color: #000;\n      line-height: 1.2;\n    }\n\n    .shipping-date {\n      font-weight: 700;\n    }\n\n    .free-shipping {\n      font-weight: 700;\n    }\n\n    .green-circle {\n      animation: fade 1s ease-in-out infinite;\n      flex-shrink: 0;\n    }\n\n    .custom-truck-icon {\n      width: 15px;\n      height: 15px;\n      flex-shrink: 0;\n    }\n\n    @keyframes fade {\n      0%, 100% { opacity: 1; }\n      50% { opacity: 0.5; }\n    }\n\n    @media screen and (max-width: 749px) {\n      .custom-shipping-container {\n        padding: 7px 12px;\n        gap: 8px;\n      }\n\n      .text-block-shipping {\n        font-size: 11px;\n      }\n\n      .custom-shipping-item {\n        gap: 5px;\n      }\n    }\n  </style>\n\n  <script>\n    document.addEventListener(\"DOMContentLoaded\", function() {\n      var daysAfterToday = 1; // Modifier ici : 1 = demain, 2 = après-demain, etc.\n      var today = new Date();\n      var shipDate = new Date(today);\n      shipDate.setDate(today.getDate() + daysAfterToday);\n\n      var options = {\n        weekday: 'short',\n        day: 'numeric',\n        month: 'long'\n      };\n\n      var formattedDate = shipDate.toLocaleDateString('fr-FR', options);\n\n      var shippingDateElement = document.getElementById('shipping-date');\n      if (shippingDateElement) {\n        shippingDateElement.textContent = formattedDate;\n      }\n    });\n  </script>\n\n  <div class=\"custom-shipping-container\">\n    <div class=\"custom-shipping-item\">\n      <svg class=\"green-circle\" width=\"12\" height=\"13\" viewBox=\"0 0 12 13\" fill=\"none\" aria-hidden=\"true\">\n        <circle cx=\"6\" cy=\"6.5\" r=\"6\" fill=\"#137333\"></circle>\n      </svg>\n\n      <div class=\"text-block-shipping\">\n        Expédié le <span id=\"shipping-date\" class=\"shipping-date\">dim. 12 juillet</span>\n      </div>\n    </div>\n\n    <div class=\"custom-shipping-item\">\n      <svg class=\"custom-truck-icon\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\">\n        <path d=\"M3 7h11v10H3V7Z\" stroke=\"#000\" stroke-width=\"1.8\" stroke-linejoin=\"round\"></path>\n        <path d=\"M14 10h4l3 3v4h-7v-7Z\" stroke=\"#000\" stroke-width=\"1.8\" stroke-linejoin=\"round\"></path>\n        <circle cx=\"7\" cy=\"18\" r=\"2\" stroke=\"#000\" stroke-width=\"1.8\"></circle>\n        <circle cx=\"17\" cy=\"18\" r=\"2\" stroke=\"#000\" stroke-width=\"1.8\"></circle>\n      </svg>\n\n      <div class=\"text-block-shipping\">\n        <span class=\"free-shipping\">Livraison Offerte</span> en France\n      </div>\n    </div>\n  </div>\n</div>\n            </div></div>\n            </div></div>"
           }
@@ -136,9 +131,8 @@
         "liquid_GaGCCD",
         "liquid_Vmj9e9",
         "kaching_bundles_app_block_FAXjWf",
-        "price",
+        "liquid_YKTpmN",
         "variant_picker",
-        "quantity_selector",
         "liquid_fbG4pk",
         "buy_buttons",
         "liquid_cJciKj",
