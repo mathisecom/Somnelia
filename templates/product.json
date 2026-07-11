@@ -408,6 +408,118 @@
         "button_text_color": "#FFFFFF"
       }
     },
+    "avisclientsdefilant_3Airrz": {
+      "type": "avisclientsdefilant",
+      "blocks": {
+        "review_N9ww6J": {
+          "type": "review",
+          "settings": {
+            "title": "Produits de grande qualité",
+            "comment": "J'ai acheté un oreiller et une couette. Je les utilise depuis longtemps et j'en suis très satisfait. La livraison a été rapide et la qualité des produits est excellente.",
+            "author": "Deniz",
+            "date": "Il y a 4 jours",
+            "review_url": ""
+          }
+        },
+        "review_iegdUN": {
+          "type": "review",
+          "settings": {
+            "title": "Produits de grande qualité",
+            "comment": "J'ai acheté un oreiller et une couette. Je les utilise depuis longtemps et j'en suis très satisfait. La livraison a été rapide et la qualité des produits est excellente.",
+            "author": "Deniz",
+            "date": "Il y a 4 jours",
+            "review_url": ""
+          }
+        },
+        "review_NcA9iy": {
+          "type": "review",
+          "settings": {
+            "title": "Produits de grande qualité",
+            "comment": "J'ai acheté un oreiller et une couette. Je les utilise depuis longtemps et j'en suis très satisfait. La livraison a été rapide et la qualité des produits est excellente.",
+            "author": "Deniz",
+            "date": "Il y a 4 jours",
+            "review_url": ""
+          }
+        },
+        "review_madj4U": {
+          "type": "review",
+          "settings": {
+            "title": "Produits de grande qualité",
+            "comment": "J'ai acheté un oreiller et une couette. Je les utilise depuis longtemps et j'en suis très satisfait. La livraison a été rapide et la qualité des produits est excellente.",
+            "author": "Deniz",
+            "date": "Il y a 4 jours",
+            "review_url": ""
+          }
+        },
+        "review_DUxUnR": {
+          "type": "review",
+          "settings": {
+            "title": "Produits de grande qualité",
+            "comment": "J'ai acheté un oreiller et une couette. Je les utilise depuis longtemps et j'en suis très satisfait. La livraison a été rapide et la qualité des produits est excellente.",
+            "author": "Deniz",
+            "date": "Il y a 4 jours",
+            "review_url": ""
+          }
+        },
+        "review_PMxWWr": {
+          "type": "review",
+          "settings": {
+            "title": "Produits de grande qualité",
+            "comment": "J'ai acheté un oreiller et une couette. Je les utilise depuis longtemps et j'en suis très satisfait. La livraison a été rapide et la qualité des produits est excellente.",
+            "author": "Deniz",
+            "date": "Il y a 4 jours",
+            "review_url": ""
+          }
+        },
+        "review_CaXVxG": {
+          "type": "review",
+          "settings": {
+            "title": "Produits de grande qualité",
+            "comment": "J'ai acheté un oreiller et une couette. Je les utilise depuis longtemps et j'en suis très satisfait. La livraison a été rapide et la qualité des produits est excellente.",
+            "author": "Deniz",
+            "date": "Il y a 4 jours",
+            "review_url": ""
+          }
+        },
+        "review_rqjYFE": {
+          "type": "review",
+          "settings": {
+            "title": "Produits de grande qualité",
+            "comment": "J'ai acheté un oreiller et une couette. Je les utilise depuis longtemps et j'en suis très satisfait. La livraison a été rapide et la qualité des produits est excellente.",
+            "author": "Deniz",
+            "date": "Il y a 4 jours",
+            "review_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "review_N9ww6J",
+        "review_iegdUN",
+        "review_NcA9iy",
+        "review_madj4U",
+        "review_DUxUnR",
+        "review_PMxWWr",
+        "review_CaXVxG",
+        "review_rqjYFE"
+      ],
+      "name": "Avis clients défilants",
+      "settings": {
+        "heading": "Que disent nos clients ?",
+        "text": "<p>Lisez les avis et découvrez ce que les autres pensent de leur expérience avec nous.</p>",
+        "heading_size_desktop": 56,
+        "heading_size_mobile": 32,
+        "show_trustpilot": true,
+        "trustpilot_url": "",
+        "trust_score": 4.6,
+        "reviews_count": "34013",
+        "reviews_label": "avis sur",
+        "bg_color": "#EFEEE9",
+        "card_color": "#FFFFFF",
+        "text_color": "#1A1A1A",
+        "desktop_height": 700,
+        "scroll_speed": 45
+      }
+    },
     "faq_caH4tY": {
       "type": "faq",
       "blocks": {
@@ -491,6 +603,7 @@
     "avisclienttrust_LHtrM7",
     "scrolling_text_q6tUBg",
     "facondedormir_g9ci4P",
+    "avisclientsdefilant_3Airrz",
     "faq_caH4tY",
     "related-products"
   ]
