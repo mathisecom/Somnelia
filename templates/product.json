@@ -37,14 +37,6 @@
             "show_taxes_notice": false
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {
-            "icon": "none",
-            "icon_width": 20,
-            "collapse_content": false
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -65,7 +57,7 @@
           "settings": {
             "show_payment_button": false,
             "show_gift_card_recipient": false,
-            "atc_button_background": "",
+            "atc_button_background": "#0E1A2B",
             "atc_button_text_color": "",
             "payment_button_background": "",
             "payment_button_text_color": ""
@@ -113,7 +105,6 @@
         "title",
         "liquid_GaGCCD",
         "price",
-        "description",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
