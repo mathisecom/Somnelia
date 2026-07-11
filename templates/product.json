@@ -157,6 +157,78 @@
         "input_text_color": ""
       }
     },
+    "logoscroll_TpFtAk": {
+      "type": "logoscroll",
+      "blocks": {
+        "image_Vh6dBr": {
+          "type": "image",
+          "settings": {
+            "url": ""
+          }
+        },
+        "image_CcjqiK": {
+          "type": "image",
+          "settings": {
+            "url": ""
+          }
+        },
+        "image_4U8Q7q": {
+          "type": "image",
+          "settings": {
+            "url": ""
+          }
+        },
+        "image_MdwD6r": {
+          "type": "image",
+          "settings": {
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_Vh6dBr",
+        "image_CcjqiK",
+        "image_4U8Q7q",
+        "image_MdwD6r"
+      ],
+      "name": "SS - Scrolling logo cloud #5",
+      "settings": {
+        "layout_radius": 30,
+        "layout_border_thickness": 0,
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 18,
+        "heading_size_mobile": 18,
+        "heading_height": 130,
+        "scrolling_velocity": 30,
+        "scrolling_velocity_mobile": 30,
+        "scrolling_direction": "left",
+        "pause_hover": false,
+        "scrolling_gap": 70,
+        "scrolling_gap_mobile": 30,
+        "card_width_desktop": 130,
+        "card_width_mobile": 100,
+        "heading_color": "#121212",
+        "layout_bg_color": "#F4F4F1",
+        "layout_border_color": "#121212",
+        "background_color": "#F4F4F1",
+        "border_color": "#121212",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 0,
+        "full_width": false,
+        "content_width": 1200,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
+      }
+    },
     "avisclienttrust_LHtrM7": {
       "type": "avisclienttrust",
       "blocks": {
@@ -264,11 +336,11 @@
         "read_more_label": "",
         "read_less_label": "Réduire",
         "review_text_lines": 7,
-        "background_color": "#F4F4F1",
-        "text_color": "#0E1A2B",
-        "muted_color": "#6F747B",
-        "border_color": "#E6E1DA",
-        "accent_color": "#00B67A",
+        "background_color": "#f4f4f1",
+        "text_color": "#0e1a2b",
+        "muted_color": "#6f747b",
+        "border_color": "#e6e1da",
+        "accent_color": "#00b67a",
         "max_width": 1120,
         "padding_top": 20,
         "padding_bottom": 20,
@@ -372,6 +444,7 @@
   },
   "order": [
     "main",
+    "logoscroll_TpFtAk",
     "avisclienttrust_LHtrM7",
     "scrolling_text_q6tUBg",
     "faq_caH4tY",
