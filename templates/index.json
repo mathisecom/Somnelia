@@ -18,7 +18,7 @@
             "image": "shopify://shop_images/Design_sans_titre_63.png",
             "title": "Oreiller Ergonomique",
             "desc": "",
-            "link": "",
+            "link": "shopify://products/oreiller-ergonomique",
             "bg": "#f8ecd4",
             "badge_line1": "",
             "badge_line2": "OFFERT",
@@ -31,7 +31,7 @@
             "image": "shopify://shop_images/Design_sans_titre_64.png",
             "title": "Oreiller Cervical",
             "desc": "",
-            "link": "",
+            "link": "shopify://products/oreiller-cervical-somnelia",
             "bg": "#fbe3ea",
             "badge_line1": "",
             "badge_line2": "",
@@ -110,7 +110,7 @@
         "show_flower": false,
         "subtitle": "<b>SOLDES D’ÉTÉ :</b> -40% DE RÉDUCTION",
         "btn_label": "Profiter de L'Offre",
-        "btn_link": "",
+        "btn_link": "shopify://products/oreiller-ergonomique",
         "hero_image": "shopify://shop_images/ChatGPT_Image_13_juil._2026_11_15_25.png",
         "hide_desc_mobile": true
       }
