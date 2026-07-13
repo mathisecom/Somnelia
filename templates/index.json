@@ -260,6 +260,7 @@
         "image_xrt8XT": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/DSC00027_720x_24aec214-df75-492a-9da5-92d89b06a7a4.webp",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
