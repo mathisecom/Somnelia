@@ -123,6 +123,16 @@
             "content": "<p>Nous sommes convaincus que vous allez adorer notre <strong>Oreiller Orthopédique Somnelia</strong>, mais nous comprenons que vous ne puissiez pas en être sûr maintenant. C'est pourquoi nous vous offrons une période d'essai de <strong>30 nuits. </strong></p><p>Vous pouvez essayer, ressentir et constater par vous-même la qualité exceptionnelle de l'Oreiller <strong>Somnelia</strong>, sans aucun souci.</p><p><strong>Si, après 30 jours</strong>, vous n'êtes pas satisfait de votre oreiller <strong>Somnelia</strong>, renvoyez-le-nous pour un remboursement complet.</p>",
             "page": ""
           }
+        },
+        "associated_products_Ky3MPT": {
+          "type": "associated_products",
+          "settings": {
+            "title": "Complétez pour un confort ultime !",
+            "stack_products": false,
+            "products_count": 5,
+            "background": "",
+            "text_color": ""
+          }
         }
       },
       "block_order": [
@@ -139,7 +149,8 @@
         "collapsible_text_qweLRz",
         "collapsible_text_d4Q7iF",
         "collapsible_text_dGNMY7",
-        "collapsible_text_B4qahV"
+        "collapsible_text_B4qahV",
+        "associated_products_Ky3MPT"
       ],
       "settings": {
         "full_width": true,
