@@ -14,27 +14,25 @@
       "blocks": {
         "deal_9YFNi3": {
           "type": "deal",
-          "disabled": true,
           "settings": {
             "title": "1+1 offert sur la literie",
             "desc": "Mixez couettes et parures : l'article le moins cher est offert",
             "link": "",
             "bg": "#f8ecd4",
-            "badge_line1": "1+1",
+            "badge_line1": "",
             "badge_line2": "OFFERT",
             "badge_color": "#f2b72c"
           }
         },
         "deal_bpPFfE": {
           "type": "deal",
-          "disabled": true,
           "settings": {
             "title": "1+1 offert sur les oreillers",
-            "desc": "Célébrez l'été : 1 acheté = 1 offert sur tous les oreillers",
+            "desc": "",
             "link": "",
             "bg": "#fbe3ea",
-            "badge_line1": "1+1",
-            "badge_line2": "OFFERT",
+            "badge_line1": "",
+            "badge_line2": "",
             "badge_color": "#f1a7bc"
           }
         },
