@@ -108,7 +108,7 @@
         "title_part1": "Summer",
         "title_part2": "Deals",
         "show_flower": false,
-        "subtitle": "Célébrez l'été avec le 1+1 offert et économisez sur presque toute notre collection.*",
+        "subtitle": "<b>SOLDES D’ÉTÉ :</b> -40% DE RÉDUCTION",
         "btn_label": "Profiter de L'Offre",
         "btn_link": "",
         "hide_desc_mobile": true
@@ -187,9 +187,9 @@
         "card_width_desktop": 130,
         "card_width_mobile": 140,
         "heading_color": "#121212",
-        "layout_bg_color": "#F4F4F1",
+        "layout_bg_color": "#f4f4f1",
         "layout_border_color": "#121212",
-        "background_color": "#F4F4F1",
+        "background_color": "#f4f4f1",
         "border_color": "#121212",
         "margin_top": 0,
         "margin_bottom": 0,
@@ -269,12 +269,12 @@
             "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
             "link_text": "DÉCOUVRIR",
             "link_url": "",
-            "background": "#0E1A2B",
+            "background": "#0e1a2b",
             "background_gradient": "",
             "text_color": "#ffffff",
             "text_gradient": "",
-            "button_background": "#F4F4F1",
-            "button_text_color": "#0E1A2B"
+            "button_background": "#f4f4f1",
+            "button_text_color": "#0e1a2b"
           }
         }
       },
