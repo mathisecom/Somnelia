@@ -918,6 +918,20 @@
             "title": "Comment l’oreiller agit-il sur les douleurs cervicales ?",
             "content": "<p>L’oreiller Somnelia soutient la courbure naturelle des cervicales et aligne la colonne vertébrale durant le sommeil. Il permet ainsi de réduire les tensions musculaires et de prévenir les douleurs liées aux mauvaises postures nocturnes.</p>"
           }
+        },
+        "item_78fJ8a": {
+          "type": "item",
+          "settings": {
+            "title": "Améliore-t-il vraiment la qualité de mon sommeil ?",
+            "content": "<p>En favorisant un bon alignement postural et une respiration plus fluide, il contribue à un endormissement plus rapide, une diminution des micro-réveils et un sommeil globalement plus réparateur.</p>"
+          }
+        },
+        "item_K4Nhwg": {
+          "type": "item",
+          "settings": {
+            "title": "Quels sont les délais de livraison ?",
+            "content": "<p>Nous traitons votre commande sous 1 à 2 jours ouvrés. La livraison s’effectue ensuite en 3 à 6 jours, selon votre localisation.</p><p>Chaque colis est expédié avec un numéro de suivi pour garantir une réception rapide et sécurisée.</p>"
+          }
         }
       },
       "block_order": [
@@ -925,7 +939,9 @@
         "item_jFK9WR",
         "item_CijbCd",
         "item_bTzjUP",
-        "item_NmeieJ"
+        "item_NmeieJ",
+        "item_78fJ8a",
+        "item_K4Nhwg"
       ],
       "name": "FAQ",
       "settings": {
