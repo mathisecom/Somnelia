@@ -235,82 +235,6 @@
         "lazy": true
       }
     },
-    "logoscroll_MeUam9": {
-      "type": "logoscroll",
-      "blocks": {
-        "image_PKJaC8": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Design_sans_titre_59.webp",
-            "url": ""
-          }
-        },
-        "image_hzCmxz": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Design_sans_titre_60.webp",
-            "url": ""
-          }
-        },
-        "image_FTqEgW": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Design_sans_titre_62.webp",
-            "url": ""
-          }
-        },
-        "image_GtJf8W": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Design_sans_titre_61.webp",
-            "url": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_PKJaC8",
-        "image_hzCmxz",
-        "image_FTqEgW",
-        "image_GtJf8W"
-      ],
-      "name": "SS - Scrolling logo cloud #5",
-      "settings": {
-        "layout_radius": 30,
-        "layout_border_thickness": 0,
-        "heading": "",
-        "heading_custom": false,
-        "heading_font": "josefin_sans_n4",
-        "heading_size": 18,
-        "heading_size_mobile": 18,
-        "heading_height": 130,
-        "scrolling_velocity": 20,
-        "scrolling_velocity_mobile": 18,
-        "scrolling_direction": "left",
-        "pause_hover": false,
-        "scrolling_gap": 70,
-        "scrolling_gap_mobile": 26,
-        "card_width_desktop": 160,
-        "card_width_mobile": 140,
-        "heading_color": "#121212",
-        "layout_bg_color": "#f4f4f1",
-        "layout_border_color": "#121212",
-        "background_color": "#f4f4f1",
-        "border_color": "#121212",
-        "margin_top": 0,
-        "margin_bottom": 20,
-        "margin_horizontal": 0,
-        "margin_horizontal_mobile": 0,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "padding_horizontal": 5,
-        "padding_horizontal_mobile": 0,
-        "full_width": true,
-        "content_width": 1200,
-        "border_thickness": 0,
-        "section_radius": 0,
-        "lazy": true
-      }
-    },
     "avisclienttrust_LHtrM7": {
       "type": "avisclienttrust",
       "blocks": {
@@ -460,7 +384,7 @@
             "icon_width": 48,
             "subheading": "",
             "title": "Votre posture commence la nuit",
-            "content": "<p>Un oreiller mal adapté peut désaligner votre nuque et provoquer des tensions au réveil. L’oreiller <strong>Somnelia</strong> aide à aligner naturellement la tête, le cou et la colonne pendant le sommeil.<br/><br/><strong>Moins de douleurs, meilleure posture, réveils plus légers.</strong></p>",
+            "content": "<p>Un oreiller mal adapté peut désaligner votre nuque et provoquer des tensions au réveil.L’oreiller <strong>Somnelia</strong> aide à aligner naturellement la tête, le cou et la colonne pendant le sommeil. </p><p><strong>Moins de douleurs, meilleure posture, réveils plus légers.</strong></p>",
             "link_text": "ACHETER MAINTENANT",
             "link_url": "",
             "background": "#0e1a2b",
@@ -677,6 +601,82 @@
         "full_width": false,
         "alternate_media_position": false,
         "spacing": "large"
+      }
+    },
+    "logoscroll_MeUam9": {
+      "type": "logoscroll",
+      "blocks": {
+        "image_PKJaC8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Design_sans_titre_59.webp",
+            "url": ""
+          }
+        },
+        "image_hzCmxz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Design_sans_titre_60.webp",
+            "url": ""
+          }
+        },
+        "image_FTqEgW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Design_sans_titre_62.webp",
+            "url": ""
+          }
+        },
+        "image_GtJf8W": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Design_sans_titre_61.webp",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_PKJaC8",
+        "image_hzCmxz",
+        "image_FTqEgW",
+        "image_GtJf8W"
+      ],
+      "name": "SS - Scrolling logo cloud #5",
+      "settings": {
+        "layout_radius": 30,
+        "layout_border_thickness": 0,
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 18,
+        "heading_size_mobile": 18,
+        "heading_height": 130,
+        "scrolling_velocity": 20,
+        "scrolling_velocity_mobile": 18,
+        "scrolling_direction": "left",
+        "pause_hover": false,
+        "scrolling_gap": 70,
+        "scrolling_gap_mobile": 26,
+        "card_width_desktop": 160,
+        "card_width_mobile": 140,
+        "heading_color": "#121212",
+        "layout_bg_color": "#f4f4f1",
+        "layout_border_color": "#121212",
+        "background_color": "#f4f4f1",
+        "border_color": "#121212",
+        "margin_top": 0,
+        "margin_bottom": 20,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 0,
+        "full_width": true,
+        "content_width": 1200,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
       }
     },
     "avisclientsdefilant_3Airrz": {
