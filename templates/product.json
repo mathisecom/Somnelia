@@ -478,7 +478,7 @@
           "settings": {
             "column_size": "3",
             "title": "Maintient votre cou et épouse votre épaule naturellement.",
-            "heading_tag": "h4",
+            "heading_tag": "h3",
             "content": "<p>Les deux caractéristiques qui éliminent les raideurs matinales, réunies dans un seul oreiller.</p>",
             "link_url": "",
             "link_text": "",
@@ -490,7 +490,7 @@
           "settings": {
             "column_size": "3",
             "title": "Mousse mémoire premium, nuit après nuit.",
-            "heading_tag": "h4",
+            "heading_tag": "h3",
             "content": "<p>Contrairement aux oreillers bas de gamme qui s’affaissent en quelques mois, l’oreiller Align conserve son maintien pendant des années.</p>",
             "link_url": "",
             "link_text": "",
@@ -502,7 +502,7 @@
           "settings": {
             "column_size": "3",
             "title": "Une housse respirante qui reste fraîche toute la nuit.",
-            "heading_tag": "h4",
+            "heading_tag": "h3",
             "content": "<p>Fini de retourner votre oreiller à 3 h du matin. Réveillez-vous confortablement, sans transpiration.</p>",
             "link_url": "",
             "link_text": "",
@@ -524,9 +524,9 @@
         "subheading": "",
         "title": "Dormez Profondément, Chaque Nuit",
         "content": "",
-        "background": "",
+        "background": "#EFEEE9",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "#0E1A2B"
       }
     },
     "facondedormir_g9ci4P": {
