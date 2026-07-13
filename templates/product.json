@@ -904,12 +904,20 @@
             "title": "L’oreiller est-il compatible avec les masques nasaux et l’apnée du sommeil ?",
             "content": "<p>Oui. L’oreiller Somnelia est parfaitement adapté aux personnes portant un masque nasal ou concernées par l’apnée du sommeil légère à modérée. Sa forme ergonomique favorise un bon alignement des voies respiratoires, ce qui contribue à une respiration fluide tout au long de la nuit.</p>"
           }
+        },
+        "item_bTzjUP": {
+          "type": "item",
+          "settings": {
+            "title": "L’oreiller est-il efficace contre les ronflements ?",
+            "content": "<p>Totalement testé et approuvé. L’oreiller Somnelia favorise un bon alignement de la tête, du cou et des voies respiratoires, ce qui peut réduire considérablement les ronflements liés à une mauvaise posture durant la nuit.</p>"
+          }
         }
       },
       "block_order": [
         "item_pgUrjp",
         "item_jFK9WR",
-        "item_CijbCd"
+        "item_CijbCd",
+        "item_bTzjUP"
       ],
       "name": "FAQ",
       "settings": {
