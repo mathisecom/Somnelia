@@ -617,6 +617,82 @@
         "spacing": "large"
       }
     },
+    "multi_column_R7TytF": {
+      "type": "multi-column",
+      "blocks": {
+        "item_TbzE9g": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/gempages_537902831378629779-cada7a50-62b4-419d-b522-47e3cf1a2cd9.webp",
+            "column_size": "4",
+            "title": "Maintient votre cou et épouse votre épaule naturellement.",
+            "heading_tag": "h3",
+            "content": "<p>Les deux caractéristiques qui éliminent les raideurs matinales, réunies dans un seul oreiller.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_ARKmgP": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/gempages_537902831378629779-fae0395e-caec-4c11-a694-cd2abfc058c0.webp",
+            "column_size": "4",
+            "title": "Mousse mémoire premium, nuit après nuit.",
+            "heading_tag": "h3",
+            "content": "<p>Contrairement aux oreillers bas de gamme qui s’affaissent en quelques mois, l’oreiller Align conserve son maintien pendant des années.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_KnF4WX": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/gempages_537902831378629779-34513939-6611-40ec-9196-a956aec39d54.webp",
+            "column_size": "4",
+            "title": "Une housse respirante qui reste fraîche toute la nuit.",
+            "heading_tag": "h3",
+            "content": "<p>Fini de retourner votre oreiller à 3 h du matin. Réveillez-vous confortablement, sans transpiration.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_mhcbdJ": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/gempages_537902831378629779-49c08024-e9f4-4575-a901-5653eeb8c7ce.webp",
+            "column_size": "4",
+            "title": "Une housse respirante qui reste fraîche toute la nuit.",
+            "heading_tag": "h3",
+            "content": "<p>Fini de retourner votre oreiller à 3 h du matin. Réveillez-vous confortablement, sans transpiration.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_TbzE9g",
+        "item_ARKmgP",
+        "item_KnF4WX",
+        "item_mhcbdJ"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "Dormez Profondément, Chaque Nuit",
+        "content": "",
+        "background": "#F4F4F1",
+        "background_gradient": "",
+        "text_color": "#0e1a2b"
+      }
+    },
     "logoscroll_MeUam9": {
       "type": "logoscroll",
       "blocks": {
@@ -892,6 +968,7 @@
     "multi_column_3y6c3w",
     "facondedormir_g9ci4P",
     "media_with_text_mT9kKq",
+    "multi_column_R7TytF",
     "logoscroll_MeUam9",
     "avisclientsdefilant_3Airrz",
     "faq_caH4tY",
