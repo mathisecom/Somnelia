@@ -568,6 +568,41 @@
         "button_text_color": "#ffffff"
       }
     },
+    "media_with_text_mT9kKq": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_KXG77R": {
+          "type": "image",
+          "settings": {
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "",
+            "content": "",
+            "link_text": "ACHETER MAINTENANT",
+            "link_url": "",
+            "background": "#0e1a2b",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#f4f4f1",
+            "button_text_color": "#0e1a2b"
+          }
+        }
+      },
+      "block_order": [
+        "image_KXG77R"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "alternate_media_position": false,
+        "spacing": "large"
+      }
+    },
     "avisclientsdefilant_3Airrz": {
       "type": "avisclientsdefilant",
       "blocks": {
@@ -766,6 +801,7 @@
     "text_with_icons_MiVUBa",
     "multi_column_3y6c3w",
     "facondedormir_g9ci4P",
+    "media_with_text_mT9kKq",
     "avisclientsdefilant_3Airrz",
     "faq_caH4tY",
     "related-products"
