@@ -911,13 +911,21 @@
             "title": "L’oreiller est-il efficace contre les ronflements ?",
             "content": "<p>Totalement testé et approuvé. L’oreiller Somnelia favorise un bon alignement de la tête, du cou et des voies respiratoires, ce qui peut réduire considérablement les ronflements liés à une mauvaise posture durant la nuit.</p>"
           }
+        },
+        "item_NmeieJ": {
+          "type": "item",
+          "settings": {
+            "title": "Comment l’oreiller agit-il sur les douleurs cervicales ?",
+            "content": "<p>L’oreiller Somnelia soutient la courbure naturelle des cervicales et aligne la colonne vertébrale durant le sommeil. Il permet ainsi de réduire les tensions musculaires et de prévenir les douleurs liées aux mauvaises postures nocturnes.</p>"
+          }
         }
       },
       "block_order": [
         "item_pgUrjp",
         "item_jFK9WR",
         "item_CijbCd",
-        "item_bTzjUP"
+        "item_bTzjUP",
+        "item_NmeieJ"
       ],
       "name": "FAQ",
       "settings": {
