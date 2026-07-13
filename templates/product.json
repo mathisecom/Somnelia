@@ -491,7 +491,7 @@
           "settings": {
             "column_size": "3",
             "title": "Maintient votre cou et épouse votre épaule naturellement.",
-            "heading_tag": "h3",
+            "heading_tag": "h4",
             "content": "<p>Les deux caractéristiques qui éliminent les raideurs matinales, réunies dans un seul oreiller.</p>",
             "link_url": "",
             "link_text": "",
@@ -503,7 +503,7 @@
           "settings": {
             "column_size": "3",
             "title": "Mousse mémoire premium, nuit après nuit.",
-            "heading_tag": "h3",
+            "heading_tag": "h4",
             "content": "<p>Contrairement aux oreillers bas de gamme qui s’affaissent en quelques mois, l’oreiller Align conserve son maintien pendant des années.</p>",
             "link_url": "",
             "link_text": "",
@@ -515,7 +515,7 @@
           "settings": {
             "column_size": "3",
             "title": "Une housse respirante qui reste fraîche toute la nuit.",
-            "heading_tag": "h3",
+            "heading_tag": "h4",
             "content": "<p>Fini de retourner votre oreiller à 3 h du matin. Réveillez-vous confortablement, sans transpiration.</p>",
             "link_url": "",
             "link_text": "",
@@ -625,9 +625,9 @@
           "settings": {
             "image": "shopify://shop_images/gempages_537902831378629779-cada7a50-62b4-419d-b522-47e3cf1a2cd9.webp",
             "column_size": "4",
-            "title": "Maintient votre cou et épouse votre épaule naturellement.",
+            "title": "Étape 1",
             "heading_tag": "h3",
-            "content": "<p>Les deux caractéristiques qui éliminent les raideurs matinales, réunies dans un seul oreiller.</p>",
+            "content": "<p>Détachez l’attache centrale.</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -638,9 +638,9 @@
           "settings": {
             "image": "shopify://shop_images/gempages_537902831378629779-fae0395e-caec-4c11-a694-cd2abfc058c0.webp",
             "column_size": "4",
-            "title": "Mousse mémoire premium, nuit après nuit.",
+            "title": "Étape 2",
             "heading_tag": "h3",
-            "content": "<p>Contrairement aux oreillers bas de gamme qui s’affaissent en quelques mois, l’oreiller Align conserve son maintien pendant des années.</p>",
+            "content": "<p>Ouvrir la fermeture éclair pour retirer la housse.</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -651,9 +651,9 @@
           "settings": {
             "image": "shopify://shop_images/gempages_537902831378629779-34513939-6611-40ec-9196-a956aec39d54.webp",
             "column_size": "4",
-            "title": "Une housse respirante qui reste fraîche toute la nuit.",
+            "title": "Étape 3",
             "heading_tag": "h3",
-            "content": "<p>Fini de retourner votre oreiller à 3 h du matin. Réveillez-vous confortablement, sans transpiration.</p>",
+            "content": "<p>Retirez délicatement la housse du coussin sans forcer.</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -664,9 +664,9 @@
           "settings": {
             "image": "shopify://shop_images/gempages_537902831378629779-49c08024-e9f4-4575-a901-5653eeb8c7ce.webp",
             "column_size": "4",
-            "title": "Une housse respirante qui reste fraîche toute la nuit.",
+            "title": "Étape 4",
             "heading_tag": "h3",
-            "content": "<p>Fini de retourner votre oreiller à 3 h du matin. Réveillez-vous confortablement, sans transpiration.</p>",
+            "content": "<p>Placez la housse dans la machine à laver pour un lavage en douceur.</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -686,7 +686,7 @@
         "gap": "medium",
         "text_alignment": "center",
         "subheading": "",
-        "title": "Dormez Profondément, Chaque Nuit",
+        "title": "Prendre soin de votre Oreiller",
         "content": "",
         "background": "#F4F4F1",
         "background_gradient": "",
