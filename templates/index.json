@@ -15,6 +15,7 @@
         "deal_9YFNi3": {
           "type": "deal",
           "settings": {
+            "image": "shopify://shop_images/Design_sans_titre_63.png",
             "title": "Oreiller Ergonomique",
             "desc": "",
             "link": "",
@@ -27,6 +28,7 @@
         "deal_bpPFfE": {
           "type": "deal",
           "settings": {
+            "image": "shopify://shop_images/Design_sans_titre_64.png",
             "title": "Oreiller Cervical",
             "desc": "",
             "link": "",
