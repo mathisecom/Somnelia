@@ -377,11 +377,13 @@
         "image_9qTRmV": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_13_juil._2026_14_24_31.png",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
             "icon": "none",
-            "icon_width": 48,
+            "custom_icon": "shopify://shop_images/Design_sans_titre_65.png",
+            "icon_width": 88,
             "subheading": "",
             "title": "Un bon sommeil commence par une bonne posture",
             "content": "<p>Un oreiller mal adapté peut désaligner votre nuque et provoquer des tensions au réveil. L’oreiller <strong>Somnelia</strong> aide à aligner naturellement la tête, le cou et la colonne pendant le sommeil. </p><p><strong>Moins de douleurs, meilleure posture, réveils plus légers.</strong></p>",
@@ -524,9 +526,9 @@
         "subheading": "",
         "title": "Dormez Profondément, Chaque Nuit",
         "content": "",
-        "background": "#EFEEE9",
+        "background": "#efeee9",
         "background_gradient": "",
-        "text_color": "#0E1A2B"
+        "text_color": "#0e1a2b"
       }
     },
     "facondedormir_g9ci4P": {
