@@ -574,6 +574,7 @@
         "image_KXG77R": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_13_juil._2026_11_41_03.png",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
@@ -782,7 +783,7 @@
         "show_trustpilot": true,
         "trustpilot_url": "",
         "trust_score": 4.6,
-        "reviews_count": "34013",
+        "reviews_count": "3,413",
         "reviews_label": "avis sur",
         "bg_color": "#efeee9",
         "card_color": "#ffffff",
