@@ -406,6 +406,70 @@
         "spacing": "large"
       }
     },
+    "text_with_icons_MiVUBa": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_qzrdkg": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/Icons-12.webp",
+            "mobile_icon_width": 36,
+            "icon_width": 44,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Soulage le Cou et le Dos",
+            "content": "<p>Aide le cou à retrouver sa courbure naturelle et favorise un meilleur alignement.</p>"
+          }
+        },
+        "item_thL4L9": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/blue-08.webp",
+            "mobile_icon_width": 44,
+            "icon_width": 44,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Des Nuits plus Paisibles",
+            "content": "<p>Répartit la pression, détend les muscles et facilite l’endormissement.</p>"
+          }
+        },
+        "item_k4JUGa": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/neck_shoulder-27.webp",
+            "mobile_icon_width": 44,
+            "icon_width": 44,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Soulage les Épaules",
+            "content": "<p>Épouse les épaules sur le côté pour un maintien confortable.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_qzrdkg",
+        "item_thL4L9",
+        "item_k4JUGa"
+      ],
+      "name": "Text with icons",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "title": "",
+        "heading_tag": "h5",
+        "text_alignment": "center",
+        "icon_spacing": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "facondedormir_g9ci4P": {
       "type": "facondedormir",
       "blocks": {
@@ -640,6 +704,7 @@
     "avisclienttrust_LHtrM7",
     "scrolling_text_q6tUBg",
     "media_with_text_mr67Ki",
+    "text_with_icons_MiVUBa",
     "facondedormir_g9ci4P",
     "avisclientsdefilant_3Airrz",
     "faq_caH4tY",
