@@ -388,7 +388,6 @@
         "image_9qTRmV": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_13_juil._2026_14_24_31.png",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
@@ -587,7 +586,6 @@
         "image_KXG77R": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_13_juil._2026_11_41_03.png",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
@@ -688,7 +686,7 @@
         "subheading": "",
         "title": "Prendre soin de votre Oreiller",
         "content": "",
-        "background": "#F4F4F1",
+        "background": "#f4f4f1",
         "background_gradient": "",
         "text_color": "#0e1a2b"
       }
