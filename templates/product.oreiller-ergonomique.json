@@ -550,7 +550,8 @@
           "settings": {
             "icon": "side",
             "title": "Sur le côté",
-            "text": "<p>Posez votre tête sur les ailes de l'oreiller. Votre cou comble l'espace laissé par l'épaule et reste dans le prolongement de votre colonne vertébrale, pour que vos muscles puissent se détendre complètement.</p>"
+            "text": "<p>Posez votre tête sur les ailes de l'oreiller. Votre cou comble l'espace laissé par l'épaule et reste dans le prolongement de votre colonne vertébrale, pour que vos muscles puissent se détendre complètement.</p>",
+            "image": "shopify://shop_images/ChatGPT_Image_14_juil._2026_14_08_16.png"
           }
         },
         "position_PmeAfK": {
@@ -558,7 +559,8 @@
           "settings": {
             "icon": "back",
             "title": "Sur le dos",
-            "text": "<p>Posez votre tête dans l'encoche centrale. La forme cervicale épouse la courbe naturelle de votre nuque et maintient votre tête à la bonne hauteur, sans la pousser vers l'avant.</p>"
+            "text": "<p>Posez votre tête dans l'encoche centrale. La forme cervicale épouse la courbe naturelle de votre nuque et maintient votre tête à la bonne hauteur, sans la pousser vers l'avant.</p>",
+            "image": "shopify://shop_images/ChatGPT_Image_14_juil._2026_14_07_58_fc17bc5e-86d3-458d-a4a3-4d06a807a319.png"
           }
         }
       },
@@ -688,7 +690,7 @@
         "subheading": "",
         "title": "Prendre soin de votre Oreiller",
         "content": "",
-        "background": "#F4F4F1",
+        "background": "#f4f4f1",
         "background_gradient": "",
         "text_color": "#0e1a2b"
       }
