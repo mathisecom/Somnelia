@@ -1,0 +1,598 @@
+{% comment %}
+================================================================
+  SECTION — Comparateur "Nous face aux autres"
+  À placer dans : sections/comparateur-produit.liquid
+
+  ▸ 2 visuels côte à côte avec pastille "VS"
+  ▸ Lignes de comparaison en blocs : avantage (✓) à gauche,
+    inconvénient (✗) à droite — ajoutez/retirez/réordonnez
+  ▸ Tout est modifiable : images, textes, couleurs, tailles
+    de texte PC & mobile, arrondis, espacements
+  ▸ Responsive : 2 colonnes conservées sur mobile (comme
+    votre maquette), tailles réduites automatiquement
+
+  INSTALLATION :
+  1. Modifier le code > sections > Ajouter une nouvelle section
+  2. Nommer : comparateur-produit  (.liquid)
+  3. Coller tout ce fichier, enregistrer
+  4. Personnaliser > Ajouter une section > "Comparateur produit"
+================================================================
+{% endcomment %}
+
+{%- liquid
+  assign s = section.settings
+  assign uid = section.id
+-%}
+
+<style>
+  #comp-{{ uid }} {
+    background: {{ s.bg_color }};
+    padding: {{ s.padding_top }}px 0 {{ s.padding_bottom }}px;
+  }
+  #comp-{{ uid }} .comp-inner {
+    max-width: {{ s.max_width }}px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  #comp-{{ uid }} .comp-title {
+    margin: 0 0 {{ s.title_margin_bottom }}px;
+    text-align: center;
+    color: {{ s.title_color }};
+    font-size: {{ s.title_size }}px;
+    font-weight: {{ s.title_weight }};
+    line-height: 1.2;
+  }
+
+  /* ── Rangée des 2 visuels + pastille VS ── */
+  #comp-{{ uid }} .comp-visuals {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: {{ s.col_gap }}px;
+    margin-bottom: {{ s.col_gap }}px;
+  }
+  #comp-{{ uid }} .comp-visual {
+    position: relative;
+    border: 1px solid {{ s.card_border }};
+    border-radius: {{ s.radius }}px;
+    overflow: hidden;
+    background: {{ s.card_bg }};
+  }
+  #comp-{{ uid }} .comp-visual .media {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: {{ s.img_bg_left }};
+  }
+  #comp-{{ uid }} .comp-visual:last-child .media {
+    background: {{ s.img_bg_right }};
+  }
+  #comp-{{ uid }} .comp-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: {{ s.img_fit }};
+    display: block;
+  }
+  #comp-{{ uid }} .comp-vs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: {{ s.vs_size }}px;
+    height: {{ s.vs_size }}px;
+    border-radius: 50%;
+    background: {{ s.vs_bg }};
+    color: {{ s.vs_color }};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: {{ s.vs_size | divided_by: 3 }}px;
+    font-weight: 800;
+    text-transform: uppercase;
+    z-index: 2;
+    box-shadow: 0 4px 14px rgba(0,0,0,.18);
+  }
+
+  /* ── Lignes de comparaison ── */
+  #comp-{{ uid }} .comp-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: {{ s.col_gap }}px;
+    margin-bottom: {{ s.row_gap }}px;
+  }
+  #comp-{{ uid }} .comp-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: {{ s.card_bg }};
+    border: 1px solid {{ s.card_border }};
+    border-radius: {{ s.radius }}px;
+    padding: {{ s.cell_padding }}px 16px;
+    text-align: center;
+    font-size: {{ s.text_size }}px;
+    font-weight: {{ s.text_weight }};
+    line-height: 1.35;
+    color: {{ s.text_color }};
+  }
+  #comp-{{ uid }} .comp-ico {
+    flex: 0 0 auto;
+    width: {{ s.icon_size }}px;
+    height: {{ s.icon_size }}px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #comp-{{ uid }} .comp-ico svg {
+    width: 55%;
+    height: 55%;
+    display: block;
+  }
+  #comp-{{ uid }} .comp-ico.pro {
+    background: {{ s.check_bg }};
+  }
+  #comp-{{ uid }} .comp-ico.pro svg { stroke: {{ s.check_color }}; }
+  #comp-{{ uid }} .comp-ico.con {
+    background: {{ s.cross_bg }};
+    border: 1.5px solid {{ s.cross_color }};
+  }
+  #comp-{{ uid }} .comp-ico.con svg { stroke: {{ s.cross_color }}; }
+
+  /* ── Responsive mobile ── */
+  @media (max-width: 749px) {
+    #comp-{{ uid }} {
+      padding: {{ s.padding_top_mobile }}px 0 {{ s.padding_bottom_mobile }}px;
+    }
+    #comp-{{ uid }} .comp-inner { padding: 0 14px; }
+    #comp-{{ uid }} .comp-title {
+      font-size: {{ s.title_size_mobile }}px;
+      margin-bottom: {{ s.title_margin_bottom | times: 0.6 | round }}px;
+    }
+    #comp-{{ uid }} .comp-visuals,
+    #comp-{{ uid }} .comp-row {
+      gap: {{ s.col_gap_mobile }}px;
+    }
+    #comp-{{ uid }} .comp-row { margin-bottom: {{ s.row_gap_mobile }}px; }
+    #comp-{{ uid }} .comp-cell {
+      font-size: {{ s.text_size_mobile }}px;
+      padding: {{ s.cell_padding_mobile }}px 10px;
+      flex-direction: {{ s.icon_position_mobile }};
+    }
+    #comp-{{ uid }} .comp-ico {
+      width: {{ s.icon_size_mobile }}px;
+      height: {{ s.icon_size_mobile }}px;
+    }
+    #comp-{{ uid }} .comp-vs {
+      width: {{ s.vs_size_mobile }}px;
+      height: {{ s.vs_size_mobile }}px;
+      font-size: {{ s.vs_size_mobile | divided_by: 3 }}px;
+    }
+  }
+</style>
+
+<div id="comp-{{ uid }}">
+  <div class="comp-inner">
+
+    {% if s.title != blank %}
+      <h2 class="comp-title">{{ s.title }}</h2>
+    {% endif %}
+
+    <div class="comp-visuals">
+      <div class="comp-visual">
+        <div class="media">
+          {% if s.image_left != blank %}
+            {{ s.image_left | image_url: width: 900 | image_tag: loading: 'lazy', alt: s.image_left.alt | default: 'Notre produit' }}
+          {% endif %}
+        </div>
+      </div>
+      <span class="comp-vs">{{ s.vs_text }}</span>
+      <div class="comp-visual">
+        <div class="media">
+          {% if s.image_right != blank %}
+            {{ s.image_right | image_url: width: 900 | image_tag: loading: 'lazy', alt: s.image_right.alt | default: 'Les autres' }}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+    {% for block in section.blocks %}
+      <div class="comp-row" {{ block.shopify_attributes }}>
+        <div class="comp-cell">
+          <span class="comp-ico pro" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4.5 12.5L9.5 17.5L19.5 7"/>
+            </svg>
+          </span>
+          <span>{{ block.settings.avantage }}</span>
+        </div>
+        <div class="comp-cell">
+          <span class="comp-ico con" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2.6" stroke-linecap="round">
+              <path d="M7 7L17 17M17 7L7 17"/>
+            </svg>
+          </span>
+          <span>{{ block.settings.inconvenient }}</span>
+        </div>
+      </div>
+    {% endfor %}
+
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Comparateur produit",
+  "tag": "section",
+  "class": "section-comparateur",
+  "max_blocks": 10,
+  "settings": [
+    { "type": "header", "content": "Titre" },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titre",
+      "default": "O'CAOU face aux autres"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Couleur du titre",
+      "default": "#111111"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Taille titre PC",
+      "min": 18, "max": 56, "step": 1, "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "title_size_mobile",
+      "label": "Taille titre mobile",
+      "min": 16, "max": 36, "step": 1, "unit": "px",
+      "default": 23
+    },
+    {
+      "type": "select",
+      "id": "title_weight",
+      "label": "Épaisseur du titre",
+      "default": "700",
+      "options": [
+        { "value": "500", "label": "Medium" },
+        { "value": "600", "label": "Semi-bold" },
+        { "value": "700", "label": "Bold" },
+        { "value": "800", "label": "Extra-bold" }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "title_margin_bottom",
+      "label": "Marge sous le titre",
+      "min": 0, "max": 80, "step": 2, "unit": "px",
+      "default": 30
+    },
+    { "type": "header", "content": "Images" },
+    {
+      "type": "image_picker",
+      "id": "image_left",
+      "label": "Image gauche (votre produit)"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_right",
+      "label": "Image droite (les autres)"
+    },
+    {
+      "type": "select",
+      "id": "img_fit",
+      "label": "Cadrage des images",
+      "options": [
+        { "value": "cover", "label": "Remplir (recadre)" },
+        { "value": "contain", "label": "Contenir (image entière)" }
+      ],
+      "default": "cover"
+    },
+    {
+      "type": "color",
+      "id": "img_bg_left",
+      "label": "Fond image gauche",
+      "default": "#FAF5EC"
+    },
+    {
+      "type": "color",
+      "id": "img_bg_right",
+      "label": "Fond image droite",
+      "default": "#FFFFFF"
+    },
+    { "type": "header", "content": "Pastille VS" },
+    {
+      "type": "text",
+      "id": "vs_text",
+      "label": "Texte de la pastille",
+      "default": "VS"
+    },
+    {
+      "type": "color",
+      "id": "vs_bg",
+      "label": "Fond de la pastille",
+      "default": "#4A1259"
+    },
+    {
+      "type": "color",
+      "id": "vs_color",
+      "label": "Texte de la pastille",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "vs_size",
+      "label": "Taille pastille PC",
+      "min": 30, "max": 90, "step": 2, "unit": "px",
+      "default": 52
+    },
+    {
+      "type": "range",
+      "id": "vs_size_mobile",
+      "label": "Taille pastille mobile",
+      "min": 26, "max": 70, "step": 2, "unit": "px",
+      "default": 42
+    },
+    { "type": "header", "content": "Icônes ✓ / ✗" },
+    {
+      "type": "color",
+      "id": "check_bg",
+      "label": "Fond du rond ✓",
+      "default": "#4A1259"
+    },
+    {
+      "type": "color",
+      "id": "check_color",
+      "label": "Couleur du ✓",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "cross_bg",
+      "label": "Fond du rond ✗",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "cross_color",
+      "label": "Couleur du ✗",
+      "default": "#F08080"
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "label": "Taille des icônes PC",
+      "min": 16, "max": 40, "step": 1, "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "icon_size_mobile",
+      "label": "Taille des icônes mobile",
+      "min": 14, "max": 34, "step": 1, "unit": "px",
+      "default": 22
+    },
+    {
+      "type": "select",
+      "id": "icon_position_mobile",
+      "label": "Disposition mobile des cases",
+      "options": [
+        { "value": "row", "label": "Icône à côté du texte" },
+        { "value": "column", "label": "Icône au-dessus du texte" }
+      ],
+      "default": "row"
+    },
+    { "type": "header", "content": "Textes des cases" },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Couleur du texte",
+      "default": "#111111"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Taille texte PC",
+      "min": 11, "max": 24, "step": 1, "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "text_size_mobile",
+      "label": "Taille texte mobile",
+      "min": 10, "max": 20, "step": 1, "unit": "px",
+      "default": 13
+    },
+    {
+      "type": "select",
+      "id": "text_weight",
+      "label": "Épaisseur du texte",
+      "default": "500",
+      "options": [
+        { "value": "400", "label": "Normal" },
+        { "value": "500", "label": "Medium" },
+        { "value": "600", "label": "Semi-bold" },
+        { "value": "700", "label": "Bold" }
+      ]
+    },
+    { "type": "header", "content": "Cartes" },
+    {
+      "type": "color",
+      "id": "card_bg",
+      "label": "Fond des cases",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "card_border",
+      "label": "Bordure des cases",
+      "default": "#E8E4DD"
+    },
+    {
+      "type": "range",
+      "id": "radius",
+      "label": "Arrondi des cases",
+      "min": 0, "max": 30, "step": 1, "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "cell_padding",
+      "label": "Hauteur des cases PC",
+      "min": 8, "max": 40, "step": 1, "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "cell_padding_mobile",
+      "label": "Hauteur des cases mobile",
+      "min": 8, "max": 32, "step": 1, "unit": "px",
+      "default": 16
+    },
+    { "type": "header", "content": "Espacements" },
+    {
+      "type": "range",
+      "id": "max_width",
+      "label": "Largeur maximum",
+      "min": 600, "max": 1400, "step": 20, "unit": "px",
+      "default": 820
+    },
+    {
+      "type": "range",
+      "id": "col_gap",
+      "label": "Espace entre colonnes PC",
+      "min": 8, "max": 60, "step": 2, "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "col_gap_mobile",
+      "label": "Espace entre colonnes mobile",
+      "min": 6, "max": 30, "step": 2, "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "row_gap",
+      "label": "Espace entre lignes PC",
+      "min": 4, "max": 40, "step": 2, "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "row_gap_mobile",
+      "label": "Espace entre lignes mobile",
+      "min": 4, "max": 30, "step": 2, "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Fond de la section",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Espace au-dessus PC",
+      "min": 0, "max": 140, "step": 4, "unit": "px",
+      "default": 56
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Espace en dessous PC",
+      "min": 0, "max": 140, "step": 4, "unit": "px",
+      "default": 64
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Espace au-dessus mobile",
+      "min": 0, "max": 100, "step": 4, "unit": "px",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Espace en dessous mobile",
+      "min": 0, "max": 100, "step": 4, "unit": "px",
+      "default": 44
+    }
+  ],
+  "blocks": [
+    {
+      "type": "ligne",
+      "name": "Ligne de comparaison",
+      "settings": [
+        {
+          "type": "text",
+          "id": "avantage",
+          "label": "Avantage (colonne gauche ✓)",
+          "default": "Prêt en 10 secondes"
+        },
+        {
+          "type": "text",
+          "id": "inconvenient",
+          "label": "Inconvénient (colonne droite ✗)",
+          "default": "Long à installer"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Comparateur produit",
+      "blocks": [
+        {
+          "type": "ligne",
+          "settings": {
+            "avantage": "Prêt en 10 secondes",
+            "inconvenient": "Long à installer"
+          }
+        },
+        {
+          "type": "ligne",
+          "settings": {
+            "avantage": "Compact, tient dans un sac",
+            "inconvenient": "Encombrant, difficile à ranger"
+          }
+        },
+        {
+          "type": "ligne",
+          "settings": {
+            "avantage": "Épaule rembourrée (zéro douleur)",
+            "inconvenient": "Sangle qui comprime, vite inconfortable"
+          }
+        },
+        {
+          "type": "ligne",
+          "settings": {
+            "avantage": "Clic de sécurité mécanique",
+            "inconvenient": "Réglage technique, maintien moins fiable"
+          }
+        },
+        {
+          "type": "ligne",
+          "settings": {
+            "avantage": "Parfait pour monter / descendre",
+            "inconvenient": "Peu pratique en “transitions”"
+          }
+        },
+        {
+          "type": "ligne",
+          "settings": {
+            "avantage": "Léger et respirant",
+            "inconvenient": "Tient chaud, fait transpirer"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
