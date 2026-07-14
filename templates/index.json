@@ -291,6 +291,104 @@
         "spacing": "small"
       }
     },
+    "tabsvs_idh3TV": {
+      "type": "tabsvs",
+      "blocks": {
+        "ligne_UC9bHW": {
+          "type": "ligne",
+          "settings": {
+            "avantage": "Prêt en 10 secondes",
+            "inconvenient": "Long à installer"
+          }
+        },
+        "ligne_jzgXQ4": {
+          "type": "ligne",
+          "settings": {
+            "avantage": "Compact, tient dans un sac",
+            "inconvenient": "Encombrant, difficile à ranger"
+          }
+        },
+        "ligne_Cdph3M": {
+          "type": "ligne",
+          "settings": {
+            "avantage": "Épaule rembourrée (zéro douleur)",
+            "inconvenient": "Sangle qui comprime, vite inconfortable"
+          }
+        },
+        "ligne_KmLdVh": {
+          "type": "ligne",
+          "settings": {
+            "avantage": "Clic de sécurité mécanique",
+            "inconvenient": "Réglage technique, maintien moins fiable"
+          }
+        },
+        "ligne_a8Ajn6": {
+          "type": "ligne",
+          "settings": {
+            "avantage": "Parfait pour monter / descendre",
+            "inconvenient": "Peu pratique en “transitions”"
+          }
+        },
+        "ligne_xpixNe": {
+          "type": "ligne",
+          "settings": {
+            "avantage": "Léger et respirant",
+            "inconvenient": "Tient chaud, fait transpirer"
+          }
+        }
+      },
+      "block_order": [
+        "ligne_UC9bHW",
+        "ligne_jzgXQ4",
+        "ligne_Cdph3M",
+        "ligne_KmLdVh",
+        "ligne_a8Ajn6",
+        "ligne_xpixNe"
+      ],
+      "name": "Comparateur produit",
+      "settings": {
+        "title": "O'CAOU face aux autres",
+        "title_color": "#111111",
+        "title_size": 32,
+        "title_size_mobile": 23,
+        "title_weight": "700",
+        "title_margin_bottom": 30,
+        "img_fit": "cover",
+        "img_bg_left": "#FAF5EC",
+        "img_bg_right": "#FFFFFF",
+        "vs_text": "VS",
+        "vs_bg": "#0E1A2B",
+        "vs_color": "#FFFFFF",
+        "vs_size": 52,
+        "vs_size_mobile": 42,
+        "check_bg": "#0E1A2B",
+        "check_color": "#FFFFFF",
+        "cross_bg": "#FFFFFF",
+        "cross_color": "#F08080",
+        "icon_size": 24,
+        "icon_size_mobile": 22,
+        "icon_position_mobile": "row",
+        "text_color": "#111111",
+        "text_size": 15,
+        "text_size_mobile": 13,
+        "text_weight": "500",
+        "card_bg": "#FFFFFF",
+        "card_border": "#E8E4DD",
+        "radius": 12,
+        "cell_padding": 20,
+        "cell_padding_mobile": 16,
+        "max_width": 820,
+        "col_gap": 18,
+        "col_gap_mobile": 10,
+        "row_gap": 14,
+        "row_gap_mobile": 10,
+        "bg_color": "#F4F4F1",
+        "padding_top": 56,
+        "padding_bottom": 64,
+        "padding_top_mobile": 36,
+        "padding_bottom_mobile": 0
+      }
+    },
     "logoscroll_bPeDE4": {
       "type": "logoscroll",
       "blocks": {
@@ -348,9 +446,9 @@
         "card_width_desktop": 140,
         "card_width_mobile": 140,
         "heading_color": "#121212",
-        "layout_bg_color": "#F4F4F1",
+        "layout_bg_color": "#f4f4f1",
         "layout_border_color": "#121212",
-        "background_color": "#F4F4F1",
+        "background_color": "#f4f4f1",
         "border_color": "#121212",
         "margin_top": 0,
         "margin_bottom": 0,
@@ -538,6 +636,7 @@
     "featured_collection_aiLzYJ",
     "scrolling_text_9amhqk",
     "media_with_text_rqHq7h",
+    "tabsvs_idh3TV",
     "logoscroll_bPeDE4",
     "avisclientsdefilant_Np3ig7",
     "faq"
