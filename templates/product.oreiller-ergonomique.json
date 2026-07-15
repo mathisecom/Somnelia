@@ -583,6 +583,90 @@
         "button_text_color": "#ffffff"
       }
     },
+    "tabsvs_bcb6RP": {
+      "type": "tabsvs",
+      "blocks": {
+        "ligne_yd88XB": {
+          "type": "ligne",
+          "settings": {
+            "avantage": "Prêt en 10 secondes",
+            "inconvenient": "Long à installer"
+          }
+        },
+        "ligne_ByLNib": {
+          "type": "ligne",
+          "settings": {
+            "avantage": "Compact, tient dans un sac",
+            "inconvenient": "Encombrant, difficile à ranger"
+          }
+        },
+        "ligne_JXPwhR": {
+          "type": "ligne",
+          "settings": {
+            "avantage": "Épaule rembourrée (zéro douleur)",
+            "inconvenient": "Sangle qui comprime, vite inconfortable"
+          }
+        },
+        "ligne_tU7HN4": {
+          "type": "ligne",
+          "settings": {
+            "avantage": "Clic de sécurité mécanique",
+            "inconvenient": "Réglage technique, maintien moins fiable"
+          }
+        }
+      },
+      "block_order": [
+        "ligne_yd88XB",
+        "ligne_ByLNib",
+        "ligne_JXPwhR",
+        "ligne_tU7HN4"
+      ],
+      "name": "Comparateur produit",
+      "settings": {
+        "title": "O'CAOU face aux autres",
+        "title_color": "#0E1A2B",
+        "title_size": 32,
+        "title_size_mobile": 23,
+        "title_weight": "700",
+        "title_margin_bottom": 30,
+        "image_left": "shopify://shop_images/0E1A2B_10.png",
+        "image_right": "shopify://shop_images/gempages_537902831378629779-a607bb1a-c490-4bdb-8f17-ccdf3b1aac3e.avif",
+        "img_fit": "contain",
+        "img_bg_left": "#FAF5EC",
+        "img_bg_right": "#FFFFFF",
+        "vs_text": "VS",
+        "vs_bg": "#0E1A2B",
+        "vs_color": "#FFFFFF",
+        "vs_size": 52,
+        "vs_size_mobile": 42,
+        "check_bg": "#0E1A2B",
+        "check_color": "#FFFFFF",
+        "cross_bg": "#FFFFFF",
+        "cross_color": "#F08080",
+        "icon_size": 24,
+        "icon_size_mobile": 22,
+        "icon_position_mobile": "row",
+        "text_color": "#0E1A2B",
+        "text_size": 15,
+        "text_size_mobile": 13,
+        "text_weight": "500",
+        "card_bg": "#FFFFFF",
+        "card_border": "#E8E4DD",
+        "radius": 12,
+        "cell_padding": 20,
+        "cell_padding_mobile": 16,
+        "max_width": 820,
+        "col_gap": 18,
+        "col_gap_mobile": 10,
+        "row_gap": 14,
+        "row_gap_mobile": 10,
+        "bg_color": "#F4F4F1",
+        "padding_top": 56,
+        "padding_bottom": 64,
+        "padding_top_mobile": 8,
+        "padding_bottom_mobile": 20
+      }
+    },
     "media_with_text_mT9kKq": {
       "type": "media-with-text",
       "blocks": {
@@ -752,32 +836,32 @@
       "name": "Comparateur produit",
       "settings": {
         "title": "Somnelia Face aux Autres",
-        "title_color": "#0E1A2B",
+        "title_color": "#0e1a2b",
         "title_size": 32,
         "title_size_mobile": 25,
         "title_weight": "700",
         "title_margin_bottom": 30,
         "img_fit": "cover",
-        "img_bg_left": "#FAF5EC",
-        "img_bg_right": "#FFFFFF",
+        "img_bg_left": "#faf5ec",
+        "img_bg_right": "#ffffff",
         "vs_text": "VS",
-        "vs_bg": "#0E1A2B",
-        "vs_color": "#FFFFFF",
+        "vs_bg": "#0e1a2b",
+        "vs_color": "#ffffff",
         "vs_size": 52,
         "vs_size_mobile": 42,
-        "check_bg": "#0E1A2B",
-        "check_color": "#FFFFFF",
-        "cross_bg": "#FFFFFF",
-        "cross_color": "#F08080",
+        "check_bg": "#0e1a2b",
+        "check_color": "#ffffff",
+        "cross_bg": "#ffffff",
+        "cross_color": "#f08080",
         "icon_size": 24,
         "icon_size_mobile": 22,
         "icon_position_mobile": "row",
-        "text_color": "#0E1A2B",
+        "text_color": "#0e1a2b",
         "text_size": 15,
         "text_size_mobile": 13,
         "text_weight": "500",
-        "card_bg": "#FFFFFF",
-        "card_border": "#E8E4DD",
+        "card_bg": "#ffffff",
+        "card_border": "#e8e4dd",
         "radius": 12,
         "cell_padding": 20,
         "cell_padding_mobile": 16,
@@ -786,7 +870,7 @@
         "col_gap_mobile": 10,
         "row_gap": 14,
         "row_gap_mobile": 10,
-        "bg_color": "#F4F4F1",
+        "bg_color": "#f4f4f1",
         "padding_top": 56,
         "padding_bottom": 64,
         "padding_top_mobile": 12,
@@ -1099,6 +1183,7 @@
     "text_with_icons_MiVUBa",
     "multi_column_3y6c3w",
     "facondedormir_g9ci4P",
+    "tabsvs_bcb6RP",
     "media_with_text_mT9kKq",
     "multi_column_R7TytF",
     "tabsvs_TwECtp",
