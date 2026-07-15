@@ -598,6 +598,7 @@
         "image_KXG77R": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/gempages_537902831378629779-d384f88d-cbc6-48c4-958c-40f4668e1b05_1_1.jpg",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
