@@ -600,7 +600,27 @@
         "image_KXG77R": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_13_juil._2026_11_41_03.png",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Un maintien naturel, nuit après nuit",
+            "content": "<p>Dormez sur le côté sans tensions. Placé entre les genoux, ce coussin aligne vos jambes, votre bassin et votre colonne. </p><p>Sa mousse à mémoire de forme reste bien en place toute la nuit pour soulager le bas du dos et les hanches.</p>",
+            "link_text": "ACHETER MAINTENANT",
+            "link_url": "",
+            "background": "#0e1a2b",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#f4f4f1",
+            "button_text_color": "#0e1a2b"
+          }
+        },
+        "image_RPxWUC": {
+          "type": "image",
+          "settings": {
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
@@ -621,7 +641,8 @@
         }
       },
       "block_order": [
-        "image_KXG77R"
+        "image_KXG77R",
+        "image_RPxWUC"
       ],
       "name": "Media with text",
       "settings": {
@@ -745,7 +766,6 @@
         "image_FTqEgW",
         "image_GtJf8W"
       ],
-      "disabled": true,
       "name": "SS - Scrolling logo cloud #5",
       "settings": {
         "layout_radius": 30,
@@ -878,7 +898,6 @@
         "review_CaXVxG",
         "review_rqjYFE"
       ],
-      "disabled": true,
       "name": "Avis clients défilants",
       "settings": {
         "heading": "Que disent nos clients ?",

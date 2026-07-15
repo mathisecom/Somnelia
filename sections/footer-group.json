@@ -114,7 +114,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "title": "About",
+            "title": "Contactez-Nous",
             "content": "<p><strong>info.somnelia@gmail.com</strong></p>",
             "enable_follow_on_shop": true
           }
