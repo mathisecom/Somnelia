@@ -617,8 +617,22 @@
             "button_background": "#f4f4f1",
             "button_text_color": "#0e1a2b"
           }
-        },
-        "image_RPxWUC": {
+        }
+      },
+      "block_order": [
+        "image_KXG77R"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "alternate_media_position": false,
+        "spacing": "large"
+      }
+    },
+    "media_with_text_DLEJMf": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_DpVf96": {
           "type": "image",
           "settings": {
             "media_width": 50,
@@ -631,9 +645,9 @@
             "content": "<p>Dormez sur le côté sans tensions. Placé entre les genoux, ce coussin aligne vos jambes, votre bassin et votre colonne. </p><p>Sa mousse à mémoire de forme reste bien en place toute la nuit pour soulager le bas du dos et les hanches.</p>",
             "link_text": "ACHETER MAINTENANT",
             "link_url": "",
-            "background": "#0e1a2b",
+            "background": "#EFEEE9",
             "background_gradient": "",
-            "text_color": "#ffffff",
+            "text_color": "#0E1A2B",
             "text_gradient": "",
             "button_background": "#f4f4f1",
             "button_text_color": "#0e1a2b"
@@ -641,8 +655,7 @@
         }
       },
       "block_order": [
-        "image_KXG77R",
-        "image_RPxWUC"
+        "image_DpVf96"
       ],
       "name": "Media with text",
       "settings": {
@@ -1036,6 +1049,7 @@
     "multi_column_3y6c3w",
     "facondedormir_g9ci4P",
     "media_with_text_mT9kKq",
+    "media_with_text_DLEJMf",
     "multi_column_R7TytF",
     "logoscroll_MeUam9",
     "avisclientsdefilant_3Airrz",
