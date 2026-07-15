@@ -607,8 +607,8 @@
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
-            "title": "Un confort adapté à chaque position",
-            "content": "<p>Ses deux hauteurs et sa forme papillon soutiennent la tête, libèrent les épaules et réduisent les points de pression, que vous dormiez sur le dos, le côté ou le ventre.</p>",
+            "title": "Un maintien naturel, nuit après nuit",
+            "content": "<p>Dormez sur le côté sans tensions. Placé entre les genoux, ce coussin aligne vos jambes, votre bassin et votre colonne. </p><p>Sa mousse à mémoire de forme reste bien en place toute la nuit pour soulager le bas du dos et les hanches.</p>",
             "link_text": "ACHETER MAINTENANT",
             "link_url": "",
             "background": "#0e1a2b",
@@ -623,7 +623,6 @@
       "block_order": [
         "image_KXG77R"
       ],
-      "disabled": true,
       "name": "Media with text",
       "settings": {
         "full_width": false,
