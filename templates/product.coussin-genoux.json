@@ -376,7 +376,6 @@
     },
     "scrolling_text_q6tUBg": {
       "type": "scrolling-text",
-      "disabled": true,
       "name": "Scrolling text",
       "settings": {
         "full_width": true,
@@ -642,7 +641,7 @@
             "icon_width": 48,
             "subheading": "",
             "title": "Confort nocturne innovant",
-            "content": "<p>Dormez sur le côté sans tensions. Placé entre les genoux, ce coussin aligne vos jambes, votre bassin et votre colonne. </p><p>Sa mousse à mémoire de forme reste bien en place toute la nuit pour soulager le bas du dos et les hanches.</p>",
+            "content": "<p>Découvrez le coussin pour genoux en <strong>mousse à mémoire de forme. </strong></p><p>Sa forme ergonomique maintient vos jambes alignées, réduit les tensions et améliore votre confort toute la nuit.</p>",
             "link_text": "ACHETER MAINTENANT",
             "link_url": "",
             "background": "#EFEEE9",
