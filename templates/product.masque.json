@@ -41,7 +41,7 @@
         "kaching_bundles_app_block_FAXjWf": {
           "type": "shopify://apps/kaching-bundles/blocks/app-block/6c637362-a106-4a32-94ac-94dcfd68cdb8",
           "settings": {
-            "product": "oreiller-ergonomique",
+            "product": "masque-de-sommeil-3d",
             "manual_deal_block_id": ""
           }
         },
@@ -94,6 +94,7 @@
         },
         "collapsible_text_qweLRz": {
           "type": "collapsible_text",
+          "disabled": true,
           "settings": {
             "icon": "none",
             "icon_width": 20,
@@ -104,6 +105,7 @@
         },
         "collapsible_text_d4Q7iF": {
           "type": "collapsible_text",
+          "disabled": true,
           "settings": {
             "icon": "none",
             "icon_width": 20,
@@ -421,6 +423,7 @@
       "block_order": [
         "image_9qTRmV"
       ],
+      "disabled": true,
       "name": "Media with text",
       "settings": {
         "full_width": false,
@@ -479,6 +482,7 @@
         "item_thL4L9",
         "item_k4JUGa"
       ],
+      "disabled": true,
       "name": "Text with icons",
       "settings": {
         "full_width": true,
@@ -537,6 +541,7 @@
         "item_Gk7iDz",
         "item_jtCJ7F"
       ],
+      "disabled": true,
       "name": "Multi-column",
       "settings": {
         "full_width": true,
@@ -575,6 +580,7 @@
         "position_rQPXY3",
         "position_PmeAfK"
       ],
+      "disabled": true,
       "name": "Façon de dormir",
       "settings": {
         "heading": "Conçu pour votre Façon de Dormir",
@@ -619,6 +625,7 @@
       "block_order": [
         "image_KXG77R"
       ],
+      "disabled": true,
       "name": "Media with text",
       "settings": {
         "full_width": false,
@@ -688,6 +695,7 @@
         "item_KnF4WX",
         "item_mhcbdJ"
       ],
+      "disabled": true,
       "name": "Multi-column",
       "settings": {
         "full_width": true,
@@ -740,6 +748,7 @@
         "image_FTqEgW",
         "image_GtJf8W"
       ],
+      "disabled": true,
       "name": "SS - Scrolling logo cloud #5",
       "settings": {
         "layout_radius": 30,
@@ -872,6 +881,7 @@
         "review_CaXVxG",
         "review_rqjYFE"
       ],
+      "disabled": true,
       "name": "Avis clients défilants",
       "settings": {
         "heading": "Que disent nos clients ?",
@@ -952,6 +962,7 @@
         "item_78fJ8a",
         "item_K4Nhwg"
       ],
+      "disabled": true,
       "name": "FAQ",
       "settings": {
         "full_width": true,
