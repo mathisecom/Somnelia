@@ -497,19 +497,9 @@
         "review_xEjhbq": {
           "type": "review",
           "settings": {
-            "title": "Produits de grande qualité",
-            "comment": "J'ai acheté un oreiller et une couette. Je les utilise depuis longtemps et j'en suis très satisfait. La livraison a été rapide et la qualité des produits est excellente.",
-            "author": "Deniz",
-            "date": "Il y a 4 jours",
-            "review_url": ""
-          }
-        },
-        "review_ppjbdC": {
-          "type": "review",
-          "settings": {
-            "title": "Produits de grande qualité",
-            "comment": "J'ai acheté un oreiller et une couette. Je les utilise depuis longtemps et j'en suis très satisfait. La livraison a été rapide et la qualité des produits est excellente.",
-            "author": "Deniz",
+            "title": "Parfait pour dormir sur le dos",
+            "comment": "L’encoche centrale est très confortable et évite que ma tête soit poussée vers l’avant",
+            "author": "Marc L.",
             "date": "Il y a 4 jours",
             "review_url": ""
           }
@@ -520,8 +510,7 @@
         "review_ywnjeM",
         "review_3HxXkh",
         "review_WPFHAx",
-        "review_xEjhbq",
-        "review_ppjbdC"
+        "review_xEjhbq"
       ],
       "name": "Avis clients défilants",
       "settings": {
