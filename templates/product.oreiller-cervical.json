@@ -576,7 +576,8 @@
           "settings": {
             "icon": "back",
             "title": "Sur le dos",
-            "text": "<p>Posez votre tête dans l'encoche centrale. La forme cervicale épouse la courbe naturelle de votre nuque et maintient votre tête à la bonne hauteur, sans la pousser vers l'avant.</p>"
+            "text": "<p>Posez votre tête dans l'encoche centrale. La forme cervicale épouse la courbe naturelle de votre nuque et maintient votre tête à la bonne hauteur, sans la pousser vers l'avant.</p>",
+            "image": "shopify://shop_images/ChatGPT_Image_15_juil._2026_12_02_59.png"
           }
         }
       },
