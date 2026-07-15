@@ -931,6 +931,16 @@
             "date": "Il y a 4 jours",
             "review_url": ""
           }
+        },
+        "review_WMF6W8": {
+          "type": "review",
+          "settings": {
+            "title": "Adopté dès les premières nuits",
+            "comment": "Très bon soutien cervical, confortable et facile à entretenir grâce à sa housse amovible.",
+            "author": "Laura C.",
+            "date": "Il y a 4 jours",
+            "review_url": ""
+          }
         }
       },
       "block_order": [
@@ -939,7 +949,8 @@
         "review_NcA9iy",
         "review_madj4U",
         "review_DUxUnR",
-        "review_PMxWWr"
+        "review_PMxWWr",
+        "review_WMF6W8"
       ],
       "name": "Avis clients défilants",
       "settings": {
