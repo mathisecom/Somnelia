@@ -634,6 +634,7 @@
         "image_DpVf96": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Somnilys_Coussin_Orthopedique_jambes_hero_04_1404ce90-b3b8-4870-ad84-2ab3d95cb081_2.webp",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center text-center",
