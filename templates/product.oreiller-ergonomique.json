@@ -589,29 +589,29 @@
         "ligne_yd88XB": {
           "type": "ligne",
           "settings": {
-            "avantage": "Prêt en 10 secondes",
-            "inconvenient": "Long à installer"
+            "avantage": "Aligne la colonne pour un sommeil réparateur",
+            "inconvenient": "Nuque douloureuse et tensions"
           }
         },
         "ligne_ByLNib": {
           "type": "ligne",
           "settings": {
-            "avantage": "Compact, tient dans un sac",
-            "inconvenient": "Encombrant, difficile à ranger"
+            "avantage": "Réduit les douleurs dès les premières nuits",
+            "inconvenient": "Raideurs, inconfort et fatigue"
           }
         },
         "ligne_JXPwhR": {
           "type": "ligne",
           "settings": {
-            "avantage": "Épaule rembourrée (zéro douleur)",
-            "inconvenient": "Sangle qui comprime, vite inconfortable"
+            "avantage": "Respirant, hypoallergénique et doux",
+            "inconvenient": "Peu respirant et potentiellement irritant"
           }
         },
         "ligne_tU7HN4": {
           "type": "ligne",
           "settings": {
-            "avantage": "Clic de sécurité mécanique",
-            "inconvenient": "Réglage technique, maintien moins fiable"
+            "avantage": "Mémoire de forme adaptée à votre morphologie",
+            "inconvenient": "Rembourrage basique et inconfortable"
           }
         }
       },
