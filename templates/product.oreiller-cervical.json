@@ -615,6 +615,104 @@
         "spacing": "large"
       }
     },
+    "tabsvs_ADkEkA": {
+      "type": "tabsvs",
+      "blocks": {
+        "ligne_zaQVpp": {
+          "type": "ligne",
+          "settings": {
+            "avantage": "Prêt en 10 secondes",
+            "inconvenient": "Long à installer"
+          }
+        },
+        "ligne_azdRWn": {
+          "type": "ligne",
+          "settings": {
+            "avantage": "Compact, tient dans un sac",
+            "inconvenient": "Encombrant, difficile à ranger"
+          }
+        },
+        "ligne_rerQrj": {
+          "type": "ligne",
+          "settings": {
+            "avantage": "Épaule rembourrée (zéro douleur)",
+            "inconvenient": "Sangle qui comprime, vite inconfortable"
+          }
+        },
+        "ligne_PwjqtK": {
+          "type": "ligne",
+          "settings": {
+            "avantage": "Clic de sécurité mécanique",
+            "inconvenient": "Réglage technique, maintien moins fiable"
+          }
+        },
+        "ligne_Vfzchw": {
+          "type": "ligne",
+          "settings": {
+            "avantage": "Parfait pour monter / descendre",
+            "inconvenient": "Peu pratique en “transitions”"
+          }
+        },
+        "ligne_pAAQJN": {
+          "type": "ligne",
+          "settings": {
+            "avantage": "Léger et respirant",
+            "inconvenient": "Tient chaud, fait transpirer"
+          }
+        }
+      },
+      "block_order": [
+        "ligne_zaQVpp",
+        "ligne_azdRWn",
+        "ligne_rerQrj",
+        "ligne_PwjqtK",
+        "ligne_Vfzchw",
+        "ligne_pAAQJN"
+      ],
+      "name": "Comparateur produit",
+      "settings": {
+        "title": "Somnelia Face aux Autres",
+        "title_color": "#0E1A2B",
+        "title_size": 32,
+        "title_size_mobile": 24,
+        "title_weight": "700",
+        "title_margin_bottom": 30,
+        "img_fit": "cover",
+        "img_bg_left": "#FAF5EC",
+        "img_bg_right": "#FFFFFF",
+        "vs_text": "VS",
+        "vs_bg": "#0E1A2B",
+        "vs_color": "#FFFFFF",
+        "vs_size": 52,
+        "vs_size_mobile": 42,
+        "check_bg": "#0E1A2B",
+        "check_color": "#FFFFFF",
+        "cross_bg": "#FFFFFF",
+        "cross_color": "#F08080",
+        "icon_size": 24,
+        "icon_size_mobile": 22,
+        "icon_position_mobile": "row",
+        "text_color": "#0E1A2B",
+        "text_size": 15,
+        "text_size_mobile": 13,
+        "text_weight": "500",
+        "card_bg": "#FFFFFF",
+        "card_border": "#E8E4DD",
+        "radius": 12,
+        "cell_padding": 20,
+        "cell_padding_mobile": 16,
+        "max_width": 820,
+        "col_gap": 18,
+        "col_gap_mobile": 10,
+        "row_gap": 14,
+        "row_gap_mobile": 10,
+        "bg_color": "#F4F4F1",
+        "padding_top": 56,
+        "padding_bottom": 64,
+        "padding_top_mobile": 16,
+        "padding_bottom_mobile": 16
+      }
+    },
     "multi_column_R7TytF": {
       "type": "multi-column",
       "blocks": {
@@ -998,6 +1096,7 @@
     "multi_column_3y6c3w",
     "facondedormir_g9ci4P",
     "media_with_text_mT9kKq",
+    "tabsvs_ADkEkA",
     "multi_column_R7TytF",
     "logoscroll_MeUam9",
     "avisclientsdefilant_3Airrz",
