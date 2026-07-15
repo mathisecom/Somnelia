@@ -328,13 +328,6 @@
             "avantage": "Parfait pour monter / descendre",
             "inconvenient": "Peu pratique en “transitions”"
           }
-        },
-        "ligne_xpixNe": {
-          "type": "ligne",
-          "settings": {
-            "avantage": "Léger et respirant",
-            "inconvenient": "Tient chaud, fait transpirer"
-          }
         }
       },
       "block_order": [
@@ -342,8 +335,7 @@
         "ligne_jzgXQ4",
         "ligne_Cdph3M",
         "ligne_KmLdVh",
-        "ligne_a8Ajn6",
-        "ligne_xpixNe"
+        "ligne_a8Ajn6"
       ],
       "name": "Comparateur produit",
       "settings": {
