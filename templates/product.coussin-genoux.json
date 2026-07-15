@@ -183,28 +183,28 @@
         "image_qmhEn4": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Design_sans_titre_59.webp",
+            "image": "shopify://shop_images/0E1A2B_14.png",
             "url": ""
           }
         },
         "image_BhrAMA": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Design_sans_titre_60.webp",
+            "image": "shopify://shop_images/0E1A2B_13.png",
             "url": ""
           }
         },
         "image_QKJaDA": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Design_sans_titre_62.webp",
+            "image": "shopify://shop_images/0E1A2B_12.png",
             "url": ""
           }
         },
         "image_EjM6gV": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Design_sans_titre_61.webp",
+            "image": "shopify://shop_images/0E1A2B_11.png",
             "url": ""
           }
         }
@@ -634,7 +634,7 @@
           "type": "image",
           "settings": {
             "media_width": 50,
-            "media_position": "start",
+            "media_position": "end",
             "text_position": "place-self-center text-center",
             "icon": "none",
             "icon_width": 48,
