@@ -1,0 +1,384 @@
+{%- comment -%}
+  Section : Garantie 30 nuits (satisfait ou remboursé)
+  - Badge (image), titre, sous-titre, texte : tout est modifiable
+  - Couleurs, tailles de police, espacements réglables (PC & Mobile)
+  - Responsive : desktop / tablette / mobile
+{%- endcomment -%}
+
+{%- liquid
+  assign sid = section.id
+-%}
+
+<style>
+  #guarantee-{{ sid }} {
+    background: linear-gradient(180deg, {{ section.settings.bg_top }} 0%, {{ section.settings.bg_bottom }} 100%);
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+  #guarantee-{{ sid }} .g30-inner {
+    max-width: {{ section.settings.content_width }}px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+  #guarantee-{{ sid }} .g30-badge {
+    width: {{ section.settings.badge_size }}px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto {{ section.settings.badge_spacing }}px;
+    display: block;
+  }
+  #guarantee-{{ sid }} .g30-title {
+    color: {{ section.settings.title_color }};
+    font-size: {{ section.settings.title_size }}px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 24px;
+  }
+  #guarantee-{{ sid }} .g30-subtitle {
+    color: {{ section.settings.subtitle_color }};
+    font-size: {{ section.settings.subtitle_size }}px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0 0 20px;
+  }
+  #guarantee-{{ sid }} .g30-text {
+    color: {{ section.settings.text_color }};
+    font-size: {{ section.settings.text_size }}px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: {{ section.settings.text_width }}px;
+  }
+  #guarantee-{{ sid }} .g30-text strong,
+  #guarantee-{{ sid }} .g30-subtitle strong {
+    font-weight: 700;
+  }
+  #guarantee-{{ sid }} .g30-text a {
+    color: inherit;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  #guarantee-{{ sid }} .g30-text a:hover {
+    text-decoration: underline;
+  }
+
+  /* Tablette */
+  @media screen and (max-width: 989px) {
+    #guarantee-{{ sid }} .g30-title {
+      font-size: calc({{ section.settings.title_size }}px * 0.85);
+    }
+  }
+
+  /* Mobile */
+  @media screen and (max-width: 749px) {
+    #guarantee-{{ sid }} {
+      padding-top: {{ section.settings.padding_top_mobile }}px;
+      padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+    }
+    #guarantee-{{ sid }} .g30-badge {
+      width: {{ section.settings.badge_size_mobile }}px;
+    }
+    #guarantee-{{ sid }} .g30-title {
+      font-size: {{ section.settings.title_size_mobile }}px;
+      margin-bottom: 18px;
+    }
+    #guarantee-{{ sid }} .g30-subtitle {
+      font-size: {{ section.settings.subtitle_size_mobile }}px;
+    }
+    #guarantee-{{ sid }} .g30-text {
+      font-size: {{ section.settings.text_size_mobile }}px;
+    }
+  }
+</style>
+
+<div id="guarantee-{{ sid }}">
+  <div class="g30-inner">
+
+    {%- if section.settings.badge_image != blank -%}
+      <img
+        class="g30-badge"
+        src="{{ section.settings.badge_image | image_url: width: 600 }}"
+        srcset="{{ section.settings.badge_image | image_url: width: 300 }} 300w, {{ section.settings.badge_image | image_url: width: 600 }} 600w"
+        sizes="(max-width: 749px) {{ section.settings.badge_size_mobile }}px, {{ section.settings.badge_size }}px"
+        alt="{{ section.settings.badge_image.alt | default: section.settings.title | escape }}"
+        width="{{ section.settings.badge_size }}"
+        height="{{ section.settings.badge_size }}"
+        loading="lazy"
+      >
+    {%- else -%}
+      {%- comment -%} Badge de démonstration si aucune image n'est choisie {%- endcomment -%}
+      <svg class="g30-badge" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Satisfait ou remboursé – 30 nuits">
+        <circle cx="100" cy="100" r="98" fill="#ffffff"/>
+        <circle cx="100" cy="100" r="94" fill="none" stroke="#1e2a4a" stroke-width="4"/>
+        <circle cx="100" cy="100" r="80" fill="none" stroke="#1e2a4a" stroke-width="14"/>
+        <rect x="22" y="82" width="156" height="36" fill="#1e2a4a"/>
+        <text x="100" y="108" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="26" font-weight="800" letter-spacing="1">30 NUITS</text>
+        <path id="arcTop-{{ sid }}" d="M 40 100 A 60 60 0 0 1 160 100" fill="none"/>
+        <text font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#1e2a4a" letter-spacing="3">
+          <textPath href="#arcTop-{{ sid }}" startOffset="50%" text-anchor="middle">SATISFAIT</textPath>
+        </text>
+        <path id="arcBottom-{{ sid }}" d="M 30 100 A 70 70 0 0 0 170 100" fill="none"/>
+        <text font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#1e2a4a" letter-spacing="2">
+          <textPath href="#arcBottom-{{ sid }}" startOffset="50%" text-anchor="middle">OU REMBOURSÉ</textPath>
+        </text>
+      </svg>
+    {%- endif -%}
+
+    {%- if section.settings.title != blank -%}
+      <h2 class="g30-title">{{ section.settings.title }}</h2>
+    {%- endif -%}
+
+    {%- if section.settings.subtitle != blank -%}
+      <div class="g30-subtitle">{{ section.settings.subtitle }}</div>
+    {%- endif -%}
+
+    {%- if section.settings.text != blank -%}
+      <div class="g30-text">{{ section.settings.text }}</div>
+    {%- endif -%}
+
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Garantie 30 nuits",
+  "tag": "section",
+  "class": "section-garantie-30-nuits",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Badge"
+    },
+    {
+      "type": "image_picker",
+      "id": "badge_image",
+      "label": "Image du badge",
+      "info": "Si aucune image n'est choisie, un badge de démonstration s'affiche."
+    },
+    {
+      "type": "range",
+      "id": "badge_size",
+      "label": "Taille du badge (PC)",
+      "min": 80,
+      "max": 400,
+      "step": 10,
+      "unit": "px",
+      "default": 210
+    },
+    {
+      "type": "range",
+      "id": "badge_size_mobile",
+      "label": "Taille du badge (Mobile)",
+      "min": 60,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "default": 150
+    },
+    {
+      "type": "range",
+      "id": "badge_spacing",
+      "label": "Espace sous le badge",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Contenu"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titre",
+      "default": "Essayez l'oreiller Somnilys® sans risque pendant 30 nuits !"
+    },
+    {
+      "type": "richtext",
+      "id": "subtitle",
+      "label": "Sous-titre",
+      "default": "<p>Vous avez 30 nuits pour tomber amoureux de votre oreiller ergonomique cervical Somnilys® !</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Texte",
+      "default": "<p>Si ce n'est pas le cas, contactez notre équipe support à l'adresse <strong>info@somnilys.com</strong>, et nous vous guiderons pour lancer le processus de retour et obtenir un remboursement complet. Sans tracas, juste du confort garanti !</p>"
+    },
+    {
+      "type": "header",
+      "content": "Couleurs"
+    },
+    {
+      "type": "color",
+      "id": "bg_top",
+      "label": "Fond (haut)",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "bg_bottom",
+      "label": "Fond (bas)",
+      "default": "#D9E9F7"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Couleur du titre",
+      "default": "#1A1A1A"
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "label": "Couleur du sous-titre",
+      "default": "#1A1A1A"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Couleur du texte",
+      "default": "#3A3F4A"
+    },
+    {
+      "type": "header",
+      "content": "Typographie – PC"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Taille du titre (PC)",
+      "min": 20,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size",
+      "label": "Taille du sous-titre (PC)",
+      "min": 12,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 17
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Taille du texte (PC)",
+      "min": 12,
+      "max": 26,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Typographie – Mobile"
+    },
+    {
+      "type": "range",
+      "id": "title_size_mobile",
+      "label": "Taille du titre (Mobile)",
+      "min": 16,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size_mobile",
+      "label": "Taille du sous-titre (Mobile)",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "text_size_mobile",
+      "label": "Taille du texte (Mobile)",
+      "min": 12,
+      "max": 22,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "header",
+      "content": "Mise en page"
+    },
+    {
+      "type": "range",
+      "id": "content_width",
+      "label": "Largeur maximale du contenu",
+      "min": 500,
+      "max": 1200,
+      "step": 20,
+      "unit": "px",
+      "default": 760
+    },
+    {
+      "type": "range",
+      "id": "text_width",
+      "label": "Largeur maximale du texte",
+      "min": 400,
+      "max": 1000,
+      "step": 20,
+      "unit": "px",
+      "default": 680
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Espacement haut (PC)",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Espacement bas (PC)",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "unit": "px",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Espacement haut (Mobile)",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Espacement bas (Mobile)",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    }
+  ],
+  "presets": [
+    {
+      "name": "Garantie 30 nuits"
+    }
+  ]
+}
+{% endschema %}
