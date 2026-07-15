@@ -457,9 +457,9 @@
         "review_aHjw3n": {
           "type": "review",
           "settings": {
-            "title": "Produits de grande qualité",
-            "comment": "J'ai acheté un oreiller et une couette. Je les utilise depuis longtemps et j'en suis très satisfait. La livraison a été rapide et la qualité des produits est excellente.",
-            "author": "Deniz",
+            "title": "Enfin des nuits plus confortables",
+            "comment": "L’oreiller maintient bien ma nuque sans être trop ferme. Je me réveille avec beaucoup moins de raideurs.",
+            "author": "Sophie M.",
             "date": "Il y a 4 jours",
             "review_url": ""
           }
@@ -513,26 +513,6 @@
             "date": "Il y a 4 jours",
             "review_url": ""
           }
-        },
-        "review_yHkW6N": {
-          "type": "review",
-          "settings": {
-            "title": "Produits de grande qualité",
-            "comment": "J'ai acheté un oreiller et une couette. Je les utilise depuis longtemps et j'en suis très satisfait. La livraison a été rapide et la qualité des produits est excellente.",
-            "author": "Deniz",
-            "date": "Il y a 4 jours",
-            "review_url": ""
-          }
-        },
-        "review_qBm9QK": {
-          "type": "review",
-          "settings": {
-            "title": "Produits de grande qualité",
-            "comment": "J'ai acheté un oreiller et une couette. Je les utilise depuis longtemps et j'en suis très satisfait. La livraison a été rapide et la qualité des produits est excellente.",
-            "author": "Deniz",
-            "date": "Il y a 4 jours",
-            "review_url": ""
-          }
         }
       },
       "block_order": [
@@ -541,9 +521,7 @@
         "review_3HxXkh",
         "review_WPFHAx",
         "review_xEjhbq",
-        "review_ppjbdC",
-        "review_yHkW6N",
-        "review_qBm9QK"
+        "review_ppjbdC"
       ],
       "name": "Avis clients défilants",
       "settings": {
