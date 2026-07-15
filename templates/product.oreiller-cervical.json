@@ -402,6 +402,7 @@
         "image_9qTRmV": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/gempages_537902831378629779-a9ee2599-2e0b-4e33-9d16-91e2aea1b237_1.webp",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
@@ -409,7 +410,7 @@
             "custom_icon": "shopify://shop_images/Design_sans_titre_65.png",
             "icon_width": 88,
             "subheading": "",
-            "title": "Un bon sommeil commence par une bonne posture",
+            "title": "Ressentez un soulagement durable des douleurs et des tensions cervicales.",
             "content": "<p>Un oreiller mal adapté peut désaligner votre nuque et provoquer des tensions au réveil. L’oreiller <strong>Somnelia</strong> aide à aligner naturellement la tête, le cou et la colonne pendant le sommeil. </p><p><strong>Moins de douleurs, meilleure posture, réveils plus légers.</strong></p>",
             "link_text": "ACHETER MAINTENANT",
             "link_url": "",
