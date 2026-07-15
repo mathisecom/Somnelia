@@ -645,29 +645,13 @@
             "avantage": "Clic de sécurité mécanique",
             "inconvenient": "Réglage technique, maintien moins fiable"
           }
-        },
-        "ligne_Vfzchw": {
-          "type": "ligne",
-          "settings": {
-            "avantage": "Parfait pour monter / descendre",
-            "inconvenient": "Peu pratique en “transitions”"
-          }
-        },
-        "ligne_pAAQJN": {
-          "type": "ligne",
-          "settings": {
-            "avantage": "Léger et respirant",
-            "inconvenient": "Tient chaud, fait transpirer"
-          }
         }
       },
       "block_order": [
         "ligne_zaQVpp",
         "ligne_azdRWn",
         "ligne_rerQrj",
-        "ligne_PwjqtK",
-        "ligne_Vfzchw",
-        "ligne_pAAQJN"
+        "ligne_PwjqtK"
       ],
       "name": "Comparateur produit",
       "settings": {
@@ -677,7 +661,9 @@
         "title_size_mobile": 24,
         "title_weight": "700",
         "title_margin_bottom": 30,
-        "img_fit": "cover",
+        "image_left": "shopify://shop_images/Kaching-Bundles-_0E1A2B_2.png",
+        "image_right": "shopify://shop_images/gempages_537902831378629779-a607bb1a-c490-4bdb-8f17-ccdf3b1aac3e.avif",
+        "img_fit": "contain",
         "img_bg_left": "#FAF5EC",
         "img_bg_right": "#FFFFFF",
         "vs_text": "VS",
