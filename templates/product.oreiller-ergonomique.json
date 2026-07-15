@@ -503,6 +503,7 @@
         "item_dfGBA8": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_15_juil._2026_11_55_32_2.png",
             "column_size": "3",
             "title": "Maintient votre cou et épouse votre épaule naturellement.",
             "heading_tag": "h4",
@@ -515,6 +516,7 @@
         "item_Gk7iDz": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_15_juil._2026_11_55_31_1.png",
             "column_size": "3",
             "title": "Mousse mémoire premium, nuit après nuit.",
             "heading_tag": "h4",
@@ -527,6 +529,7 @@
         "item_jtCJ7F": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_15_juil._2026_11_55_32_3.png",
             "column_size": "3",
             "title": "Une housse respirante qui reste fraîche toute la nuit.",
             "heading_tag": "h4",
