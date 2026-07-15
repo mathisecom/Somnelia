@@ -30,6 +30,7 @@
         },
         "customer-support": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "picto-customer-support",
             "custom_icon": "shopify://shop_images/icon-w-t16-img2.png",
@@ -84,7 +85,7 @@
         "heading_tag": "h6",
         "text_alignment": "center",
         "icon_spacing": "small",
-        "background": "#F3EDDD",
+        "background": "#f3eddd",
         "background_gradient": "",
         "text_color": ""
       }
@@ -95,7 +96,8 @@
         "newsletter": {
           "type": "newsletter",
           "settings": {
-            "image_width": 150,
+            "image": "shopify://shop_images/Lenova_6_1.png",
+            "image_width": 160,
             "heading_size": "h4",
             "title": "Newsletter",
             "content": ""
@@ -113,7 +115,7 @@
           "type": "text",
           "settings": {
             "title": "About",
-            "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme editor.</p>",
+            "content": "<p><strong>info.somnelia@gmail.com</strong></p>",
             "enable_follow_on_shop": true
           }
         }
