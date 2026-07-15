@@ -601,6 +601,7 @@
         "image_KXG77R": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_10_juin_2026_21_06_28.webp",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
