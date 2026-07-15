@@ -1,0 +1,1009 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "liquid_DLzTkt": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n  /* Supprime l'espace du thème autour de ce bloc précis */\n  [data-block-id=\"liquid_7WeHTt\"],\n  [data-block-id=\"liquid_7WeHTt\"] .product-info__liquid {\n    margin: 0 !important;\n    padding: 0 !important;\n  }\n\n  #trustscore-container {\n    display: flex;\n    align-items: center;\n    font-family: inherit;\n    font-size: 14px;\n    color: #333;\n    max-width: 100%;\n    line-height: 1;\n    margin: 0;          /* margin-top: 4px supprimé */\n    padding: 0;\n  }\n  #trustscore-stars {\n    display: flex;\n    align-items: center;\n    margin-right: 8px;\n  }\n  #trustscore-stars img {\n    max-width: 80px;\n    width: 80px;\n    height: auto;\n    display: block;\n  }\n  #trustscore-text {\n    font-weight: 400;\n    white-space: nowrap;\n  }\n  #trustscore-text .highlight {\n    font-weight: 700;\n  }\n</style>\n<div id=\"trustscore-container\">\n  <div id=\"trustscore-stars\">\n    <img src=\"https://i.imgur.com/EHjNmTM.png\" alt=\"5 stars\">\n  </div>\n  <div id=\"trustscore-text\">\n    Trustscore <span class=\"highlight\">4,6</span> | +3,000 avis clients\n  </div>\n</div>"
+          }
+        },
+        "liquid_cyc6dk": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<!-- ================================================================\n  Bloc \"Titre + sous-titre produit\"\n  100% autonome : à coller dans la description produit\n  (éditeur Shopify > fiche produit > afficher le HTML </>)\n  ou dans un bloc \"HTML personnalisé\" / \"Liquid\" de la fiche produit.\n================================================================= -->\n<style>\n  .ptitle {\n    margin: 0;\n    padding: 0;\n    color: #1d2153;\n    font-family: inherit;\n  }\n  .ptitle__heading {\n    margin: 0 0 6px;\n    font-size: 32px;\n    font-weight: 700;\n    line-height: 1.15;\n  }\n  .ptitle__subtitle {\n    margin: 0;\n    font-size: 15px;\n    font-weight: 500;\n    line-height: 1.4;\n  }\n  @media (max-width: 640px) {\n    .ptitle__heading { font-size: 26px; }\n    .ptitle__subtitle { font-size: 14px; }\n  }\n</style>\n\n<div class=\"ptitle\">\n  <h1 class=\"ptitle__heading\">Oreiller Cervical Somnelia</h1>\n  <p class=\"ptitle__subtitle\">Le secret du dormeur latéral et dorsal</p>\n</div>"
+          }
+        },
+        "liquid_GaGCCD": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"product-info__block-item\" data-block-id=\"liquid_UFHp6A\" data-block-type=\"liquid\"><div class=\"product-info__liquid\">\n              <div class=\"product-info__block-item\" data-block-id=\"liquid_gx7Xka\" data-block-type=\"liquid\"><div class=\"product-info__liquid\">\n              <style>\n  .dod-firmness-meter {\n    width: 100%;\n    max-width: 420px;\n    margin: 12px 0 16px;\n    font-family: inherit;\n\n    /* Modifications rapides */\n    --bar-bg: #eef8f2;\n    --active-bg: #b8e4cc;\n    --text-muted: #a5a3b8;\n    --text-active: #007a4d;\n    --radius: 999px;\n  }\n\n  .dod-firmness-meter__bar {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    background: var(--bar-bg);\n    border-radius: var(--radius);\n    overflow: hidden;\n    height: 34px;\n  }\n\n  .dod-firmness-meter__item {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-size: 11px;\n    font-weight: 700;\n    letter-spacing: 0.04em;\n    text-transform: uppercase;\n    color: #b8c9bf;\n  }\n\n  .dod-firmness-meter__item.is-active {\n    background: var(--active-bg);\n    color: var(--text-active);\n  }\n\n  .dod-firmness-meter__labels {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    margin-top: 7px;\n    text-align: center;\n  }\n\n  .dod-firmness-meter__label {\n    font-size: 12px;\n    line-height: 1.2;\n    color: var(--text-muted);\n  }\n\n  .dod-firmness-meter__label.is-active {\n    color: var(--text-active);\n    font-weight: 600;\n  }\n\n  @media screen and (max-width: 749px) {\n    .dod-firmness-meter {\n      max-width: 100%;\n      margin: 10px 0 14px;\n    }\n\n    .dod-firmness-meter__bar {\n      height: 32px;\n    }\n\n    .dod-firmness-meter__item {\n      font-size: 10px;\n    }\n\n    .dod-firmness-meter__label {\n      font-size: 11px;\n    }\n  }\n</style>\n\n<div class=\"dod-firmness-meter\">\n  <div class=\"dod-firmness-meter__bar\">\n    <div class=\"dod-firmness-meter__item\">\n      Moelleux\n    </div>\n\n    <div class=\"dod-firmness-meter__item is-active\">\n      Équilibré\n    </div>\n\n    <div class=\"dod-firmness-meter__item\">\n      Ferme\n    </div>\n  </div>\n\n  <div class=\"dod-firmness-meter__labels\">\n    <div class=\"dod-firmness-meter__label\">\n      Confort doux\n    </div>\n\n    <div class=\"dod-firmness-meter__label is-active\">\n      Soutien équilibré\n    </div>\n\n    <div class=\"dod-firmness-meter__label\">\n      Soutien ferme\n    </div>\n  </div>\n</div>\n            </div></div>\n            </div></div>"
+          }
+        },
+        "liquid_Vmj9e9": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<!-- ================================================================\n  Bloc \"Bénéfices produit\" — 2 colonnes PC / 1 colonne mobile\n  100% autonome : à coller tel quel dans la description produit\n  (éditeur Shopify > fiche produit > afficher le HTML </>)\n  ou dans un bloc \"HTML personnalisé\" / \"Liquid\" de la fiche produit.\n================================================================= -->\n<style>\n  .pbenef {\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    gap: 16px 32px;\n    margin: 16px 0;\n    font-family: inherit;\n    color: #1d2153;\n  }\n  .pbenef__item {\n    display: flex;\n    align-items: flex-start;\n    gap: 12px;\n  }\n  .pbenef__icon {\n    flex: 0 0 24px;\n    width: 24px;\n    height: 24px;\n    color: #1d2153;\n  }\n  .pbenef__icon svg { width: 100%; height: 100%; display: block; }\n  .pbenef__text {\n    margin: 0;\n    font-size: 13px;\n    line-height: 1.4;\n  }\n  .pbenef__text strong { font-weight: 700; }\n  @media (max-width: 640px) {\n    .pbenef { grid-template-columns: 1fr; gap: 14px; }\n  }\n</style>\n<div class=\"pbenef\">\n  <!-- Bénéfice 1 : nuque alignée / réveil sans tensions\n       Icône : personne allongée de profil, tête posée à niveau -->\n  <div class=\"pbenef__item\">\n    <span class=\"pbenef__icon\" aria-hidden=\"true\">\n      <svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n        <circle cx=\"5.5\" cy=\"9.5\" r=\"2.3\" stroke=\"currentColor\" stroke-width=\"1.8\"/>\n        <path d=\"M8.5 10.5H20\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n        <path d=\"M3 15.5H21\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n        <path d=\"M6 15.5V18.5M18 15.5V18.5\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n      </svg>\n    </span>\n    <p class=\"pbenef__text\"><strong>Nuque et cervicales à niveau</strong> - réveillez-vous sans raideurs</p>\n  </div>\n  <!-- Bénéfice 2 : toutes positions de sommeil\n       Icône : flèches de rotation autour d'un point (changement de position) -->\n  <div class=\"pbenef__item\">\n    <span class=\"pbenef__icon\" aria-hidden=\"true\">\n      <svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n        <path d=\"M19.5 12A7.5 7.5 0 1 1 12 4.5\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n        <path d=\"M12 2L15 4.5L12 7\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n        <circle cx=\"12\" cy=\"12\" r=\"1.6\" fill=\"currentColor\"/>\n      </svg>\n    </span>\n    <p class=\"pbenef__text\"><strong>Pensé pour chaque position</strong> - il vous suit quand vous bougez</p>\n  </div>\n  <!-- Bénéfice 3 : mousse qui reprend sa forme\n       Icône : coussin avec flèche de rebond vers le haut -->\n  <div class=\"pbenef__item\">\n    <span class=\"pbenef__icon\" aria-hidden=\"true\">\n      <svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n        <rect x=\"3.5\" y=\"13\" width=\"17\" height=\"7\" rx=\"2.5\" stroke=\"currentColor\" stroke-width=\"1.8\"/>\n        <path d=\"M12 10.5V3.5\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n        <path d=\"M8.8 6.5L12 3.2L15.2 6.5\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n      </svg>\n    </span>\n    <p class=\"pbenef__text\"><strong>Une mousse qui ne s'affaisse pas</strong> - même confort nuit après nuit</p>\n  </div>\n  <!-- Bénéfice 4 : place pour les bras / circulation\n       Icône : coussin avec flèches d'espace vers l'extérieur -->\n  <div class=\"pbenef__item\">\n    <span class=\"pbenef__icon\" aria-hidden=\"true\">\n      <svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n        <rect x=\"7\" y=\"8.5\" width=\"10\" height=\"7\" rx=\"3\" stroke=\"currentColor\" stroke-width=\"1.8\"/>\n        <path d=\"M4.5 12H1.8M1.8 12L3.6 10.2M1.8 12L3.6 13.8\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n        <path d=\"M19.5 12H22.2M22.2 12L20.4 10.2M22.2 12L20.4 13.8\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n      </svg>\n    </span>\n    <p class=\"pbenef__text\"><strong>De l'espace pour vos bras</strong> - circulation libre, zéro fourmillements</p>\n  </div>\n</div>"
+          }
+        },
+        "kaching_bundles_app_block_FAXjWf": {
+          "type": "shopify://apps/kaching-bundles/blocks/app-block/6c637362-a106-4a32-94ac-94dcfd68cdb8",
+          "settings": {
+            "product": "oreiller-ergonomique",
+            "manual_deal_block_id": ""
+          }
+        },
+        "liquid_YKTpmN": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<!-- ================================================================\n  Bloc \"Forte demande / Stocks limités\" — indicateur d'urgence\n  100% autonome : à coller dans la description produit\n  (éditeur Shopify > fiche produit > afficher le HTML </>)\n  ou dans un bloc \"HTML personnalisé\" / \"Liquid\" de la fiche produit.\n================================================================= -->\n<style>\n  .pstock {\n    display: inline-flex;\n    align-items: center;\n    gap: 10px;\n    margin: 0;\n    padding: 0;\n    font-family: inherit;\n  }\n  /* Point qui pulse */\n  .pstock__dot {\n    position: relative;\n    flex: 0 0 12px;\n    width: 12px;\n    height: 12px;\n    border-radius: 50%;\n    border: 2px solid #ff4d1f;\n  }\n  .pstock__dot::after {\n    content: \"\";\n    position: absolute;\n    inset: 2px;\n    border-radius: 50%;\n    background: #ff4d1f;\n    animation: pstock-pulse 1.4s ease-in-out infinite;\n  }\n  @keyframes pstock-pulse {\n    0%, 100% { opacity: 1; transform: scale(1); }\n    50%      { opacity: .45; transform: scale(.75); }\n  }\n  @media (prefers-reduced-motion: reduce) {\n    .pstock__dot::after { animation: none; }\n  }\n  .pstock__label {\n    font-size: 15px;\n    color: #ff4d1f;\n  }\n  .pstock__badge {\n    background: #ffe3da;\n    color: #ff4d1f;\n    font-size: 12px;\n    font-weight: 700;\n    letter-spacing: 0.05em;\n    text-transform: uppercase;\n    padding: 5px 10px;\n    border-radius: 6px;\n    white-space: nowrap;\n  }\n</style>\n\n<div class=\"pstock\">\n  <span class=\"pstock__dot\" aria-hidden=\"true\"></span>\n  <span class=\"pstock__label\">Forte demande</span>\n  <span class=\"pstock__badge\">Stocks limités</span>\n</div>"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "liquid_fbG4pk": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<div class=\"product-info__block-item\" data-block-id=\"liquid_VhFpiH\" data-block-type=\"liquid\"><div class=\"product-info__liquid\">\n              <div class=\"product-info__block-item\" data-block-id=\"liquid_UpM4EP\" data-block-type=\"liquid\"><div class=\"product-info__liquid\">\n              <div class=\"product-info__liquid\">\n  <style>\n    .custom-shipping-container {\n      display: flex;\n      padding: 6px 16px;\n      justify-content: space-between;\n      align-items: center;\n      align-self: stretch;\n      background-color: #f6f6f6;\n      border-radius: 20px;\n      gap: 10px;\n      width: 100%;\n    }\n\n    .custom-shipping-item {\n      display: flex;\n      align-items: center;\n      gap: 6px;\n      white-space: nowrap;\n    }\n\n    .text-block-shipping {\n      font-size: 12px;\n      color: #000;\n      line-height: 1.2;\n    }\n\n    .shipping-date {\n      font-weight: 700;\n    }\n\n    .free-shipping {\n      font-weight: 700;\n    }\n\n    .green-circle {\n      animation: fade 1s ease-in-out infinite;\n      flex-shrink: 0;\n    }\n\n    .custom-truck-icon {\n      width: 15px;\n      height: 15px;\n      flex-shrink: 0;\n    }\n\n    @keyframes fade {\n      0%, 100% { opacity: 1; }\n      50% { opacity: 0.5; }\n    }\n\n    @media screen and (max-width: 749px) {\n      .custom-shipping-container {\n        padding: 7px 12px;\n        gap: 8px;\n      }\n\n      .text-block-shipping {\n        font-size: 11px;\n      }\n\n      .custom-shipping-item {\n        gap: 5px;\n      }\n    }\n  </style>\n\n  <script>\n    document.addEventListener(\"DOMContentLoaded\", function() {\n      var daysAfterToday = 1; // Modifier ici : 1 = demain, 2 = après-demain, etc.\n      var today = new Date();\n      var shipDate = new Date(today);\n      shipDate.setDate(today.getDate() + daysAfterToday);\n\n      var options = {\n        weekday: 'short',\n        day: 'numeric',\n        month: 'long'\n      };\n\n      var formattedDate = shipDate.toLocaleDateString('fr-FR', options);\n\n      var shippingDateElement = document.getElementById('shipping-date');\n      if (shippingDateElement) {\n        shippingDateElement.textContent = formattedDate;\n      }\n    });\n  </script>\n\n  <div class=\"custom-shipping-container\">\n    <div class=\"custom-shipping-item\">\n      <svg class=\"green-circle\" width=\"12\" height=\"13\" viewBox=\"0 0 12 13\" fill=\"none\" aria-hidden=\"true\">\n        <circle cx=\"6\" cy=\"6.5\" r=\"6\" fill=\"#137333\"></circle>\n      </svg>\n\n      <div class=\"text-block-shipping\">\n        Expédié le <span id=\"shipping-date\" class=\"shipping-date\">dim. 12 juillet</span>\n      </div>\n    </div>\n\n    <div class=\"custom-shipping-item\">\n      <svg class=\"custom-truck-icon\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\">\n        <path d=\"M3 7h11v10H3V7Z\" stroke=\"#000\" stroke-width=\"1.8\" stroke-linejoin=\"round\"></path>\n        <path d=\"M14 10h4l3 3v4h-7v-7Z\" stroke=\"#000\" stroke-width=\"1.8\" stroke-linejoin=\"round\"></path>\n        <circle cx=\"7\" cy=\"18\" r=\"2\" stroke=\"#000\" stroke-width=\"1.8\"></circle>\n        <circle cx=\"17\" cy=\"18\" r=\"2\" stroke=\"#000\" stroke-width=\"1.8\"></circle>\n      </svg>\n\n      <div class=\"text-block-shipping\">\n        <span class=\"free-shipping\">Livraison Offerte</span> en France\n      </div>\n    </div>\n  </div>\n</div>\n            </div></div>\n            </div></div>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": false,
+            "atc_button_background": "#0e1a2b",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "liquid_cJciKj": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"product-info__block-item\" data-block-id=\"liquid_XJBFXM\" data-block-type=\"liquid\"><div class=\"product-info__liquid\">\n              <div class=\"product-info__liquid\">\n              <div class=\"product-info__block-item\" data-block-id=\"liquid_kNi8Pb\" data-block-type=\"liquid\"><div class=\"product-info__liquid\">\n              <div class=\"product-payment-icons\">\n  \n    <svg xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" viewBox=\"0 0 38 24\" width=\"38\" height=\"24\" fill=\"none\" aria-labelledby=\"pi-american_express\"><title id=\"pi-american_express\">American Express</title><rect x=\".5\" y=\".5\" width=\"37\" height=\"23\" rx=\"2.5\" stroke=\"#000\" stroke-opacity=\".07\" fill=\"none\"></rect><path d=\"M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z\" fill=\"#0071CE\" style=\"fill:#0071CE;fill:color(display-p3 0.0000 0.4431 0.8078);fill-opacity:1;\"></path><path d=\"M3 0.5H35C36.3348 0.5 37.5 1.58692 37.5 3V21C37.5 22.4239 36.4239 23.5 35 23.5H3C1.66524 23.5 0.5 22.4131 0.5 21V3C0.5 1.57614 1.57614 0.5 3 0.5Z\" stroke=\"black\" stroke-opacity=\"0.07\" style=\"stroke:black;stroke-opacity:0.07;\"></path><path d=\"M25.8662 6.33203V3H31L31.8662 5.5332L32.7334 3H37V14.2002H36.7998L34.8672 16.2656L36.7998 18.3594H37V21.2666H33.5996L31.9336 19.3994L30.2002 21.2666H19.4668V12.666H16L20.2666 3H24.4004L25.8662 6.33203ZM20.5996 20.2656H27V18.5322H22.666V17.3994H26.8662V15.666H22.666V14.5322H27V12.7988H20.5996V20.2656ZM30.5332 16.5322L27 20.2656H29.5996L31.8662 17.8662L34.0664 20.2656H36.7324L33.1992 16.4658L36.7324 12.7988H34.1328L31.8662 15.1992L29.7324 12.7988H27L30.5332 16.5322ZM17.666 11.7324H19.9326L20.5332 10.1992H23.999L24.666 11.7324H26.999L23.666 4.19922H20.999L17.666 11.7324ZM33.5996 4.19922L31.9326 8.86621L30.1992 4.19922H27V11.666H29.0664V6.39941L31 11.666H32.7998L34.7324 6.39941V11.666H36.7324V4.13281L33.5996 4.19922ZM23.2656 8.46582H21.2656L22.2656 5.99902L23.2656 8.46582Z\" fill=\"white\" style=\"fill:white;fill-opacity:1;\"></path></svg>\n\n  \n    <svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" x=\"0\" y=\"0\" width=\"38\" height=\"24\" viewBox=\"0 0 165.521 105.965\" xml:space=\"preserve\" aria-labelledby=\"pi-apple_pay\"><title id=\"pi-apple_pay\">Apple Pay</title><path fill=\"#000\" d=\"M150.698 0H14.823c-.566 0-1.133 0-1.698.003-.477.004-.953.009-1.43.022-1.039.028-2.087.09-3.113.274a10.51 10.51 0 0 0-2.958.975 9.932 9.932 0 0 0-4.35 4.35 10.463 10.463 0 0 0-.975 2.96C.113 9.611.052 10.658.024 11.696a70.22 70.22 0 0 0-.022 1.43C0 13.69 0 14.256 0 14.823v76.318c0 .567 0 1.132.002 1.699.003.476.009.953.022 1.43.028 1.036.09 2.084.275 3.11a10.46 10.46 0 0 0 .974 2.96 9.897 9.897 0 0 0 1.83 2.52 9.874 9.874 0 0 0 2.52 1.83c.947.483 1.917.79 2.96.977 1.025.183 2.073.245 3.112.273.477.011.953.017 1.43.02.565.004 1.132.004 1.698.004h135.875c.565 0 1.132 0 1.697-.004.476-.002.952-.009 1.431-.02 1.037-.028 2.085-.09 3.113-.273a10.478 10.478 0 0 0 2.958-.977 9.955 9.955 0 0 0 4.35-4.35c.483-.947.789-1.917.974-2.96.186-1.026.246-2.074.274-3.11.013-.477.02-.954.022-1.43.004-.567.004-1.132.004-1.699V14.824c0-.567 0-1.133-.004-1.699a63.067 63.067 0 0 0-.022-1.429c-.028-1.038-.088-2.085-.274-3.112a10.4 10.4 0 0 0-.974-2.96 9.94 9.94 0 0 0-4.35-4.35A10.52 10.52 0 0 0 156.939.3c-1.028-.185-2.076-.246-3.113-.274a71.417 71.417 0 0 0-1.431-.022C151.83 0 151.263 0 150.698 0z\"></path><path fill=\"#FFF\" d=\"M150.698 3.532l1.672.003c.452.003.905.008 1.36.02.793.022 1.719.065 2.583.22.75.135 1.38.34 1.984.648a6.392 6.392 0 0 1 2.804 2.807c.306.6.51 1.226.645 1.983.154.854.197 1.783.218 2.58.013.45.019.9.02 1.36.005.557.005 1.113.005 1.671v76.318c0 .558 0 1.114-.004 1.682-.002.45-.008.9-.02 1.35-.022.796-.065 1.725-.221 2.589a6.855 6.855 0 0 1-.645 1.975 6.397 6.397 0 0 1-2.808 2.807c-.6.306-1.228.511-1.971.645-.881.157-1.847.2-2.574.22-.457.01-.912.017-1.379.019-.555.004-1.113.004-1.669.004H14.801c-.55 0-1.1 0-1.66-.004a74.993 74.993 0 0 1-1.35-.018c-.744-.02-1.71-.064-2.584-.22a6.938 6.938 0 0 1-1.986-.65 6.337 6.337 0 0 1-1.622-1.18 6.355 6.355 0 0 1-1.178-1.623 6.935 6.935 0 0 1-.646-1.985c-.156-.863-.2-1.788-.22-2.578a66.088 66.088 0 0 1-.02-1.355l-.003-1.327V14.474l.002-1.325a66.7 66.7 0 0 1 .02-1.357c.022-.792.065-1.717.222-2.587a6.924 6.924 0 0 1 .646-1.981c.304-.598.7-1.144 1.18-1.623a6.386 6.386 0 0 1 1.624-1.18 6.96 6.96 0 0 1 1.98-.646c.865-.155 1.792-.198 2.586-.22.452-.012.905-.017 1.354-.02l1.677-.003h135.875\"></path><g><g><path fill=\"#000\" d=\"M43.508 35.77c1.404-1.755 2.356-4.112 2.105-6.52-2.054.102-4.56 1.355-6.012 3.112-1.303 1.504-2.456 3.959-2.156 6.266 2.306.2 4.61-1.152 6.063-2.858\"></path><path fill=\"#000\" d=\"M45.587 39.079c-3.35-.2-6.196 1.9-7.795 1.9-1.6 0-4.049-1.8-6.698-1.751-3.447.05-6.645 2-8.395 5.1-3.598 6.2-.95 15.4 2.55 20.45 1.699 2.5 3.747 5.25 6.445 5.151 2.55-.1 3.549-1.65 6.647-1.65 3.097 0 3.997 1.65 6.696 1.6 2.798-.05 4.548-2.5 6.247-5 1.95-2.85 2.747-5.6 2.797-5.75-.05-.05-5.396-2.101-5.446-8.251-.05-5.15 4.198-7.6 4.398-7.751-2.399-3.548-6.147-3.948-7.447-4.048\"></path></g><g><path fill=\"#000\" d=\"M78.973 32.11c7.278 0 12.347 5.017 12.347 12.321 0 7.33-5.173 12.373-12.529 12.373h-8.058V69.62h-5.822V32.11h14.062zm-8.24 19.807h6.68c5.07 0 7.954-2.729 7.954-7.46 0-4.73-2.885-7.434-7.928-7.434h-6.706v14.894z\"></path><path fill=\"#000\" d=\"M92.764 61.847c0-4.809 3.665-7.564 10.423-7.98l7.252-.442v-2.08c0-3.04-2.001-4.704-5.562-4.704-2.938 0-5.07 1.507-5.51 3.82h-5.252c.157-4.86 4.731-8.395 10.918-8.395 6.654 0 10.995 3.483 10.995 8.89v18.663h-5.38v-4.497h-.13c-1.534 2.937-4.914 4.782-8.579 4.782-5.406 0-9.175-3.222-9.175-8.057zm17.675-2.417v-2.106l-6.472.416c-3.64.234-5.536 1.585-5.536 3.95 0 2.288 1.975 3.77 5.068 3.77 3.95 0 6.94-2.522 6.94-6.03z\"></path><path fill=\"#000\" d=\"M120.975 79.652v-4.496c.364.051 1.247.103 1.715.103 2.573 0 4.029-1.09 4.913-3.899l.52-1.663-9.852-27.293h6.082l6.863 22.146h.13l6.862-22.146h5.927l-10.216 28.67c-2.34 6.577-5.017 8.735-10.683 8.735-.442 0-1.872-.052-2.261-.157z\"></path></g></g></svg>\n\n  \n    <svg width=\"38\" height=\"24\" role=\"img\" viewBox=\"0 0 38 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-labelledby=\"pi-cartes_bancaires\"><title id=\"pi-cartes_bancaires\">Cartes Bancaires</title><rect x=\"1\" y=\"1\" width=\"36\" height=\"22\" rx=\"2\" fill=\"url(#pi-cartes_bancaires-paint0_linear)\"></rect><rect x=\".5\" y=\".5\" width=\"37\" height=\"23\" rx=\"2.5\" stroke=\"#000\" stroke-opacity=\".07\"></rect><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M28 9.934c0 1.067-.8 1.932-1.79 1.934v.002h-6.52V8h6.52c.99.002 1.79.867 1.79 1.934zm0 4.104c0 1.067-.8 1.932-1.79 1.934v.003h-6.52v-3.87h6.52c.99.002 1.79.867 1.79 1.933zm-13.224-1.934h4.788v.378c0 1.943-1.46 3.518-3.26 3.518H13.26C11.46 16 10 14.425 10 12.482v-.938c0-1.943 1.46-3.518 3.26-3.518h3.044c1.8 0 3.26 1.575 3.26 3.518v.326h-4.788v.234z\" fill=\"#fff\"></path><defs><linearGradient id=\"pi-cartes_bancaires-paint0_linear\" x1=\"37\" y1=\"1\" x2=\"17.422\" y2=\"33.036\" gradientUnits=\"userSpaceOnUse\"><stop stop-color=\"#083969\"></stop><stop offset=\".492\" stop-color=\"#007B9D\"></stop><stop offset=\"1\" stop-color=\"#00A84A\"></stop></linearGradient></defs></svg>\n    <svg xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" viewBox=\"0 0 38 24\" width=\"38\" height=\"24\" fill=\"none\" aria-labelledby=\"pi-master\"><title id=\"pi-master\">Mastercard</title><rect x=\".5\" y=\".5\" width=\"37\" height=\"23\" rx=\"2.5\" stroke=\"#000\" stroke-opacity=\".07\" fill=\"none\"></rect><path d=\"M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z\" fill=\"#1C1C1C\" style=\"fill:#1C1C1C;fill:color(display-p3 0.1098 0.1098 0.1098);fill-opacity:1;\"></path><path d=\"M35 1C36.1 1 37 1.9 37 3V21C37 22.1 36.1 23 35 23H3C1.9 23 1 22.1 1 21V3C1 1.9 1.9 1 3 1H35Z\" fill=\"#232323\" style=\"fill:#232323;fill:color(display-p3 0.1373 0.1373 0.1373);fill-opacity:1;\"></path><path d=\"M14.6364 19.2727C18.8538 19.2727 22.2727 15.8538 22.2727 11.6364C22.2727 7.41892 18.8538 4 14.6364 4C10.4189 4 7 7.41892 7 11.6364C7 15.8538 10.4189 19.2727 14.6364 19.2727Z\" fill=\"#EB001B\" style=\"fill:#EB001B;fill:color(display-p3 0.9216 0.0000 0.1059);fill-opacity:1;\"></path><path d=\"M23.3637 19.2727C27.5811 19.2727 31 15.8538 31 11.6364C31 7.41892 27.5811 4 23.3637 4C19.1462 4 15.7273 7.41892 15.7273 11.6364C15.7273 15.8538 19.1462 19.2727 23.3637 19.2727Z\" fill=\"#F79E1B\" style=\"fill:#F79E1B;fill:color(display-p3 0.9686 0.6196 0.1059);fill-opacity:1;\"></path><path d=\"M22.2727 11.6362C22.2727 9.01797 20.9637 6.72706 19 5.41797C17.0364 6.83615 15.7273 9.12706 15.7273 11.6362C15.7273 14.1452 17.0364 16.5452 19 17.8543C20.9637 16.5452 22.2727 14.2543 22.2727 11.6362Z\" fill=\"#FF5F00\" style=\"fill:#FF5F00;fill:color(display-p3 1.0000 0.3725 0.0000);fill-opacity:1;\"></path></svg>\n\n  \n    <svg viewBox=\"0 0 38 24\" xmlns=\"http://www.w3.org/2000/svg\" width=\"38\" height=\"24\" role=\"img\" aria-labelledby=\"pi-paypal\"><title id=\"pi-paypal\">PayPal</title><path opacity=\".07\" d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z\"></path><path fill=\"#fff\" d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32\"></path><path fill=\"#003087\" d=\"M23.9 8.3c.2-1 0-1.7-.6-2.3-.6-.7-1.7-1-3.1-1h-4.1c-.3 0-.5.2-.6.5L14 15.6c0 .2.1.4.3.4H17l.4-3.4 1.8-2.2 4.7-2.1z\"></path><path fill=\"#3086C8\" d=\"M23.9 8.3l-.2.2c-.5 2.8-2.2 3.8-4.6 3.8H18c-.3 0-.5.2-.6.5l-.6 3.9-.2 1c0 .2.1.4.3.4H19c.3 0 .5-.2.5-.4v-.1l.4-2.4v-.1c0-.2.3-.4.5-.4h.3c2.1 0 3.7-.8 4.1-3.2.2-1 .1-1.8-.4-2.4-.1-.5-.3-.7-.5-.8z\"></path><path fill=\"#012169\" d=\"M23.3 8.1c-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.3-.1-.7-.1-1.1-.1h-3c-.1 0-.2 0-.2.1-.2.1-.3.2-.3.4l-.7 4.4v.1c0-.3.3-.5.6-.5h1.3c2.5 0 4.1-1 4.6-3.8v-.2c-.1-.1-.3-.2-.5-.2h-.1z\"></path></svg>\n  \n    <svg xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" viewBox=\"0 0 38 24\" width=\"38\" height=\"24\" fill=\"none\" aria-labelledby=\"pi-visa\"><title id=\"pi-visa\">Visa</title><rect x=\".5\" y=\".5\" width=\"37\" height=\"23\" rx=\"2.5\" stroke=\"#000\" stroke-opacity=\".07\" fill=\"none\"></rect><path d=\"M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z\" fill=\"#142FBD\" style=\"fill:#142FBD;fill:color(display-p3 0.0784 0.1843 0.7412);fill-opacity:1;\"></path><path d=\"M35 1C36.1 1 37 1.9 37 3V21C37 22.1 36.1 23 35 23H3C1.9 23 1 22.1 1 21V3C1 1.9 1.9 1 3 1H35Z\" fill=\"#1532CB\" style=\"fill:#1532CB;fill:color(display-p3 0.0824 0.1961 0.7961);fill-opacity:1;\"></path><path d=\"M29.5944 10.2167H29.2778C28.8556 11.2722 28.5389 11.8 28.2222 13.3833H30.2278C29.9111 11.8 29.9111 11.0611 29.5944 10.2167V10.2167ZM32.6556 16.4444H30.8611C30.7556 16.4444 30.7556 16.4444 30.65 16.3389L30.4389 15.3889L30.3333 15.1778H27.8C27.6944 15.1778 27.5889 15.1778 27.5889 15.3889L27.2722 16.3389C27.2722 16.4444 27.1667 16.4444 27.1667 16.4444H24.95L25.1611 15.9167L28.2222 8.73889C28.2222 8.21111 28.5389 8 29.0667 8H30.65C30.7556 8 30.8611 8 30.8611 8.21111L32.3389 15.0722C32.4444 15.4944 32.55 15.8111 32.55 16.2333C32.6556 16.3389 32.6556 16.3389 32.6556 16.4444V16.4444ZM18.5111 16.1278L18.9333 14.2278C19.0389 14.2278 19.1444 14.3333 19.1444 14.3333C19.8833 14.65 20.6222 14.8611 21.3611 14.7556C21.5722 14.7556 21.8889 14.65 22.1 14.5444C22.6278 14.3333 22.6278 13.8056 22.2056 13.3833C21.9944 13.1722 21.6778 13.0667 21.3611 12.8556C20.9389 12.6444 20.5167 12.4333 20.2 12.1167C18.9333 11.0611 19.3556 9.58333 20.0944 8.84444C20.7278 8.42222 21.0444 8 21.8889 8C23.1556 8 24.5278 8 25.1611 8.21111H25.2667C25.1611 8.84444 25.0556 9.37222 24.8444 10.0056C24.3167 9.79444 23.7889 9.58333 23.2611 9.58333C22.9444 9.58333 22.6278 9.58333 22.3111 9.68889C22.1 9.68889 21.9944 9.79444 21.8889 9.9C21.6778 10.1111 21.6778 10.4278 21.8889 10.6389L22.4167 11.0611C22.8389 11.2722 23.2611 11.4833 23.5778 11.6944C24.1056 12.0111 24.6333 12.5389 24.7389 13.1722C24.95 14.1222 24.6333 14.9667 23.7889 15.6C23.2611 16.0222 23.05 16.2333 22.3111 16.2333C20.8333 16.2333 19.6722 16.3389 18.7222 16.0222C18.6167 16.2333 18.6167 16.2333 18.5111 16.1278V16.1278ZM14.8167 16.4444C14.9222 15.7056 14.9222 15.7056 15.0278 15.3889C15.5556 13.0667 16.0833 10.6389 16.5056 8.31667C16.6111 8.10556 16.6111 8 16.8222 8H18.7222C18.5111 9.26667 18.3 10.2167 17.9833 11.3778C17.6667 12.9611 17.35 14.5444 16.9278 16.1278C16.9278 16.3389 16.8222 16.3389 16.6111 16.3389L14.8167 16.4444ZM5 8.21111C5 8.10556 5.21111 8 5.31667 8H8.90556C9.43333 8 9.85556 8.31667 9.96111 8.84444L10.9111 13.4889C10.9111 13.5944 10.9111 13.5944 11.0167 13.7C11.0167 13.5944 11.1222 13.5944 11.1222 13.5944L13.3389 8.21111C13.2333 8.10556 13.3389 8 13.4444 8H15.6611C15.6611 8.10556 15.6611 8.10556 15.5556 8.21111L12.2833 15.9167C12.1778 16.1278 12.1778 16.2333 12.0722 16.3389C11.9667 16.4444 11.7556 16.3389 11.5444 16.3389H9.96111C9.85556 16.3389 9.75 16.3389 9.75 16.1278L8.06111 9.58333C7.85 9.37222 7.53333 9.05556 7.11111 8.95C6.47778 8.63333 5.31667 8.42222 5.10556 8.42222L5 8.21111Z\" fill=\"white\" style=\"fill:white;fill-opacity:1;\"></path></svg>\n\n  \n</div>\n\n<style>\n.product-payment-icons{\n  display:flex;\n  justify-content:center;\n  gap:8px;\n  margin-top:12px;\n  flex-wrap:wrap;\n}\n\n.product-payment-icons svg{\n  height:22px;\n  width:auto;\n}\n</style>\n            </div></div>\n            </div>\n            </div></div>"
+          }
+        },
+        "collapsible_text_qweLRz": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "Matériaux & Dimensions",
+            "content": "<p><strong>L’Oreiller Somnelia est conçu avec une mousse intelligente à mémoire de forme de nouvelle génération, sans produits chimiques nocifs.</strong> </p><p>Hypoallergénique et ultra-durable, il crée un environnement de sommeil sain tout en offrant un équilibre parfait entre confort et maintien, nuit après nuit.</p><p>Avec des dimensions de <strong>62 cm de largeur, 37 cm de longueur</strong> et deux hauteurs disponibles (<strong>14,4 cm ou 9 cm</strong>), il s’adapte à toutes les morphologies et à toutes les positions de sommeil.</p><p>Le <strong>Somnelia</strong> allie <strong>sécurité, longévité et innovation</strong> pour vous offrir un sommeil réparateur et une posture optimale chaque nuit.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_text_d4Q7iF": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "Instructions de Lavage",
+            "content": "<p>L’Oreiller <strong>Somnelia est enveloppé d’une housse amovible</strong>, en fibre de bambou, douce et hypoallergénique.</p><p><strong>Instructions de lavage :</strong></p><p>• Déhoussez l’oreiller avec précaution</p><p>• Lavez la housse en machine à <strong>30°C</strong>, en sélectionnant le <strong>programme “lavage délicat” ou “lavage à la main”</strong></p><p>• <strong>Ne pas essorer (évitez la centrifugeuse)</strong></p><p>• Laissez sécher <strong>à l’air libre</strong></p><p>• Une fois sèche, repassez là<strong> légèrement</strong> pour un rendu doux et net</p><p>Ces précautions permettent de préserver la qualité et la longévité de la housse.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_text_dGNMY7": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "Livraison & Retours",
+            "content": "<p>Livraison gratuite pour toutes les commandes.</p><p>Veuillez prévoir les délais de livraison suivants :</p><ul><li><strong>Temps de traitement :</strong> 1 à 2 jours</li><li><strong>Livraison standard :</strong> 3 à 5 jours</li></ul><p>Essayez votre oreiller Somnelia pendant 30 jours. Si vous n’êtes pas entièrement satisfait, vous pouvez le retourner dans ce délai pour un remboursement complet.<br/><br/><strong>Note</strong> : Une fois reçu, laissez votre oreiller à l’air libre quelques minutes afin qu’il retrouve sa forme d’origine après avoir été compressé pour l’expédition.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_text_B4qahV": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "Garantie 30 Nuits",
+            "content": "<p>Nous sommes convaincus que vous allez adorer notre <strong>Oreiller Orthopédique Somnelia</strong>, mais nous comprenons que vous ne puissiez pas en être sûr maintenant. C'est pourquoi nous vous offrons une période d'essai de <strong>30 nuits. </strong></p><p>Vous pouvez essayer, ressentir et constater par vous-même la qualité exceptionnelle de l'Oreiller <strong>Somnelia</strong>, sans aucun souci.</p><p><strong>Si, après 30 jours</strong>, vous n'êtes pas satisfait de votre oreiller <strong>Somnelia</strong>, renvoyez-le-nous pour un remboursement complet.</p>",
+            "page": ""
+          }
+        },
+        "associated_products_Ky3MPT": {
+          "type": "associated_products",
+          "settings": {
+            "title": "Complétez Pour un Confort Ultime !",
+            "stack_products": false,
+            "products_count": 5,
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "liquid_DLzTkt",
+        "liquid_cyc6dk",
+        "liquid_GaGCCD",
+        "liquid_Vmj9e9",
+        "kaching_bundles_app_block_FAXjWf",
+        "liquid_YKTpmN",
+        "variant_picker",
+        "liquid_fbG4pk",
+        "buy_buttons",
+        "liquid_cJciKj",
+        "collapsible_text_qweLRz",
+        "collapsible_text_d4Q7iF",
+        "collapsible_text_dGNMY7",
+        "collapsible_text_B4qahV",
+        "associated_products_Ky3MPT"
+      ],
+      "settings": {
+        "full_width": true,
+        "show_fixed_add_to_cart": true,
+        "desktop_media_width": 45,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "contained",
+        "mobile_carousel_control": "thumbnails",
+        "enable_video_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": false,
+        "max_image_zoom_level": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "logoscroll_TpFtAk": {
+      "type": "logoscroll",
+      "blocks": {
+        "image_qmhEn4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Design_sans_titre_59.webp",
+            "url": ""
+          }
+        },
+        "image_BhrAMA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Design_sans_titre_60.webp",
+            "url": ""
+          }
+        },
+        "image_QKJaDA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Design_sans_titre_62.webp",
+            "url": ""
+          }
+        },
+        "image_EjM6gV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Design_sans_titre_61.webp",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_qmhEn4",
+        "image_BhrAMA",
+        "image_QKJaDA",
+        "image_EjM6gV"
+      ],
+      "name": "SS - Scrolling logo cloud #5",
+      "settings": {
+        "layout_radius": 30,
+        "layout_border_thickness": 0,
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 18,
+        "heading_size_mobile": 18,
+        "heading_height": 130,
+        "scrolling_velocity": 20,
+        "scrolling_velocity_mobile": 18,
+        "scrolling_direction": "left",
+        "pause_hover": false,
+        "scrolling_gap": 70,
+        "scrolling_gap_mobile": 26,
+        "card_width_desktop": 160,
+        "card_width_mobile": 140,
+        "heading_color": "#121212",
+        "layout_bg_color": "#f4f4f1",
+        "layout_border_color": "#121212",
+        "background_color": "#f4f4f1",
+        "border_color": "#121212",
+        "margin_top": 0,
+        "margin_bottom": 20,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 0,
+        "full_width": true,
+        "content_width": 1200,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
+      }
+    },
+    "avisclienttrust_LHtrM7": {
+      "type": "avisclienttrust",
+      "blocks": {
+        "review_Kfexag": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Une qualité incroyable",
+            "text": "J’ai commandé pour tester et je suis franchement surpris par la qualité. Le produit est propre, confortable et le rendu est encore mieux en vrai. Livraison rapide et service client très réactif.",
+            "name": "Jenny Lewis",
+            "date": "3 mai 2026",
+            "initials": "J"
+          }
+        },
+        "review_9ekjwK": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Je recommande à 100%",
+            "text": "Très bonne expérience du début à la fin. La commande est arrivée rapidement, bien emballée, et la qualité est vraiment au-dessus de ce que j’attendais.",
+            "name": "Melissa Manjoine",
+            "date": "24 avril 2026",
+            "initials": "M"
+          }
+        },
+        "review_CQewkG": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Super confortable et qualitatif",
+            "text": "Le produit est à la fois beau, agréable à porter et très bien fini. On sent que les détails ont été travaillés. Je pense déjà repasser commande très bientôt.",
+            "name": "Sally Myhr",
+            "date": "23 avril 2026",
+            "initials": "S"
+          }
+        },
+        "review_icV8qg": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "J’adore mon achat",
+            "text": "Après plusieurs commandes ailleurs, c’est clairement l’un des meilleurs achats que j’ai faits. Le rapport qualité-prix est excellent et le résultat est vraiment propre.",
+            "name": "Cherith",
+            "date": "14 avril 2026",
+            "initials": "C"
+          }
+        },
+        "review_HYPymz": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Très satisfait de ma commande",
+            "text": "Très content de mon achat. La qualité est au rendez-vous, la taille correspond bien et le rendu final est exactement comme sur les photos.",
+            "name": "Suzanne",
+            "date": "27 mars 2026",
+            "initials": "S"
+          }
+        },
+        "review_4zTdfH": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Service client au top",
+            "text": "Service client rapide, gentil et efficace. J’avais une question avant de commander et j’ai reçu une réponse claire très rapidement. L’expérience est vraiment rassurante.",
+            "name": "Katie Glover",
+            "date": "28 janvier 2026",
+            "initials": "K"
+          }
+        },
+        "review_cjzcj4": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "J’étais un peu sceptique…",
+            "text": "Je ne savais pas trop à quoi m’attendre au départ, mais au final je suis super content. La qualité est là, le rendu est propre et je n’utiliserai plus d’autre boutique pour ce type de produit.",
+            "name": "Eva",
+            "date": "16 janvier 2026",
+            "initials": "E"
+          }
+        }
+      },
+      "block_order": [
+        "review_Kfexag",
+        "review_9ekjwK",
+        "review_CQewkG",
+        "review_icV8qg",
+        "review_HYPymz",
+        "review_4zTdfH",
+        "review_cjzcj4"
+      ],
+      "name": "Avis clients carousel",
+      "settings": {
+        "eyebrow": "APPROUVÉ PAR +3,000 CLIENTS",
+        "heading": "De Vrais Avis De Vrais Clients",
+        "heading_size": 34,
+        "mobile_heading_size": 24,
+        "eyebrow_size": 11,
+        "mobile_eyebrow_size": 10,
+        "review_title_size": 19,
+        "mobile_review_title_size": 19,
+        "badge_brand": "Somnelia",
+        "rating_label": "Excellent",
+        "rating_score": "4,6/5",
+        "review_platform": "Trustpilot",
+        "read_more_label": "",
+        "read_less_label": "Réduire",
+        "review_text_lines": 7,
+        "background_color": "#f4f4f1",
+        "text_color": "#0e1a2b",
+        "muted_color": "#6f747b",
+        "border_color": "#e6e1da",
+        "accent_color": "#00b67a",
+        "max_width": 1120,
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "card_radius": 16,
+        "card_min_height": 350,
+        "mobile_card_min_height": 340
+      }
+    },
+    "scrolling_text_q6tUBg": {
+      "type": "scrolling-text",
+      "name": "Scrolling text",
+      "settings": {
+        "full_width": true,
+        "text": "🌙  Essai de 30 nuits sans risque",
+        "text_size": "xsmall",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 7,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "text_gradient": ""
+      }
+    },
+    "media_with_text_mr67Ki": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_9qTRmV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_13_juil._2026_14_24_31.png",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "custom_icon": "shopify://shop_images/Design_sans_titre_65.png",
+            "icon_width": 88,
+            "subheading": "",
+            "title": "Un bon sommeil commence par une bonne posture",
+            "content": "<p>Un oreiller mal adapté peut désaligner votre nuque et provoquer des tensions au réveil. L’oreiller <strong>Somnelia</strong> aide à aligner naturellement la tête, le cou et la colonne pendant le sommeil. </p><p><strong>Moins de douleurs, meilleure posture, réveils plus légers.</strong></p>",
+            "link_text": "ACHETER MAINTENANT",
+            "link_url": "",
+            "background": "#0e1a2b",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#f4f4f1",
+            "button_text_color": "#0e1a2b"
+          }
+        }
+      },
+      "block_order": [
+        "image_9qTRmV"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "alternate_media_position": false,
+        "spacing": "large"
+      }
+    },
+    "text_with_icons_MiVUBa": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_qzrdkg": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/Icons-12.webp",
+            "mobile_icon_width": 56,
+            "icon_width": 56,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Soulage le Cou et le Dos",
+            "content": "<p>Aide le cou à retrouver sa courbure naturelle et favorise un meilleur alignement.</p>"
+          }
+        },
+        "item_thL4L9": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/blue-08.webp",
+            "mobile_icon_width": 56,
+            "icon_width": 56,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Des Nuits plus Paisibles",
+            "content": "<p>Répartit la pression, détend les muscles et facilite l’endormissement.</p>"
+          }
+        },
+        "item_k4JUGa": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/neck_shoulder-27.webp",
+            "mobile_icon_width": 56,
+            "icon_width": 56,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Soulage les Épaules",
+            "content": "<p>Épouse les épaules sur le côté pour un maintien confortable.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_qzrdkg",
+        "item_thL4L9",
+        "item_k4JUGa"
+      ],
+      "name": "Text with icons",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "title": "",
+        "heading_tag": "h5",
+        "text_alignment": "center",
+        "icon_spacing": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_3y6c3w": {
+      "type": "multi-column",
+      "blocks": {
+        "item_dfGBA8": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Maintient votre cou et épouse votre épaule naturellement.",
+            "heading_tag": "h4",
+            "content": "<p>Les deux caractéristiques qui éliminent les raideurs matinales, réunies dans un seul oreiller.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_Gk7iDz": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Mousse mémoire premium, nuit après nuit.",
+            "heading_tag": "h4",
+            "content": "<p>Contrairement aux oreillers bas de gamme qui s’affaissent en quelques mois, l’oreiller Align conserve son maintien pendant des années.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_jtCJ7F": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Une housse respirante qui reste fraîche toute la nuit.",
+            "heading_tag": "h4",
+            "content": "<p>Fini de retourner votre oreiller à 3 h du matin. Réveillez-vous confortablement, sans transpiration.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_dfGBA8",
+        "item_Gk7iDz",
+        "item_jtCJ7F"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "Dormez Profondément, Chaque Nuit",
+        "content": "",
+        "background": "#efeee9",
+        "background_gradient": "",
+        "text_color": "#0e1a2b"
+      }
+    },
+    "facondedormir_g9ci4P": {
+      "type": "facondedormir",
+      "blocks": {
+        "position_rQPXY3": {
+          "type": "position",
+          "settings": {
+            "icon": "side",
+            "title": "Sur le côté",
+            "text": "<p>Posez votre tête sur les ailes de l'oreiller. Votre cou comble l'espace laissé par l'épaule et reste dans le prolongement de votre colonne vertébrale, pour que vos muscles puissent se détendre complètement.</p>"
+          }
+        },
+        "position_PmeAfK": {
+          "type": "position",
+          "settings": {
+            "icon": "back",
+            "title": "Sur le dos",
+            "text": "<p>Posez votre tête dans l'encoche centrale. La forme cervicale épouse la courbe naturelle de votre nuque et maintient votre tête à la bonne hauteur, sans la pousser vers l'avant.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "position_rQPXY3",
+        "position_PmeAfK"
+      ],
+      "name": "Façon de dormir",
+      "settings": {
+        "heading": "Conçu pour votre Façon de Dormir",
+        "heading_size_desktop": 40,
+        "heading_size_mobile": 20,
+        "button_label": "Commander maintenant",
+        "button_link": "",
+        "bg_color": "#f4f4f1",
+        "panel_color": "#f4f7f9",
+        "heading_color": "#1d2153",
+        "text_color": "#5a6473",
+        "button_bg": "#0e1a2b",
+        "button_text_color": "#ffffff"
+      }
+    },
+    "media_with_text_mT9kKq": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_KXG77R": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_13_juil._2026_11_41_03.png",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Un confort adapté à chaque position",
+            "content": "<p>Ses deux hauteurs et sa forme papillon soutiennent la tête, libèrent les épaules et réduisent les points de pression, que vous dormiez sur le dos, le côté ou le ventre.</p>",
+            "link_text": "ACHETER MAINTENANT",
+            "link_url": "",
+            "background": "#0e1a2b",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#f4f4f1",
+            "button_text_color": "#0e1a2b"
+          }
+        }
+      },
+      "block_order": [
+        "image_KXG77R"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "alternate_media_position": false,
+        "spacing": "large"
+      }
+    },
+    "multi_column_R7TytF": {
+      "type": "multi-column",
+      "blocks": {
+        "item_TbzE9g": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/gempages_537902831378629779-cada7a50-62b4-419d-b522-47e3cf1a2cd9.webp",
+            "column_size": "4",
+            "title": "Étape 1",
+            "heading_tag": "h3",
+            "content": "<p>Détachez l’attache centrale.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_ARKmgP": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/gempages_537902831378629779-fae0395e-caec-4c11-a694-cd2abfc058c0.webp",
+            "column_size": "4",
+            "title": "Étape 2",
+            "heading_tag": "h3",
+            "content": "<p>Ouvrir la fermeture éclair pour retirer la housse.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_KnF4WX": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/gempages_537902831378629779-34513939-6611-40ec-9196-a956aec39d54.webp",
+            "column_size": "4",
+            "title": "Étape 3",
+            "heading_tag": "h3",
+            "content": "<p>Retirez délicatement la housse du coussin sans forcer.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_mhcbdJ": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/gempages_537902831378629779-49c08024-e9f4-4575-a901-5653eeb8c7ce.webp",
+            "column_size": "4",
+            "title": "Étape 4",
+            "heading_tag": "h3",
+            "content": "<p>Placez la housse dans la machine à laver pour un lavage en douceur.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_TbzE9g",
+        "item_ARKmgP",
+        "item_KnF4WX",
+        "item_mhcbdJ"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "Prendre soin de votre Oreiller",
+        "content": "",
+        "background": "#F4F4F1",
+        "background_gradient": "",
+        "text_color": "#0e1a2b"
+      }
+    },
+    "logoscroll_MeUam9": {
+      "type": "logoscroll",
+      "blocks": {
+        "image_PKJaC8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Design_sans_titre_59.webp",
+            "url": ""
+          }
+        },
+        "image_hzCmxz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Design_sans_titre_60.webp",
+            "url": ""
+          }
+        },
+        "image_FTqEgW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Design_sans_titre_62.webp",
+            "url": ""
+          }
+        },
+        "image_GtJf8W": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Design_sans_titre_61.webp",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_PKJaC8",
+        "image_hzCmxz",
+        "image_FTqEgW",
+        "image_GtJf8W"
+      ],
+      "name": "SS - Scrolling logo cloud #5",
+      "settings": {
+        "layout_radius": 30,
+        "layout_border_thickness": 0,
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 18,
+        "heading_size_mobile": 18,
+        "heading_height": 130,
+        "scrolling_velocity": 20,
+        "scrolling_velocity_mobile": 18,
+        "scrolling_direction": "left",
+        "pause_hover": false,
+        "scrolling_gap": 70,
+        "scrolling_gap_mobile": 26,
+        "card_width_desktop": 160,
+        "card_width_mobile": 140,
+        "heading_color": "#121212",
+        "layout_bg_color": "#f4f4f1",
+        "layout_border_color": "#121212",
+        "background_color": "#f4f4f1",
+        "border_color": "#121212",
+        "margin_top": 0,
+        "margin_bottom": 20,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 0,
+        "full_width": true,
+        "content_width": 1200,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
+      }
+    },
+    "avisclientsdefilant_3Airrz": {
+      "type": "avisclientsdefilant",
+      "blocks": {
+        "review_N9ww6J": {
+          "type": "review",
+          "settings": {
+            "title": "Produits de grande qualité",
+            "comment": "J'ai acheté un oreiller et une couette. Je les utilise depuis longtemps et j'en suis très satisfait. La livraison a été rapide et la qualité des produits est excellente.",
+            "author": "Deniz",
+            "date": "Il y a 4 jours",
+            "review_url": ""
+          }
+        },
+        "review_iegdUN": {
+          "type": "review",
+          "settings": {
+            "title": "Produits de grande qualité",
+            "comment": "J'ai acheté un oreiller et une couette. Je les utilise depuis longtemps et j'en suis très satisfait. La livraison a été rapide et la qualité des produits est excellente.",
+            "author": "Deniz",
+            "date": "Il y a 4 jours",
+            "review_url": ""
+          }
+        },
+        "review_NcA9iy": {
+          "type": "review",
+          "settings": {
+            "title": "Produits de grande qualité",
+            "comment": "J'ai acheté un oreiller et une couette. Je les utilise depuis longtemps et j'en suis très satisfait. La livraison a été rapide et la qualité des produits est excellente.",
+            "author": "Deniz",
+            "date": "Il y a 4 jours",
+            "review_url": ""
+          }
+        },
+        "review_madj4U": {
+          "type": "review",
+          "settings": {
+            "title": "Produits de grande qualité",
+            "comment": "J'ai acheté un oreiller et une couette. Je les utilise depuis longtemps et j'en suis très satisfait. La livraison a été rapide et la qualité des produits est excellente.",
+            "author": "Deniz",
+            "date": "Il y a 4 jours",
+            "review_url": ""
+          }
+        },
+        "review_DUxUnR": {
+          "type": "review",
+          "settings": {
+            "title": "Produits de grande qualité",
+            "comment": "J'ai acheté un oreiller et une couette. Je les utilise depuis longtemps et j'en suis très satisfait. La livraison a été rapide et la qualité des produits est excellente.",
+            "author": "Deniz",
+            "date": "Il y a 4 jours",
+            "review_url": ""
+          }
+        },
+        "review_PMxWWr": {
+          "type": "review",
+          "settings": {
+            "title": "Produits de grande qualité",
+            "comment": "J'ai acheté un oreiller et une couette. Je les utilise depuis longtemps et j'en suis très satisfait. La livraison a été rapide et la qualité des produits est excellente.",
+            "author": "Deniz",
+            "date": "Il y a 4 jours",
+            "review_url": ""
+          }
+        },
+        "review_CaXVxG": {
+          "type": "review",
+          "settings": {
+            "title": "Produits de grande qualité",
+            "comment": "J'ai acheté un oreiller et une couette. Je les utilise depuis longtemps et j'en suis très satisfait. La livraison a été rapide et la qualité des produits est excellente.",
+            "author": "Deniz",
+            "date": "Il y a 4 jours",
+            "review_url": ""
+          }
+        },
+        "review_rqjYFE": {
+          "type": "review",
+          "settings": {
+            "title": "Produits de grande qualité",
+            "comment": "J'ai acheté un oreiller et une couette. Je les utilise depuis longtemps et j'en suis très satisfait. La livraison a été rapide et la qualité des produits est excellente.",
+            "author": "Deniz",
+            "date": "Il y a 4 jours",
+            "review_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "review_N9ww6J",
+        "review_iegdUN",
+        "review_NcA9iy",
+        "review_madj4U",
+        "review_DUxUnR",
+        "review_PMxWWr",
+        "review_CaXVxG",
+        "review_rqjYFE"
+      ],
+      "name": "Avis clients défilants",
+      "settings": {
+        "heading": "Que disent nos clients ?",
+        "text": "<p>Lisez les avis et découvrez ce que les autres pensent de leur expérience avec nous.</p>",
+        "heading_size_desktop": 38,
+        "heading_size_mobile": 28,
+        "show_trustpilot": true,
+        "trustpilot_url": "",
+        "trust_score": 4.6,
+        "reviews_count": "3,413",
+        "reviews_label": "avis sur",
+        "bg_color": "#efeee9",
+        "card_color": "#ffffff",
+        "text_color": "#1a1a1a",
+        "desktop_height": 700,
+        "scroll_speed": 45
+      }
+    },
+    "faq_caH4tY": {
+      "type": "faq",
+      "blocks": {
+        "item_pgUrjp": {
+          "type": "item",
+          "settings": {
+            "title": "L’oreiller est-il ferme ou moelleux ?",
+            "content": "<p>L’oreiller Somnelia a été conçu pour offrir un équilibre idéal entre fermeté et confort. Sa mousse à mémoire de forme haute densité garantit un maintien optimal des cervicales, tout en épousant naturellement les contours de la tête et du cou pour un accueil moelleux.</p>"
+          }
+        },
+        "item_jFK9WR": {
+          "type": "item",
+          "settings": {
+            "title": "Est-il adapté à toutes les positions de sommeil ?",
+            "content": "<p>Oui. Que vous dormiez sur le dos, le côté ou même sur le ventre, l’oreiller Somnelia s’ajuste à votre position grâce à sa conception ergonomique. Il permet un alignement optimal de la colonne vertébrale dans toutes les postures.</p>"
+          }
+        },
+        "item_CijbCd": {
+          "type": "item",
+          "settings": {
+            "title": "L’oreiller est-il compatible avec les masques nasaux et l’apnée du sommeil ?",
+            "content": "<p>Oui. L’oreiller Somnelia est parfaitement adapté aux personnes portant un masque nasal ou concernées par l’apnée du sommeil légère à modérée. Sa forme ergonomique favorise un bon alignement des voies respiratoires, ce qui contribue à une respiration fluide tout au long de la nuit.</p>"
+          }
+        },
+        "item_bTzjUP": {
+          "type": "item",
+          "settings": {
+            "title": "L’oreiller est-il efficace contre les ronflements ?",
+            "content": "<p>Totalement testé et approuvé. L’oreiller Somnelia favorise un bon alignement de la tête, du cou et des voies respiratoires, ce qui peut réduire considérablement les ronflements liés à une mauvaise posture durant la nuit.</p>"
+          }
+        },
+        "item_NmeieJ": {
+          "type": "item",
+          "settings": {
+            "title": "Comment l’oreiller agit-il sur les douleurs cervicales ?",
+            "content": "<p>L’oreiller Somnelia soutient la courbure naturelle des cervicales et aligne la colonne vertébrale durant le sommeil. Il permet ainsi de réduire les tensions musculaires et de prévenir les douleurs liées aux mauvaises postures nocturnes.</p>"
+          }
+        },
+        "item_78fJ8a": {
+          "type": "item",
+          "settings": {
+            "title": "Améliore-t-il vraiment la qualité de mon sommeil ?",
+            "content": "<p>En favorisant un bon alignement postural et une respiration plus fluide, il contribue à un endormissement plus rapide, une diminution des micro-réveils et un sommeil globalement plus réparateur.</p>"
+          }
+        },
+        "item_K4Nhwg": {
+          "type": "item",
+          "settings": {
+            "title": "Quels sont les délais de livraison ?",
+            "content": "<p>Nous traitons votre commande sous 1 à 2 jours ouvrés. La livraison s’effectue ensuite en 3 à 6 jours, selon votre localisation.</p><p>Chaque colis est expédié avec un numéro de suivi pour garantir une réception rapide et sécurisée.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_pgUrjp",
+        "item_jFK9WR",
+        "item_CijbCd",
+        "item_bTzjUP",
+        "item_NmeieJ",
+        "item_78fJ8a",
+        "item_K4Nhwg"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Questions Fréquentes",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "recommendations_count": 6,
+        "products": [],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "You may also like",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "logoscroll_TpFtAk",
+    "avisclienttrust_LHtrM7",
+    "scrolling_text_q6tUBg",
+    "media_with_text_mr67Ki",
+    "text_with_icons_MiVUBa",
+    "multi_column_3y6c3w",
+    "facondedormir_g9ci4P",
+    "media_with_text_mT9kKq",
+    "multi_column_R7TytF",
+    "logoscroll_MeUam9",
+    "avisclientsdefilant_3Airrz",
+    "faq_caH4tY",
+    "related-products"
+  ]
+}
