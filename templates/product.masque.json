@@ -21,7 +21,7 @@
         "liquid_cyc6dk": {
           "type": "liquid",
           "settings": {
-            "liquid": "<!-- ================================================================\n  Bloc \"Titre + sous-titre produit\"\n  100% autonome : à coller dans la description produit\n  (éditeur Shopify > fiche produit > afficher le HTML </>)\n  ou dans un bloc \"HTML personnalisé\" / \"Liquid\" de la fiche produit.\n================================================================= -->\n<style>\n  .ptitle {\n    margin: 0;\n    padding: 0;\n    color: #1d2153;\n    font-family: inherit;\n  }\n  .ptitle__heading {\n    margin: 0 0 6px;\n    font-size: 32px;\n    font-weight: 700;\n    line-height: 1.15;\n  }\n  .ptitle__subtitle {\n    margin: 0;\n    font-size: 15px;\n    font-weight: 500;\n    line-height: 1.4;\n  }\n  @media (max-width: 640px) {\n    .ptitle__heading { font-size: 26px; }\n    .ptitle__subtitle { font-size: 14px; }\n  }\n</style>\n\n<div class=\"ptitle\">\n  <h1 class=\"ptitle__heading\">Oreiller Cervical Somnelia</h1>\n  <p class=\"ptitle__subtitle\">Le secret du dormeur latéral et dorsal</p>\n</div>"
+            "liquid": "<!-- ================================================================\n  Bloc \"Titre + sous-titre produit\"\n  100% autonome : à coller dans la description produit\n  (éditeur Shopify > fiche produit > afficher le HTML </>)\n  ou dans un bloc \"HTML personnalisé\" / \"Liquid\" de la fiche produit.\n================================================================= -->\n<style>\n  .ptitle {\n    margin: 0;\n    padding: 0;\n    color: #1d2153;\n    font-family: inherit;\n  }\n  .ptitle__heading {\n    margin: 0 0 6px;\n    font-size: 32px;\n    font-weight: 700;\n    line-height: 1.15;\n  }\n  .ptitle__subtitle {\n    margin: 0;\n    font-size: 15px;\n    font-weight: 500;\n    line-height: 1.4;\n  }\n  @media (max-width: 640px) {\n    .ptitle__heading { font-size: 26px; }\n    .ptitle__subtitle { font-size: 14px; }\n  }\n</style>\n\n<div class=\"ptitle\">\n  <h1 class=\"ptitle__heading\">Masque Sommeil 3D - Somnelia</h1>\n  <p class=\"ptitle__subtitle\">Le secret du dormeur latéral et dorsal</p>\n</div>"
           }
         },
         "liquid_GaGCCD": {
@@ -688,7 +688,7 @@
         "subheading": "",
         "title": "Prendre soin de votre Oreiller",
         "content": "",
-        "background": "#F4F4F1",
+        "background": "#f4f4f1",
         "background_gradient": "",
         "text_color": "#0e1a2b"
       }
